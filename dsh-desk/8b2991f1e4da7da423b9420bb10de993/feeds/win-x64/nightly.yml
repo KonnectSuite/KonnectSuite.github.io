@@ -1,8 +1,8 @@
-version: 0.1.7-rc.2.20260926.4
+version: 0.1.7-rc.2.20260926.5
 files:
-  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260926.4/aryaai-0.1.7-rc.2.20260926.4-win-x64-unsigned.exe
-    sha512: bp903XrIo2XvhyNeSxmx/R8Gy/uiQHm+9rCprlt5HFfW0ekhmTVy4aIukB4yy+q6LpbtWRpvG5xHuD4Eklq7VQ==
-    size: 330215745
-path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260926.4/aryaai-0.1.7-rc.2.20260926.4-win-x64-unsigned.exe
-sha512: bp903XrIo2XvhyNeSxmx/R8Gy/uiQHm+9rCprlt5HFfW0ekhmTVy4aIukB4yy+q6LpbtWRpvG5xHuD4Eklq7VQ==
-releaseDate: '2026-09-26T19:16:07.214Z'
+  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260926.5/aryaai-0.1.7-rc.2.20260926.5-win-x64-unsigned.exe
+    sha512: vJ/+nRGC/sdDJzF94KSBur7/d7qEgJ4BRYQaJsx83IBXQs4x4y8oKiqedpoPZcvW+iFSUSQXZTksL2SnfXYEUA==
+    size: 498149637
+path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260926.5/aryaai-0.1.7-rc.2.20260926.5-win-x64-unsigned.exe
+sha512: vJ/+nRGC/sdDJzF94KSBur7/d7qEgJ4BRYQaJsx83IBXQs4x4y8oKiqedpoPZcvW+iFSUSQXZTksL2SnfXYEUA==
+releaseDate: '2026-09-26T21:30:22.708Z'
