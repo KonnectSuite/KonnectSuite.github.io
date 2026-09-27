@@ -1,8 +1,9 @@
-version: 0.1.7-rc.2.20260926.6
+version: 0.1.7-rc.2.20260927.1
 files:
-  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260926.6/aryaai-0.1.7-rc.2.20260926.6-win-x64-unsigned.exe
-    sha512: ilC33QdghAlDoj9D4Zc978PHjQwNmyJYAer/3IH0iKL9hfSiUmVYpD38nx7h+2yEzkKehXBqm3dIxzBVan0Ezg==
-    size: 496795480
-path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260926.6/aryaai-0.1.7-rc.2.20260926.6-win-x64-unsigned.exe
-sha512: ilC33QdghAlDoj9D4Zc978PHjQwNmyJYAer/3IH0iKL9hfSiUmVYpD38nx7h+2yEzkKehXBqm3dIxzBVan0Ezg==
-releaseDate: '2026-09-27T01:59:40.385Z'
+  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260927.1/aryaai-0.1.7-rc.2.20260927.1-win-x64-unsigned.exe
+    sha512: azQAofwuPNzPjqEWCIqTl+rinYoZiP5Xc3lPAWMmIqkKisodd/pzFdnnFzdeNno97UF/17tkMzOTzhN5H9R9zg==
+    size: 496790468
+path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.20260927.1/aryaai-0.1.7-rc.2.20260927.1-win-x64-unsigned.exe
+sha512: azQAofwuPNzPjqEWCIqTl+rinYoZiP5Xc3lPAWMmIqkKisodd/pzFdnnFzdeNno97UF/17tkMzOTzhN5H9R9zg==
+releaseDate: '2026-09-27T08:44:59.020Z'
+releaseNotes: '{"en":["Updates are offered on their own. The installer shows its progress, then reopens AryaAI. Chats and settings stay.","A plan stays in the workspace, and opening it shows the plan beside the chat.","A DXF in the file tree opens as a drawing. Scroll to zoom and drag to pan.","Add skill sits beside Refresh, with Add server. The form asks when to use the skill and what to do.","Sign in to GitHub in Settings. Add workspace can clone a repository onto this PC and open it as a workspace.","No Repo sits above Ungrouped. A chat there has no workspace folder.","The slash menu has MCP. Turn a server on or off without leaving the chat, and the list stays open."],"zh":["更新会自己出现。安装程序会显示进度，然后重新打开 AryaAI。对话和设置会保留。","计划会留在工作区里，打开后显示在对话旁边。","文件树里的 DXF 会画成图纸。滚轮缩放，拖动平移。","添加技能在刷新旁边，和添加服务器同一位置。表单要写清什么时候用、具体怎么做。","设置里可以登录 GitHub。添加工作区可以把仓库克隆到这台电脑，并当作工作区打开。","无仓库在未分组上方。那里的对话没有工作区文件夹。","斜杠菜单里有 MCP。不用离开对话就能打开或关闭服务器，列表保持打开。"]}'
