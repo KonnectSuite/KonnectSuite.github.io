@@ -348,29 +348,30 @@
     </div>
   </section>
 
-  <!-- Images and video (ComfyUI) ------------------------------------------- -->
+  <!-- Images (ComfyUI) ---------------------------------------------------- -->
   <section class="section section--tight" id="images">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Images and video</p>
-        <h2>It edits the graph, not just the prompt</h2>
+        <p class="eyebrow">Images</p>
+        <h2>Generate from your own ComfyUI, or let the agent drive it</h2>
         <p class="lead">
-          AryaAI ships a built-in ComfyUI canvas. The agent reads the workflow, adds and connects
-          nodes, changes parameters, runs the job, inspects the error when it fails, and exports
-          the result — against a ComfyUI you already run.
+          Two halves. An <strong>Images</strong> page for generating directly against the ComfyUI
+          you already run &mdash; your checkpoints, your saved workflows, by name. And a
+          <strong>ComfyUI MCP</strong> server, Comfy Org&rsquo;s own with the
+          <code>comfy-cli</code> engine it invokes, so the agent can operate the workflow itself.
         </p>
       </div>
 
       <figure class="shot shot--accent">
-        <img src="assets/img/app-skills.png"
-             alt="The AryaAI Skills panel listing four bundled ComfyUI skills: comfyui-admin-ops, comfyui-canvas-ops, comfyui-dev-ops and comfyui-video-audio-ops, each with a description and marked as shipping with Arya."
-             width="1600" height="733" loading="lazy">
+        <img src="assets/img/app-images.png"
+             alt="The AryaAI Images panel reporting ComfyUI connected, with a prompt box, a workflow picker set to HMI-Doc-Schematic, size, steps, prompt strength, seed and image count controls, and a Generate button."
+             width="1600" height="424" loading="lazy">
         <figcaption>
           <span class="shot__tag">Captured from the application</span>
-          <strong>Four ComfyUI skills arrive with the installer.</strong>
-          Managing the environment, operating the live canvas, developing a custom node from the
-          conversation, and producing video with an audio track — each is a row you can read before
-          you switch it on.
+          <strong>ComfyUI connected, and a workflow chosen by name.</strong>
+          AryaAI talks to the ComfyUI you already run. Pick a workflow, set size, steps, prompt
+          strength and seed, and generate — or hand the whole thing to the agent and let it edit
+          the graph instead.
         </figcaption>
       </figure>
 
@@ -379,38 +380,42 @@
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
           </div>
-          <h3>Local, or somewhere else</h3>
-          <p>Point it at the ComfyUI on this PC — the agent can start, stop, restart and upgrade
-          that install — or at a remote instance at an address you configure.</p>
+          <h3>It finds your checkpoints</h3>
+          <p>AryaAI probes the ComfyUI you point it at, discovers the checkpoint and Z-Image Turbo
+          models already installed there, and offers them by name.</p>
         </article>
 
         <article class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M6 8.5v3a4 4 0 0 0 4 4h.5M18 8.5v3a4 4 0 0 1-4 4h-.5"/></svg>
           </div>
-          <h3>Tools, not a text box</h3>
-          <p>The agent receives <code>comfyui_read_workflow</code>, <code>comfyui_add_node</code>
-          and the tools around them, so a change is a real edit to the graph you can look at.</p>
+          <h3>Your saved workflows, validated</h3>
+          <p>It reads ComfyUI&rsquo;s own workflow catalog. A standard-node graph is checked against
+          the models actually installed before it is compiled and run &mdash; so a missing model is
+          a refusal, not a failed render.</p>
         </article>
 
         <article class="card">
           <div class="card__icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.5"/><path d="M4 17l5-4 4 3 3-2 4 3"/></svg>
           </div>
-          <h3>Media stays out of the chat</h3>
-          <p>Images and video are not poured into the conversation. They stay outside it unless the
-          agent asks for their metadata or presents them to you.</p>
+          <h3>One endpoint, no CORS to fix</h3>
+          <p>Your browser never contacts ComfyUI. The application does, and it handles cancellation
+          and history for you &mdash; which is why the same feature works in the desktop window and
+          the WebUI without configuring an origin.</p>
         </article>
       </div>
 
-      <div class="callout callout--info mt-3">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <div class="callout callout--warn mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
         <p>
-          <span class="callout__title">The setup, said plainly</span>
-          ComfyUI has to be reachable at the address you configure. Full live editing needs the
-          bundled <code>ComfyUI-DSH-Canvas</code> folder installed in ComfyUI&rsquo;s
-          <code>custom_nodes</code> directory, then a restart. Embedding a remote instance can also
-          be limited by browser security policy unless that instance permits the AryaAI origin.
+          <span class="callout__title">What the Images page does not cover yet</span>
+          Saved-workflow support is the text-to-image node set. ControlNet, LoRA, video, custom
+          nodes and three-dimensional graphs stay visible in ComfyUI but unavailable from the
+          Images page. Generated files over 50&nbsp;MB are refused, deleting a gallery entry leaves
+          the file in ComfyUI&rsquo;s output folder, and one ComfyUI endpoint is configured per
+          install &mdash; switching servers means changing <code>ARYAAI_COMFYUI_URL</code> and
+          restarting.
         </p>
       </div>
     </div>
@@ -568,11 +573,14 @@
         </details>
 
         <details>
-          <summary>It does not edit a MotionWorks IEC project</summary>
+          <summary>MotionWorks IEC is edited through the running IDE, not by rewriting the file</summary>
           <div class="accordion__body">
-            <p>A writer for that format was tried and withdrawn, because it could replace a real
-            program body with an empty one and report success. There is no MotionWorks plugin in
-            this line. A reader that refuses to write is the next milestone.</p>
+            <p>A writer for the project file format was tried and withdrawn, because it could
+            replace a real program body with an empty one and report success. What ships instead is
+            a skill that operates the MotionWorks IEC IDE itself: it stages and opens a project,
+            reads the live object model, rewrites POU Structured Text, adds declarations, and
+            compiles &mdash; so the compiler verdict is the evidence, not the writer&rsquo;s own
+            claim. It still does not download to a controller.</p>
           </div>
         </details>
 

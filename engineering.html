@@ -58,14 +58,28 @@
     <div class="container">
       <figure class="shot">
         <img src="assets/img/app-mcp.png"
-             alt="The AryaAI Skills and MCP panel showing all seven automation servers with individual enable toggles, and Windows Computer Use reporting 20 tools and a Connected status."
-             width="1600" height="1128">
+             alt="The AryaAI Skills and MCP panel listing the shipped servers — SCADA to PLC Bridge, ComfyUI MCP, FT Optix Tools, Ignition SCADA, IronPLC Compiler, NetLogic Cheat Sheet, Studio 5000 Projects and Windows Computer Use — each with an enable toggle. Windows Computer Use reports 20 tools and a Connected status."
+             width="1600" height="1042">
         <figcaption>
           <span class="shot__tag">Captured from the application</span>
           <strong>Every automation server is a row with a switch.</strong>
           The state shown is the state after a fresh install: the engineering servers are present
           but off. Nothing spawns until you turn it on, and nothing fails if the vendor tool is not
           installed on this PC.
+        </figcaption>
+      </figure>
+
+      <figure class="shot mt-3">
+        <img src="assets/img/app-skills.png"
+             alt="The AryaAI Skills panel showing a single built-in skill, motionworks-iec-use, described as operating a running Yaskawa MotionWorks IEC 3 Pro IDE and editing its code, with a toggle that is off."
+             width="1600" height="272" loading="lazy">
+        <figcaption>
+          <span class="shot__tag">The MotionWorks path, and why it is a skill</span>
+          <strong>It drives the running IDE rather than rewriting the project file.</strong>
+          A file-format writer was tried and withdrawn because it could empty a real program body
+          and report success. This skill stages and opens a project, rewrites POU Structured Text,
+          and compiles — so the compiler is the evidence, and it still never downloads to a
+          controller.
         </figcaption>
       </figure>
     </div>
@@ -126,7 +140,7 @@
             </tr>
             <tr>
               <th scope="row">Windows Computer Use</th>
-              <td data-label="Reaches">Finds windows, reads UI Automation elements, and sees the screen with OCR in English and Chinese — the path to an application that has no project plugin yet, including Studio 5000, MotionWorks IEC and FactoryTalk View.</td>
+              <td data-label="Reaches">Finds windows, reads UI Automation elements, and sees the screen with OCR in English and Chinese — the path to an application that has no project plugin yet, including Studio 5000 and FactoryTalk View, and to the MotionWorks IEC actions that have no file equivalent.</td>
               <td data-label="Stops at"><span class="tag tag--warn">Dry run by default</span> Mouse, keyboard, element clicks and shortcuts start in a dry run. Face recognition and the keylogger are not enabled.</td>
             </tr>
           </tbody>
@@ -237,7 +251,8 @@
           <p class="lead">
             Some work has no file format: go online, watch a trend, open the cam editor. Computer
             Use is how the agent reaches an application that has no project plugin yet — including
-            Studio 5000, MotionWorks IEC and FactoryTalk View.
+            Studio 5000 and FactoryTalk View — and the MotionWorks IEC actions that have no file
+            equivalent.
           </p>
           <ul class="checklist mt-3">
             <li>

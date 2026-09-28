@@ -253,9 +253,11 @@ pnpm dsh web</code></pre>
         <details>
           <summary>A writer that can destroy a program and report success does not ship</summary>
           <div class="accordion__body">
-            <p>A writer for the MotionWorks IEC format was tried and withdrawn for exactly this
-            reason — it could replace a real program body with an empty one and report success.
-            Editing that format waits until the result can be proved.</p>
+            <p>A writer for the MotionWorks IEC project file format was tried and withdrawn for
+            exactly this reason — it could replace a real program body with an empty one and report
+            success. The shipped path is deliberately different: a skill that drives the running
+            IDE and compiles the result, so the compiler is the evidence rather than the
+            writer&rsquo;s own claim.</p>
           </div>
         </details>
 
@@ -307,7 +309,7 @@ pnpm dsh web</code></pre>
             </tr>
             <tr>
               <th scope="row">Motion</th>
-              <td data-label="The limit">Does not edit a MotionWorks IEC project. A writer was tried and withdrawn, and there is no MotionWorks plugin in this line.</td>
+              <td data-label="The limit">Editing goes through the running MotionWorks IEC IDE, not the project file. The file-format writer was tried and withdrawn and is not a starting point. It does not download to a controller.</td>
             </tr>
             <tr>
               <th scope="row">HMI</th>

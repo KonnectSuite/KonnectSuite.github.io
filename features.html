@@ -143,64 +143,69 @@
     </div>
   </section>
 
-  <!-- Images and video (ComfyUI) ------------------------------------------- -->
+  <!-- Images (ComfyUI) ---------------------------------------------------- -->
   <section class="section section--tight">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow">Images and video</p>
-        <h2>A ComfyUI canvas inside the application</h2>
+        <p class="eyebrow">Images</p>
+        <h2>Generation in the application, and an agent that can drive the graph</h2>
         <p class="lead">
-          The built-in ComfyUI plugin adds a conversation tab, a split canvas, settings, workflow
-          tools, run history, media export, and the bundled bridge node that lets the agent work
-          against the live graph. The WebUI and the desktop window share the same feature.
+          The <strong>Images</strong> page generates against the ComfyUI you already run. The
+          <strong>ComfyUI MCP</strong> server gives the agent the workflow operations. They are two
+          halves of the same feature, and the WebUI and the desktop window share both.
         </p>
       </div>
 
       <figure class="shot">
-        <img src="assets/img/app-skills.png"
-             alt="The AryaAI Skills panel showing the four bundled ComfyUI skills and what each one does."
-             width="1600" height="733" loading="lazy">
+        <img src="assets/img/app-images.png"
+             alt="The AryaAI Images panel with ComfyUI connected, a prompt field, a workflow picker, and controls for size, steps, prompt strength, seed and image count."
+             width="1600" height="424" loading="lazy">
         <figcaption>
-          <span class="shot__tag">Four skills, shipped with Arya</span>
-          <strong>Environment, canvas, node development and video.</strong>
-          Each is inert until you switch it on, and each says what it does before you do.
+          <span class="shot__tag">A dedicated surface, not a chat command</span>
+          <strong>ComfyUI connected, driven by name.</strong>
+          The panel reports its own connection state and lets you pick the workflow before you
+          spend a generation on it.
         </figcaption>
       </figure>
 
       <div class="dl mt-3">
         <div class="dl__row">
-          <dt>Operating the canvas</dt>
-          <dd>Read and edit the workflow, add and connect nodes, change parameters, run the job,
-          inspect the error when it fails, and fetch the output.</dd>
+          <dt>The Images page</dt>
+          <dd>Describe an image, choose a saved workflow, and set size, steps, prompt strength,
+          seed and how many to make. It discovers the checkpoint and Z-Image Turbo models you have
+          installed and checks a workflow against them before running it.</dd>
         </div>
         <div class="dl__row">
-          <dt>Managing the environment</dt>
-          <dd>Configure, launch, upgrade, and list or install custom nodes. The local ComfyUI
-          process is something the agent can drive, not something you have to babysit.</dd>
+          <dt>Run history and outputs</dt>
+          <dd>Each generation keeps its prompt, workflow, dimensions, steps and seed, and can be
+          reused, downloaded or deleted. Queued and running work can be cancelled.</dd>
         </div>
         <div class="dl__row">
-          <dt>Developing a node</dt>
-          <dd>Read a custom node&rsquo;s source from the conversation, edit it, reload ComfyUI, and
-          verify the change on the canvas.</dd>
+          <dt>The ComfyUI MCP server</dt>
+          <dd>Comfy Org&rsquo;s own ComfyUI MCP server, shipped with the <code>comfy-cli</code>
+          engine it invokes. This is the half the agent uses to work on the workflow itself.</dd>
         </div>
         <div class="dl__row">
-          <dt>Video with audio</dt>
-          <dd>Generate video, attach an audio track or voiceover, and fetch the merged file.</dd>
+          <dt>Where the browser is kept out</dt>
+          <dd>Page code never contacts ComfyUI directly &mdash; the application does. That is why
+          the feature works in the desktop window and the WebUI without CORS configuration.</dd>
         </div>
         <div class="dl__row">
           <dt>Updates</dt>
-          <dd>The plugin ships and updates with AryaAI releases. It never replaces itself from npm.</dd>
+          <dd>Ships and updates with AryaAI releases. It never replaces itself from npm.</dd>
         </div>
       </div>
 
-      <div class="callout callout--info mt-3">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+      <div class="callout callout--warn mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
         <p>
-          <span class="callout__title">ComfyUI has to be reachable</span>
-          Either the install on this PC, or a remote instance at an address you configure. Full
-          live editing needs the bundled <code>ComfyUI-DSH-Canvas</code> folder in ComfyUI&rsquo;s
-          <code>custom_nodes</code> directory and a restart, and embedding a remote instance can be
-          limited by browser security policy unless it permits the AryaAI origin.
+          <span class="callout__title">What the Images page does not cover yet</span>
+          Saved-workflow support is the text-to-image node set, so ControlNet, LoRA, video, custom
+          nodes and three-dimensional graphs stay visible in ComfyUI but unavailable from the page.
+          Gallery entries over 50&nbsp;MB are refused, deleting an entry clears ComfyUI history but
+          leaves the generated file in ComfyUI&rsquo;s output folder, and one ComfyUI endpoint is
+          configured per install &mdash; changing servers means setting
+          <code>ARYAAI_COMFYUI_URL</code> and restarting.
         </p>
       </div>
     </div>
@@ -256,24 +261,36 @@
       <div class="hero__inner">
         <div>
           <p class="eyebrow">The companion herself</p>
-          <h2>Arya keeps you company in the workspace</h2>
+          <h2>Arya is a pet you can pick up</h2>
           <p class="lead">
-            Arya appears as a full-body animated companion inside both the desktop workspace and
-            the web UI. Her pose follows the agent&rsquo;s activity, so you can tell at a glance
-            whether it is thinking, writing, running a check, or waiting on you.
+            Arya renders as a sprite-atlas pet in both the desktop workspace and the WebUI. She is
+            a draggable overlay rather than a decoration in a corner, and her pose follows the live
+            conversation &mdash; idle, waiting, running or in review &mdash; so you can read the
+            agent&rsquo;s state without reading the transcript.
           </p>
           <ul class="checklist mt-3">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              Short, seamless loops with natural blinking and a two-pixel breathing bob
+              <strong>Drag her anywhere</strong> &mdash; the overlay moves where you put it
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              A subtle cyan headset pulse — not a flashing light
+              <strong>She looks back</strong> &mdash; her gaze tracks the pointer
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              <code>prefers-reduced-motion</code> swaps in a still, and no two instances animate at once
+              <strong>Wave on hover, jump on double-click</strong>, with a progress bubble while a
+              turn is running
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <strong>Registry-driven</strong> &mdash; pets are entries in an atlas registry, and a
+              settings section edits the display config in place
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <code>prefers-reduced-motion</code> swaps in a still, and no two instances animate at
+              once
             </li>
           </ul>
         </div>
