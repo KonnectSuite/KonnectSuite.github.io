@@ -4,6 +4,6 @@ files:
     sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
     size: 567860131
 path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.3.0/aryaai-0.1.7-rc.2.AryaAI.0.3.0-win-x64-unsigned.exe
-    sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
-releaseDate: '2026-09-28T07:48:02.927Z'
+sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
+releaseDate: '2026-09-28T08:00:13.369Z'
 releaseNotes: '{"en": ["Right-click a workspace in the left panel to rename or delete it. Right-click a chat to pin, rename, fork, or archive it. The same menu opens at your cursor, without opening what you clicked.", "The account area names the account instead of reporting a sign-in state. Your name and picture appear once DeepSeek returns them; until then the account card says why they are missing.", "Fixed an auto pet that kept the whole interface from loading. The interface now opens reliably; the pet returns once it can load with it."], "zh": ["在左侧面板右键点击工作区即可重命名或删除。右键点击对话即可置顶、重命名、分支或归档。同样的菜单会出现在光标位置，不会打开你点的那一项。", "账号区域显示账号名称，而不是登录状态。DeepSeek 返回后就会显示你的名字和头像；在此之前，账号卡片会说明缺失原因。", "修复了导致整个界面无法加载的内置宠物。界面现在可以可靠打开；宠物会在能同时加载后回归。"]}'
