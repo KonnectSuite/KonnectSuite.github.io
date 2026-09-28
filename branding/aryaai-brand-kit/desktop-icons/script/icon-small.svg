@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI script desktop icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M62 148Q62 116 94 116H196L230 150H418Q450 150 450 182V394Q450 426 418 426H94Q62 426 62 394Z" fill="#171D26" stroke="#E6E8EB" stroke-opacity="0.45" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M72 176H440" stroke="#2B6CFF" stroke-opacity="0.42" stroke-width="14"/>
+
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="19">
+      <path d="M222 198L158 256L222 314" stroke="#2B6CFF"/>
+      <path d="M290 198L354 256L290 314" stroke="#00E0D2"/>
+      <path d="M276 172L236 340" stroke="#E6E8EB"/>
+    </g>
+</svg>

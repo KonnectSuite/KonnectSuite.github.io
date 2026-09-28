@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI library desktop icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M62 148Q62 116 94 116H196L230 150H418Q450 150 450 182V394Q450 426 418 426H94Q62 426 62 394Z" fill="#171D26" stroke="#E6E8EB" stroke-opacity="0.45" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M72 176H440" stroke="#2B6CFF" stroke-opacity="0.42" stroke-width="8"/>
+
+    <ellipse cx="256" cy="202" rx="86" ry="34" fill="#171D26" stroke="#E6E8EB" stroke-width="12"/>
+    <path d="M170 202V310Q170 344 256 344Q342 344 342 310V202" fill="#171D26" stroke="#E6E8EB" stroke-width="12"/>
+    <path d="M170 254Q170 288 256 288Q342 288 342 254M170 306Q170 340 256 340Q342 340 342 306" fill="none" stroke="#2B6CFF" stroke-width="12"/>
+</svg>

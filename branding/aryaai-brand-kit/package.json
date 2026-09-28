@@ -1,0 +1,15 @@
+{
+  "name": "aryaai-brand-kit",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build-brand-kit.mjs",
+    "validate": "node tools/validate-brand-kit.mjs",
+    "check": "npm run build && npm run validate"
+  },
+  "dependencies": {
+    "opentype.js": "0.8.0",
+    "sharp": "0.34.1"
+  }
+}

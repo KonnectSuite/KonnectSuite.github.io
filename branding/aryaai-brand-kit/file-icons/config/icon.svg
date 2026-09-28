@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI config file icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M122 58H310L390 138V454H122Z" fill="#171D26" stroke="#E6E8EB" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M310 58V138H390" fill="none" stroke="#2B6CFF" stroke-width="10" stroke-linejoin="round"/>
+    <g transform="translate(0 82) scale(1 .78)">
+    <g fill="none" stroke="#E6E8EB" stroke-width="12" stroke-linecap="round">
+      <circle cx="256" cy="256" r="66"/><circle cx="256" cy="256" r="25"/><path d="M323.00 256.00L348.00 256.00"/><path d="M303.38 303.38L321.05 321.05"/><path d="M256.00 323.00L256.00 348.00"/><path d="M208.62 303.38L190.95 321.05"/><path d="M189.00 256.00L164.00 256.00"/><path d="M208.62 208.62L190.95 190.95"/><path d="M256.00 189.00L256.00 164.00"/><path d="M303.38 208.62L321.05 190.95"/>
+    </g></g>
+
+</svg>

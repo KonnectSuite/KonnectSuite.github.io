@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI hmi-scada desktop icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M62 148Q62 116 94 116H196L230 150H418Q450 150 450 182V394Q450 426 418 426H94Q62 426 62 394Z" fill="#171D26" stroke="#E6E8EB" stroke-opacity="0.45" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M72 176H440" stroke="#2B6CFF" stroke-opacity="0.42" stroke-width="8"/>
+
+    <rect x="145" y="176" width="222" height="150" rx="12" fill="#0F141B" stroke="#E6E8EB" stroke-width="12"/>
+    <path d="M178 286L222 248L256 266L318 208L340 226" fill="none" stroke="#2B6CFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M256 326V366M205 366H307" fill="none" stroke="#E6E8EB" stroke-width="12" stroke-linecap="round"/>
+</svg>

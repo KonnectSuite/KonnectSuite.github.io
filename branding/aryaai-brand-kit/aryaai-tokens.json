@@ -1,0 +1,80 @@
+{
+  "brand": "AryaAI",
+  "tagline": "Your AI engineering pal",
+  "colors": {
+    "primaryBlue": "#2B6CFF",
+    "accentTeal": "#00E0D2",
+    "accentPurple": "#8A5CFF",
+    "darkBackground": "#0F141B",
+    "surface": "#171D26",
+    "textLight": "#E6E8EB",
+    "statusSuccess": "#30D158",
+    "statusWarning": "#FFB020",
+    "statusError": "#FF3B30"
+  },
+  "typography": {
+    "primary": {
+      "family": "Sora",
+      "weights": [
+        300,
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    "secondary": {
+      "family": "JetBrains Mono",
+      "weights": [
+        400,
+        500,
+        700
+      ]
+    }
+  },
+  "spacing": {
+    "clearSpace": "1x, where x is the height of the mascot glasses"
+  },
+  "header": {
+    "fullMinWidthPx": 520,
+    "compactBelowWidthPx": 520
+  },
+  "tray": {
+    "busyFrames": 12,
+    "recommendedFramesPerSecond": 12
+  },
+  "companion": {
+    "states": [
+      "idle",
+      "greeting",
+      "thinking",
+      "researching",
+      "creating",
+      "running-testing",
+      "writing",
+      "explaining",
+      "waiting",
+      "success-celebrating",
+      "warning",
+      "error"
+    ],
+    "staticSizes": [
+      16,
+      20,
+      24,
+      32,
+      48,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "animatedSize": 256,
+    "formats": [
+      "apng",
+      "webp"
+    ],
+    "reducedMotion": true
+  }
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI settings light system icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+  <g fill="none" stroke="#171D26" stroke-width="10" stroke-linecap="round"><circle cx="64" cy="64" r="34"/><circle cx="64" cy="64" r="13"/><path d="M99.0 64.0L115.0 64.0"/><path d="M88.7 88.7L100.1 100.1"/><path d="M64.0 99.0L64.0 115.0"/><path d="M39.3 88.7L27.9 100.1"/><path d="M29.0 64.0L13.0 64.0"/><path d="M39.3 39.3L27.9 27.9"/><path d="M64.0 29.0L64.0 13.0"/><path d="M88.7 39.3L100.1 27.9"/></g>
+</svg>

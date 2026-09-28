@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI report file icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M122 58H310L390 138V454H122Z" fill="#171D26" stroke="#E6E8EB" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M310 58V138H390" fill="none" stroke="#2B6CFF" stroke-width="10" stroke-linejoin="round"/>
+    <g transform="translate(0 82) scale(1 .78)">
+    <g fill="none" stroke="#E6E8EB" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M172 338H344"/>
+      <path d="M196 320V270H226V320"/>
+      <path d="M242 320V222H272V320"/>
+      <path d="M288 320V186H318V320"/>
+    </g>
+    <path d="M188 240L238 206L276 218L326 168" fill="none" stroke="#2B6CFF" stroke-width="12" stroke-linecap="round"/></g>
+
+</svg>

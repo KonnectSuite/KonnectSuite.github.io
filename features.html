@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Features — AryaAI</title>
+<meta name="description" content="What AryaAI can do today: a workspace agent with readable plans, a DXF drawing viewer, GitHub clone, skills, multi-agent workflows, background jobs, and a companion whose pose follows the work.">
+<meta name="theme-color" content="#0F141B">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/img/mark.svg" alt="" width="32" height="32">
+      <span class="brand__name">AryaAI</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-nav-toggle>
+      <svg class="nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a class="nav__link" href="features.html">Features</a>
+      <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Download
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-head">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Features</span></p>
+      <p class="eyebrow">The companion</p>
+      <h1>One agent, pointed at the work you already have</h1>
+      <p class="lead">
+        AryaAI is a desktop application, because the engineering tools live on the PC in front of
+        you. A chat in a browser is how the product is tested; the installed application is what a
+        plant PC runs.
+      </p>
+    </div>
+  </div>
+
+  <!-- Working ------------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Working</p>
+        <h2>Where the agent lives</h2>
+      </div>
+
+      <div class="dl">
+        <div class="dl__row">
+          <dt>A workspace folder</dt>
+          <dd>The agent plans and edits inside a folder you choose. On Windows its shell is
+          PowerShell, and it reads the same files you do.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>No Repo chat</dt>
+          <dd>When there is no folder yet — a question about a snippet, a quick lookup — you get a
+          chat with no project attached.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>A plan you can open</dt>
+          <dd>The agent keeps its plan in the workspace, and you can open that plan beside the chat
+          instead of guessing what it is about to do.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Background jobs</dt>
+          <dd>Long work runs as a tracked job rather than blocking the conversation. You are told
+          when it finishes.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Goals that survive the turn</dt>
+          <dd>A longer objective keeps the session working across rounds instead of stopping the
+          moment one answer is produced.</dd>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Files and drawings -------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Files and drawings</p>
+        <h2>The print stays next to the conversation</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l4-1 10-10-3-3L5 16z"/><path d="M14 6l3 3"/></svg>
+          </div>
+          <h3>A DXF that behaves like a drawing</h3>
+          <p>Open a sheet from the file tree and it renders as a drawing. Scroll to zoom, drag to
+          pan. The agent can list the sheets in an ASCII DXF, read the drawing, and apply an edit
+          that the drawing service checks before it is written.</p>
+          <div class="card__meta"><span class="tag tag--info">Checked before write</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>GitHub, from Settings</h3>
+          <p>Sign in once. From <strong>Add workspace</strong> you can clone a repository onto this
+          PC and open it. The token stays in your credential store rather than in a project file.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h6l2 2h8v12H4z"/><path d="M4 11h16"/></svg>
+          </div>
+          <h3>A file tree you already understand</h3>
+          <p>Files open in the pane they belong to, with a sidebar tree rooted where your workspace
+          is. Nothing is imported into a proprietary format first.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l5 5v11H6z"/><path d="M15 4v5h5"/></svg>
+          </div>
+          <h3>Export and diff, not silent edits</h3>
+          <p>Edits to exports and drawings are meant to prove their result — a new file or a
+          reviewed diff, with the tool able to show that what it claims to have written is what is
+          on disk.</p>
+          <div class="card__meta"><span class="tag">Milestone in progress</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills, workflows, plugins ----------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Teaching it your shop</p>
+        <h2>Skills, workflows, and plugins</h2>
+        <p class="lead">
+          A shop standard — naming, alarm text, the cam library, the HMI face — should be something
+          the agent loads, not a paragraph someone pastes into every chat.
+        </p>
+      </div>
+
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <h3>Skills</h3>
+          <p>Add a skill that states when it applies and what it should do. It is loaded when the
+          situation matches, so the same behaviour lands on every engineer&rsquo;s PC.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Workflows</h3>
+          <p>A workflow can run several agents on one job — fan the work out, collect structured
+          results, and keep the intermediate output where you can read it.</p>
+        </article>
+
+        <article class="card reveal">
+          <h3>Plugins and the Plugin Market</h3>
+          <p>Install more from <strong>Settings &rarr; Plugin Market</strong>, or from a package
+          name, a Git repository, or a folder on this PC. They live in your profile, under your
+          Harness home — not inside the application directory.</p>
+        </article>
+      </div>
+
+      <div class="callout callout--ok mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        <p>
+          <span class="callout__title">An update adds what we ship. It does not take what you installed.</span>
+          The next installer replaces AryaAI. It does not remove your plugins, your chats, or your
+          settings. If a plugin cannot load on a newer AryaAI, the files are still in your profile.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companion ----------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="hero__inner">
+        <div>
+          <p class="eyebrow">The companion herself</p>
+          <h2>Arya keeps you company in the workspace</h2>
+          <p class="lead">
+            Arya appears as a full-body animated companion inside both the desktop workspace and
+            the web UI. Her pose follows the agent&rsquo;s activity, so you can tell at a glance
+            whether it is thinking, writing, running a check, or waiting on you.
+          </p>
+          <ul class="checklist mt-3">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              Short, seamless loops with natural blinking and a two-pixel breathing bob
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              A subtle cyan headset pulse — not a flashing light
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+              <code>prefers-reduced-motion</code> swaps in a still, and no two instances animate at once
+            </li>
+          </ul>
+        </div>
+
+        <div class="stage" data-companion="thinking,researching,writing,running-testing,explaining,success-celebrating">
+          <div class="stage__bar">
+            <span class="stage__dots" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="stage__title" data-companion-label>thinking</span>
+          </div>
+          <div class="stage__body">
+            <div class="companion">
+              <span class="companion__glow" aria-hidden="true"></span>
+              <img data-base="branding/aryaai-brand-kit/companion/"
+                   src="branding/aryaai-brand-kit/companion/thinking/animated/256.webp"
+                   alt="Arya in her thinking state" width="256" height="256">
+            </div>
+            <div>
+              <p class="mb-0 small muted">
+                Her pose follows the agent: reading the project is <em>researching</em>, drafting a
+                routine is <em>writing</em>, a check is <em>testing</em>, and a finished job is
+                <em>success</em>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Desktop polish ------------------------------------------------------ -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Small things that matter daily</p>
+        <h2>It behaves like an application, not a web page</h2>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="card reveal">
+          <h3>Cut, copy, paste</h3>
+          <p>Standard editing shortcuts work in the desktop window where you expect them.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Spelling suggestions</h3>
+          <p>Your notes and prompts get the same care as any other text field.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Check for Updates</h3>
+          <p>In the application menu. AryaAI offers the newer build, shows installer progress, and
+          starts again. Chats and settings remain.</p>
+        </article>
+        <article class="card reveal">
+          <h3>MCP panel in the slash menu</h3>
+          <p>Turn a shipped server on or off without leaving the chat, add a server of your own, and
+          remove the ones you added.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta">
+        <h2>See which tool reaches what</h2>
+        <p class="lead">Each engineering server is bounded on purpose. The next page says exactly
+        where each one stops.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="engineering.html">The engineering desk</a>
+          <a class="btn btn--ghost btn--lg" href="docs.html">Install and docs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/img/mark.svg" alt="" width="26" height="26">
+          <span>AryaAI</span>
+        </div>
+        <p class="footer__tagline">
+          Your AI engineering pal. A coding and automation engineering companion for the people who
+          program machines.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io">Repository</a></li>
+          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/issues">Issues</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="docs.html#limits">Known limits</a></li>
+          <li><a href="docs.html#security">Safety model</a></li>
+          <li><a href="docs.html#updates">Updates and plugins</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>
+        &copy; <span data-year>2026</span> AryaAI. Released under the MIT license. AryaAI is built on
+        DeepSeek Harness; DeepSeek Harness is a trademark of DeepSeek, and this project is not
+        endorsed by or affiliated with DeepSeek.
+      </p>
+      <p>Built for the desk that programs machines.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

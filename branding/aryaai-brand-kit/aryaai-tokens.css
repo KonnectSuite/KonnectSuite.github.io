@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Sora";
+  src: url("./sources/fonts/Sora-Variable.ttf") format("truetype");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./sources/fonts/JetBrainsMono-Variable.ttf") format("truetype");
+  font-weight: 100 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --arya-color-primary-blue: #2B6CFF;
+  --arya-color-accent-teal: #00E0D2;
+  --arya-color-accent-purple: #8A5CFF;
+  --arya-color-dark-background: #0F141B;
+  --arya-color-surface: #171D26;
+  --arya-color-text-light: #E6E8EB;
+  --arya-color-status-success: #30D158;
+  --arya-color-status-warning: #FFB020;
+  --arya-color-status-error: #FF3B30;
+  --arya-font-primary: "Sora", sans-serif;
+  --arya-font-secondary: "JetBrains Mono", monospace;
+}

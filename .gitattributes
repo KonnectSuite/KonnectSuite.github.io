@@ -1,0 +1,16 @@
+# This repository serves a website and the desktop update feed.
+#
+# The site ships fonts, PNG/WebP companion artwork and icon containers. A line-ending
+# conversion applied to any of those corrupts the file, so the binary types are named
+# explicitly rather than left to Git's content sniffing.
+#
+# Normalising text to LF also keeps the working tree deterministic, which is what stops
+# every commit from reporting "LF will be replaced by CRLF".
+* text=auto eol=lf
+
+*.png   binary
+*.webp  binary
+*.apng  binary
+*.ico   binary
+*.icns  binary
+*.ttf   binary

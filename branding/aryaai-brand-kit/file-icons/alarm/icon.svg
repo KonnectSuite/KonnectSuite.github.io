@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI alarm file icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M122 58H310L390 138V454H122Z" fill="#171D26" stroke="#E6E8EB" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M310 58V138H390" fill="none" stroke="#2B6CFF" stroke-width="10" stroke-linejoin="round"/>
+    <g transform="translate(0 82) scale(1 .78)">
+    <path d="M188 314H324L304 286V236Q304 196 256 190Q208 196 208 236V286Z" fill="none" stroke="#E6E8EB" stroke-width="13" stroke-linejoin="round"/>
+    <path d="M236 332Q256 354 276 332" fill="none" stroke="#2B6CFF" stroke-width="13" stroke-linecap="round"/></g>
+
+</svg>

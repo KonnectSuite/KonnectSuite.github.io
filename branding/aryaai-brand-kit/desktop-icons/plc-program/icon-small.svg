@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI plc-program desktop icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M62 148Q62 116 94 116H196L230 150H418Q450 150 450 182V394Q450 426 418 426H94Q62 426 62 394Z" fill="#171D26" stroke="#E6E8EB" stroke-opacity="0.45" stroke-width="14" stroke-linejoin="round"/>
+    <path d="M72 176H440" stroke="#2B6CFF" stroke-opacity="0.42" stroke-width="14"/>
+
+    <rect x="146" y="214" width="220" height="108" rx="22" fill="#00E0D2" stroke="#E6E8EB" stroke-width="8"/>
+    <g fill="none" stroke="#E6E8EB" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M190 286V244H214Q232 244 232 259Q232 274 214 274H190"/>
+      <path d="M258 244V286H294"/>
+      <path d="M342 252Q334 243 319 243Q299 243 299 265Q299 287 319 287Q334 287 342 278"/>
+    </g>
+</svg>

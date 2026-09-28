@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI logic file icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M122 58H310L390 138V454H122Z" fill="#171D26" stroke="#E6E8EB" stroke-width="15" stroke-linejoin="round"/>
+    <path d="M310 58V138H390" fill="none" stroke="#2B6CFF" stroke-width="15" stroke-linejoin="round"/>
+    <g transform="translate(0 66) scale(1 .78)">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="19">
+      <path d="M222 198L158 256L222 314" stroke="#2B6CFF"/>
+      <path d="M290 198L354 256L290 314" stroke="#00E0D2"/>
+      <path d="M276 172L236 340" stroke="#E6E8EB"/>
+    </g></g>
+
+</svg>

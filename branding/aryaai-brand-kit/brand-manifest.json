@@ -1,0 +1,8330 @@
+{
+  "schemaVersion": 2,
+  "brand": "AryaAI",
+  "tagline": "Your AI engineering pal",
+  "sourceReference": "sources/mascot/aryaai-approved-portrait-reference.png",
+  "generatedBy": "tools/build-brand-kit.mjs",
+  "palette": {
+    "primaryBlue": "#2B6CFF",
+    "accentTeal": "#00E0D2",
+    "accentPurple": "#8A5CFF",
+    "darkBackground": "#0F141B",
+    "surface": "#171D26",
+    "textLight": "#E6E8EB",
+    "error": "#FF3B30",
+    "warning": "#FFB020",
+    "success": "#30D158"
+  },
+  "typography": {
+    "primary": {
+      "family": "Sora",
+      "source": "sources/fonts/Sora-Variable.ttf"
+    },
+    "secondary": {
+      "family": "JetBrains Mono",
+      "source": "sources/fonts/JetBrainsMono-Variable.ttf"
+    }
+  },
+  "companion": {
+    "states": [
+      {
+        "id": "idle",
+        "label": "Idle",
+        "cue": "calm smile"
+      },
+      {
+        "id": "greeting",
+        "label": "Greeting",
+        "cue": "friendly wave"
+      },
+      {
+        "id": "thinking",
+        "label": "Thinking",
+        "cue": "thought spark"
+      },
+      {
+        "id": "researching",
+        "label": "Researching",
+        "cue": "scanner"
+      },
+      {
+        "id": "creating",
+        "label": "Creating",
+        "cue": "idea light"
+      },
+      {
+        "id": "running-testing",
+        "label": "Running / testing",
+        "cue": "check panel"
+      },
+      {
+        "id": "writing",
+        "label": "Writing",
+        "cue": "notebook"
+      },
+      {
+        "id": "explaining",
+        "label": "Explaining",
+        "cue": "raised finger"
+      },
+      {
+        "id": "waiting",
+        "label": "Waiting",
+        "cue": "hourglass"
+      },
+      {
+        "id": "success-celebrating",
+        "label": "Success / celebrating",
+        "cue": "confetti"
+      },
+      {
+        "id": "warning",
+        "label": "Warning",
+        "cue": "amber alert"
+      },
+      {
+        "id": "error",
+        "label": "Error",
+        "cue": "red error"
+      }
+    ],
+    "staticSizes": [
+      16,
+      20,
+      24,
+      32,
+      48,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "animation": {
+      "formats": [
+        "apng",
+        "webp"
+      ],
+      "size": 256,
+      "loop": 0,
+      "reducedMotion": "reduced-motion.png"
+    },
+    "spriteSheets": {
+      "columns": 4,
+      "rows": 3,
+      "cellSizes": [
+        64,
+        128,
+        256
+      ]
+    }
+  },
+  "assets": [
+    {
+      "path": "app-icons/linux/hicolor/128x128/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/16x16/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/24x24/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/256x256/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/32x32/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/48x48/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/512x512/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/linux/hicolor/64x64/apps/aryaai.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "linux",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "app-icons/macos/AryaAI.icns",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "app-icons/png/dark/1024.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "app-icons/png/dark/128.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "app-icons/png/dark/16.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/png/dark/20.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "app-icons/png/dark/24.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "app-icons/png/dark/256.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "app-icons/png/dark/32.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/png/dark/48.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "app-icons/png/dark/512.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/png/dark/64.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "app-icons/png/light/1024.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "app-icons/png/light/128.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "app-icons/png/light/16.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/png/light/20.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "app-icons/png/light/24.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "app-icons/png/light/256.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "app-icons/png/light/32.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/png/light/48.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "app-icons/png/light/512.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/png/light/64.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/1024.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/128.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/16.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/20.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/24.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/256.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/32.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/48.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/512.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/png/monochrome/64.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "app-icons/png/primary/1024.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "app-icons/png/primary/128.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "app-icons/png/primary/16.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/png/primary/20.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "app-icons/png/primary/24.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "app-icons/png/primary/256.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "app-icons/png/primary/32.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/png/primary/48.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "app-icons/png/primary/512.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/png/primary/64.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "app-icons/png/small/1024.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "app-icons/png/small/128.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "app-icons/png/small/16.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/png/small/20.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "app-icons/png/small/24.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "app-icons/png/small/256.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "app-icons/png/small/32.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/png/small/48.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "app-icons/png/small/512.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/png/small/64.png",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "app-icons/store/aryaai-store-icon-1024.png",
+      "family": "app-icon",
+      "name": "store-icon",
+      "variant": "1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "app-icons/svg/dark.svg",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/svg/light.svg",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/svg/monochrome.svg",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "monochrome",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/svg/primary.svg",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "primary",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/svg/small.svg",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/web/apple-touch-icon.png",
+      "family": "favicon",
+      "name": "apple-touch-icon",
+      "variant": "180",
+      "format": "png",
+      "dimensions": {
+        "width": 180,
+        "height": 180
+      }
+    },
+    {
+      "path": "app-icons/web/favicon-16.png",
+      "family": "favicon",
+      "name": "favicon",
+      "variant": "16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "app-icons/web/favicon-20.png",
+      "family": "favicon",
+      "name": "favicon",
+      "variant": "20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "app-icons/web/favicon-32.png",
+      "family": "favicon",
+      "name": "favicon",
+      "variant": "32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "app-icons/web/favicon.ico",
+      "family": "favicon",
+      "name": "favicon",
+      "variant": "windows-web",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "app-icons/web/favicon.svg",
+      "family": "favicon",
+      "name": "favicon",
+      "variant": "vector",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/web/pwa-192.png",
+      "family": "favicon",
+      "name": "pwa-icon",
+      "variant": "192",
+      "format": "png",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    {
+      "path": "app-icons/web/pwa-512.png",
+      "family": "favicon",
+      "name": "pwa-icon",
+      "variant": "512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "app-icons/windows/aryaai.ico",
+      "family": "app-icon",
+      "name": "software-icon",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        40,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "companion/creating/animated/256.apng",
+      "family": "companion-animation",
+      "name": "creating",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/animated/256.webp",
+      "family": "companion-animation",
+      "name": "creating",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/master.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/reduced-motion.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/1024.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/128.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/16.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/20.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/24.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/256.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/32.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/48.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/512.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/creating/static/64.png",
+      "family": "companion",
+      "name": "creating",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/animated/256.apng",
+      "family": "companion-animation",
+      "name": "error",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/animated/256.webp",
+      "family": "companion-animation",
+      "name": "error",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/master.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/reduced-motion.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/1024.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/128.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/16.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/20.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/24.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/256.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/32.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/48.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/512.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/error/static/64.png",
+      "family": "companion",
+      "name": "error",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/animated/256.apng",
+      "family": "companion-animation",
+      "name": "explaining",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/animated/256.webp",
+      "family": "companion-animation",
+      "name": "explaining",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/master.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/reduced-motion.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/1024.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/128.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/16.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/20.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/24.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/256.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/32.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/48.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/512.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/explaining/static/64.png",
+      "family": "companion",
+      "name": "explaining",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/animated/256.apng",
+      "family": "companion-animation",
+      "name": "greeting",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/animated/256.webp",
+      "family": "companion-animation",
+      "name": "greeting",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/master.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/reduced-motion.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/1024.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/128.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/16.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/20.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/24.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/256.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/32.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/48.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/512.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/greeting/static/64.png",
+      "family": "companion",
+      "name": "greeting",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/animated/256.apng",
+      "family": "companion-animation",
+      "name": "idle",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/animated/256.webp",
+      "family": "companion-animation",
+      "name": "idle",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/master.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/reduced-motion.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/1024.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/128.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/16.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/20.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/24.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/256.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/32.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/48.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/512.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/idle/static/64.png",
+      "family": "companion",
+      "name": "idle",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/animated/256.apng",
+      "family": "companion-animation",
+      "name": "researching",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/animated/256.webp",
+      "family": "companion-animation",
+      "name": "researching",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/master.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/reduced-motion.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/1024.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/128.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/16.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/20.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/24.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/256.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/32.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/48.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/512.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/researching/static/64.png",
+      "family": "companion",
+      "name": "researching",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/animated/256.apng",
+      "family": "companion-animation",
+      "name": "running-testing",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/animated/256.webp",
+      "family": "companion-animation",
+      "name": "running-testing",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/master.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/reduced-motion.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/1024.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/128.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/16.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/20.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/24.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/256.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/32.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/48.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/512.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/running-testing/static/64.png",
+      "family": "companion",
+      "name": "running-testing",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/sprites/aryaai-companion-12-state-128.png",
+      "family": "companion-sprite",
+      "name": "all-states",
+      "variant": "4x3-128",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 384
+      },
+      "cellSize": 128,
+      "columns": 4,
+      "rows": 3,
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/sprites/aryaai-companion-12-state-256.png",
+      "family": "companion-sprite",
+      "name": "all-states",
+      "variant": "4x3-256",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 768
+      },
+      "cellSize": 256,
+      "columns": 4,
+      "rows": 3,
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/sprites/aryaai-companion-12-state-64.png",
+      "family": "companion-sprite",
+      "name": "all-states",
+      "variant": "4x3-64",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 192
+      },
+      "cellSize": 64,
+      "columns": 4,
+      "rows": 3,
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/animated/256.apng",
+      "family": "companion-animation",
+      "name": "success-celebrating",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/animated/256.webp",
+      "family": "companion-animation",
+      "name": "success-celebrating",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/master.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/reduced-motion.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/1024.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/128.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/16.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/20.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/24.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/256.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/32.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/48.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/512.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/success-celebrating/static/64.png",
+      "family": "companion",
+      "name": "success-celebrating",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/animated/256.apng",
+      "family": "companion-animation",
+      "name": "thinking",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/animated/256.webp",
+      "family": "companion-animation",
+      "name": "thinking",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/master.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/reduced-motion.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/1024.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/128.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/16.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/20.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/24.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/256.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/32.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/48.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/512.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/thinking/static/64.png",
+      "family": "companion",
+      "name": "thinking",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/animated/256.apng",
+      "family": "companion-animation",
+      "name": "waiting",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/animated/256.webp",
+      "family": "companion-animation",
+      "name": "waiting",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/master.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/reduced-motion.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/1024.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/128.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/16.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/20.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/24.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/256.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/32.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/48.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/512.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/waiting/static/64.png",
+      "family": "companion",
+      "name": "waiting",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/animated/256.apng",
+      "family": "companion-animation",
+      "name": "warning",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/animated/256.webp",
+      "family": "companion-animation",
+      "name": "warning",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/master.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/reduced-motion.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/1024.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/128.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/16.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/20.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/24.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/256.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/32.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/48.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/512.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/warning/static/64.png",
+      "family": "companion",
+      "name": "warning",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/animated/256.apng",
+      "family": "companion-animation",
+      "name": "writing",
+      "variant": "apng",
+      "format": "apng",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/animated/256.webp",
+      "family": "companion-animation",
+      "name": "writing",
+      "variant": "webp",
+      "format": "webp",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "width": 256,
+      "height": 256,
+      "frames": 8,
+      "loop": 0,
+      "delaysMs": [
+        180,
+        180,
+        1200,
+        90,
+        90,
+        900,
+        180,
+        180
+      ],
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/master.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "master",
+      "format": "png",
+      "dimensions": {
+        "width": 362,
+        "height": 362
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/reduced-motion.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "reduced-motion",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/1024.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-1024",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/128.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/16.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/20.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/24.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/256.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-256",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/32.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/48.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/512.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-512",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "companion/writing/static/64.png",
+      "family": "companion",
+      "name": "writing",
+      "variant": "static-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "desktop-icons/hmi-scada/hmi-scada.icns",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "desktop-icons/hmi-scada/hmi-scada.ico",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "desktop-icons/hmi-scada/icon-small.svg",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/icon.svg",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/128.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/16.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/20.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/24.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/256.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/32.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/48.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/512.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/hmi-scada/png/64.png",
+      "family": "desktop-icon",
+      "name": "hmi-scada",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "desktop-icons/library/icon-small.svg",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/library/icon.svg",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/library/library.icns",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "desktop-icons/library/library.ico",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "desktop-icons/library/png/128.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/16.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/20.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/24.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/256.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/32.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/48.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/512.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/library/png/64.png",
+      "family": "desktop-icon",
+      "name": "library",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/icon-small.svg",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/icon.svg",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/plc-program.icns",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "desktop-icons/plc-program/plc-program.ico",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "desktop-icons/plc-program/png/128.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/16.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/20.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/24.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/256.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/32.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/48.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/512.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/plc-program/png/64.png",
+      "family": "desktop-icon",
+      "name": "plc-program",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "desktop-icons/project/icon-small.svg",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/project/icon.svg",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/128.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/16.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/20.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/24.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/256.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/32.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/48.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/512.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/project/png/64.png",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "desktop-icons/project/project.icns",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "desktop-icons/project/project.ico",
+      "family": "desktop-icon",
+      "name": "project",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "desktop-icons/script/icon-small.svg",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/script/icon.svg",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/128.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/16.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/20.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/24.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/256.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/32.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/48.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/512.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/script/png/64.png",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "desktop-icons/script/script.icns",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "desktop-icons/script/script.ico",
+      "family": "desktop-icon",
+      "name": "script",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "desktop-icons/template/icon-small.svg",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/template/icon.svg",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/128.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/16.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/20.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/24.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/256.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/32.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/48.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/512.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "desktop-icons/template/png/64.png",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "desktop-icons/template/template.icns",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "desktop-icons/template/template.ico",
+      "family": "desktop-icon",
+      "name": "template",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "file-icons/alarm/alarm.icns",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "file-icons/alarm/alarm.ico",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "file-icons/alarm/icon-small.svg",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/alarm/icon.svg",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/128.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/16.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/20.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/24.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/256.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/32.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/48.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/512.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/alarm/png/64.png",
+      "family": "file-icon",
+      "name": "alarm",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "file-icons/config/config.icns",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "file-icons/config/config.ico",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "file-icons/config/icon-small.svg",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/config/icon.svg",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/config/png/128.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "file-icons/config/png/16.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "file-icons/config/png/20.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "file-icons/config/png/24.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "file-icons/config/png/256.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "file-icons/config/png/32.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "file-icons/config/png/48.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "file-icons/config/png/512.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/config/png/64.png",
+      "family": "file-icon",
+      "name": "config",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "file-icons/function/function.icns",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "file-icons/function/function.ico",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "file-icons/function/icon-small.svg",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/function/icon.svg",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/function/png/128.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "file-icons/function/png/16.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "file-icons/function/png/20.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "file-icons/function/png/24.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "file-icons/function/png/256.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "file-icons/function/png/32.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "file-icons/function/png/48.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "file-icons/function/png/512.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/function/png/64.png",
+      "family": "file-icon",
+      "name": "function",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "file-icons/logic/icon-small.svg",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/logic/icon.svg",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/logic/logic.icns",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "file-icons/logic/logic.ico",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "file-icons/logic/png/128.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "file-icons/logic/png/16.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "file-icons/logic/png/20.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "file-icons/logic/png/24.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "file-icons/logic/png/256.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "file-icons/logic/png/32.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "file-icons/logic/png/48.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "file-icons/logic/png/512.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/logic/png/64.png",
+      "family": "file-icon",
+      "name": "logic",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "file-icons/report/icon-small.svg",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/report/icon.svg",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/report/png/128.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "file-icons/report/png/16.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "file-icons/report/png/20.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "file-icons/report/png/24.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "file-icons/report/png/256.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "file-icons/report/png/32.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "file-icons/report/png/48.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "file-icons/report/png/512.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/report/png/64.png",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "file-icons/report/report.icns",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "file-icons/report/report.ico",
+      "family": "file-icon",
+      "name": "report",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "file-icons/tag/icon-small.svg",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "small",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/tag/icon.svg",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/tag/png/128.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "file-icons/tag/png/16.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "file-icons/tag/png/20.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "file-icons/tag/png/24.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "file-icons/tag/png/256.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "path": "file-icons/tag/png/32.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "small",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "file-icons/tag/png/48.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "file-icons/tag/png/512.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "file-icons/tag/png/64.png",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "full",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "file-icons/tag/tag.icns",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "macos",
+      "format": "icns",
+      "sizes": [
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "path": "file-icons/tag/tag.ico",
+      "family": "file-icon",
+      "name": "tag",
+      "variant": "windows",
+      "format": "ico",
+      "sizes": [
+        16,
+        20,
+        24,
+        32,
+        48,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "path": "header/compact/128.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-128",
+      "format": "png",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "header/compact/16.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "header/compact/20.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "header/compact/24.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "header/compact/32.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "header/compact/48.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "header/compact/64.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "header/header-mark.svg",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "compact",
+      "format": "svg",
+      "dimensions": {
+        "width": 160,
+        "height": 160
+      }
+    },
+    {
+      "path": "header/header-wordmark-1200.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "full-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 1200,
+        "height": 160
+      }
+    },
+    {
+      "path": "header/header-wordmark-2400.png",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "full-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 2400,
+        "height": 320
+      }
+    },
+    {
+      "path": "header/header-wordmark.svg",
+      "family": "header",
+      "name": "responsive-wordmark",
+      "variant": "full",
+      "format": "svg",
+      "dimensions": {
+        "width": 1200,
+        "height": 160
+      }
+    },
+    {
+      "path": "logos/dark-background-1400.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "dark-background-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/dark-background-2800.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "dark-background-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 2800,
+        "height": 800
+      }
+    },
+    {
+      "path": "logos/dark-background.svg",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "dark-background",
+      "format": "svg",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/horizontal-lockup-1400.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "full-color-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/horizontal-lockup-2800.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "full-color-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 2800,
+        "height": 800
+      }
+    },
+    {
+      "path": "logos/horizontal-lockup.svg",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "full-color",
+      "format": "svg",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/light-background-1400.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "light-background-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/light-background-2800.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "light-background-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 2800,
+        "height": 800
+      }
+    },
+    {
+      "path": "logos/light-background.svg",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "light-background",
+      "format": "svg",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/mark-full-color-1024.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "full-color-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "logos/mark-full-color-512.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "full-color-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-full-color.svg",
+      "family": "logo",
+      "name": "mark",
+      "variant": "full-color",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-light-background-1024.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "light-background-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "logos/mark-light-background-512.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "light-background-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-light-background.svg",
+      "family": "logo",
+      "name": "mark",
+      "variant": "light-background",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-monochrome-dark-1024.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "monochrome-dark-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "logos/mark-monochrome-dark-512.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "monochrome-dark-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-monochrome-dark.svg",
+      "family": "logo",
+      "name": "mark",
+      "variant": "monochrome-dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-monochrome-light-1024.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "monochrome-light-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "logos/mark-monochrome-light-512.png",
+      "family": "logo",
+      "name": "mark",
+      "variant": "monochrome-light-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/mark-monochrome-light.svg",
+      "family": "logo",
+      "name": "mark",
+      "variant": "monochrome-light",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/primary-lockup-1680.png",
+      "family": "logo",
+      "name": "primary-lockup",
+      "variant": "full-color-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1680,
+        "height": 1800
+      }
+    },
+    {
+      "path": "logos/primary-lockup-840.png",
+      "family": "logo",
+      "name": "primary-lockup",
+      "variant": "full-color-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 840,
+        "height": 900
+      }
+    },
+    {
+      "path": "logos/primary-lockup.svg",
+      "family": "logo",
+      "name": "primary-lockup",
+      "variant": "full-color",
+      "format": "svg",
+      "dimensions": {
+        "width": 840,
+        "height": 900
+      }
+    },
+    {
+      "path": "logos/single-color-dark-1400.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "monochrome-dark-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/single-color-dark-2800.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "monochrome-dark-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 2800,
+        "height": 800
+      }
+    },
+    {
+      "path": "logos/single-color-dark.svg",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "monochrome-dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/single-color-light-1400.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "monochrome-light-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/single-color-light-2800.png",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "monochrome-light-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 2800,
+        "height": 800
+      }
+    },
+    {
+      "path": "logos/single-color-light.svg",
+      "family": "logo",
+      "name": "horizontal-lockup",
+      "variant": "monochrome-light",
+      "format": "svg",
+      "dimensions": {
+        "width": 1400,
+        "height": 400
+      }
+    },
+    {
+      "path": "logos/stacked-lockup-1680.png",
+      "family": "logo",
+      "name": "stacked-lockup",
+      "variant": "full-color-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1680,
+        "height": 1901
+      }
+    },
+    {
+      "path": "logos/stacked-lockup-840.png",
+      "family": "logo",
+      "name": "stacked-lockup",
+      "variant": "full-color-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 840,
+        "height": 951
+      }
+    },
+    {
+      "path": "logos/stacked-lockup.svg",
+      "family": "logo",
+      "name": "stacked-lockup",
+      "variant": "full-color",
+      "format": "svg",
+      "dimensions": {
+        "width": 760,
+        "height": 860
+      }
+    },
+    {
+      "path": "logos/standalone-mark-1024.png",
+      "family": "logo",
+      "name": "standalone-mark",
+      "variant": "full-color-2x",
+      "format": "png",
+      "dimensions": {
+        "width": 1024,
+        "height": 1024
+      }
+    },
+    {
+      "path": "logos/standalone-mark-512.png",
+      "family": "logo",
+      "name": "standalone-mark",
+      "variant": "full-color-1x",
+      "format": "png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "logos/standalone-mark.svg",
+      "family": "logo",
+      "name": "standalone-mark",
+      "variant": "full-color",
+      "format": "svg",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    {
+      "path": "preview/aryaai-brand-kit-contact-sheet.png",
+      "family": "preview",
+      "name": "contact-sheet",
+      "variant": "raster",
+      "format": "png",
+      "dimensions": {
+        "width": 1920,
+        "height": 1400
+      }
+    },
+    {
+      "path": "preview/aryaai-brand-kit-contact-sheet.svg",
+      "family": "preview",
+      "name": "contact-sheet",
+      "variant": "vector",
+      "format": "svg",
+      "dimensions": {
+        "width": 1920,
+        "height": 1400
+      }
+    },
+    {
+      "path": "preview/aryaai-companion-contact-sheet.png",
+      "family": "preview",
+      "name": "companion-contact-sheet",
+      "variant": "raster",
+      "format": "png",
+      "dimensions": {
+        "width": 1920,
+        "height": 1400
+      }
+    },
+    {
+      "path": "preview/aryaai-companion-contact-sheet.svg",
+      "family": "preview",
+      "name": "companion-contact-sheet",
+      "variant": "vector",
+      "format": "svg",
+      "dimensions": {
+        "width": 1920,
+        "height": 1400
+      }
+    },
+    {
+      "path": "preview/aryaai-companion-size-qa.png",
+      "family": "preview",
+      "name": "companion-size-qa",
+      "variant": "raster",
+      "format": "png",
+      "dimensions": {
+        "width": 1920,
+        "height": 1400
+      }
+    },
+    {
+      "path": "preview/aryaai-companion-size-qa.svg",
+      "family": "preview",
+      "name": "companion-size-qa",
+      "variant": "vector",
+      "format": "svg",
+      "dimensions": {
+        "width": 1920,
+        "height": 1400
+      }
+    },
+    {
+      "path": "sources/fonts/JetBrainsMono-OFL.txt",
+      "family": "license",
+      "name": "JetBrains Mono OFL",
+      "variant": "license",
+      "format": "txt"
+    },
+    {
+      "path": "sources/fonts/JetBrainsMono-Variable.ttf",
+      "family": "typography",
+      "name": "JetBrains Mono",
+      "variant": "variable",
+      "format": "ttf"
+    },
+    {
+      "path": "sources/fonts/Sora-OFL.txt",
+      "family": "license",
+      "name": "Sora OFL",
+      "variant": "license",
+      "format": "txt"
+    },
+    {
+      "path": "sources/fonts/Sora-Variable.ttf",
+      "family": "typography",
+      "name": "Sora",
+      "variant": "variable",
+      "format": "ttf"
+    },
+    {
+      "path": "sources/mascot/aryaai-approved-portrait-reference.png",
+      "family": "source",
+      "name": "approved-portrait",
+      "variant": "reference",
+      "format": "png",
+      "dimensions": {
+        "width": 1315,
+        "height": 1196
+      },
+      "alphaRequired": false
+    },
+    {
+      "path": "sources/mascot/aryaai-companion-blink-master.png",
+      "family": "source",
+      "name": "companion-sheet",
+      "variant": "blink",
+      "format": "png",
+      "dimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "sources/mascot/aryaai-companion-open-master.png",
+      "family": "source",
+      "name": "companion-sheet",
+      "variant": "open",
+      "format": "png",
+      "dimensions": {
+        "width": 1448,
+        "height": 1086
+      },
+      "alphaRequired": true
+    },
+    {
+      "path": "sources/mascot/GENERATION-NOTES.md",
+      "family": "source",
+      "name": "generation-notes",
+      "variant": "documentation",
+      "format": "md"
+    },
+    {
+      "path": "splash/aryaai-splash-1600x900.png",
+      "family": "splash",
+      "name": "startup",
+      "variant": "1600x900",
+      "format": "png",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "path": "splash/aryaai-splash-3200x1800.png",
+      "family": "splash",
+      "name": "startup",
+      "variant": "3200x1800",
+      "format": "png",
+      "dimensions": {
+        "width": 3200,
+        "height": 1800
+      }
+    },
+    {
+      "path": "splash/aryaai-splash.svg",
+      "family": "splash",
+      "name": "startup",
+      "variant": "vector",
+      "format": "svg",
+      "dimensions": {
+        "width": 1600,
+        "height": 900
+      }
+    },
+    {
+      "path": "tray/png/dark/active/16.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/active/20.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/active/24.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/active/32.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/active/48.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/active/64.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-0",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-1",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-2",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-3",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-4",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-5",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-6",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-7",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-8",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-9",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-10",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/16/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-16-11",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-0",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-1",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-2",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-3",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-4",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-5",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-6",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-7",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-8",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-9",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-10",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/20/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-20-11",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-0",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-1",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-2",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-3",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-4",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-5",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-6",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-7",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-8",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-9",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-10",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/24/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-24-11",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-0",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-1",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-2",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-3",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-4",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-5",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-6",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-7",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-8",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-9",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-10",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy-frames/32/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "dark-32-11",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy/16.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/busy/20.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/busy/24.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/busy/32.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/busy/48.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/busy/64.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/error/16.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/error/20.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/error/24.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/error/32.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/error/48.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/error/64.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/exit/16.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/exit/20.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/exit/24.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/exit/32.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/exit/48.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/exit/64.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/idle/16.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/idle/20.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/idle/24.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/idle/32.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/idle/48.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/idle/64.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/notification/16.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/notification/20.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/notification/24.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/notification/32.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/notification/48.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/notification/64.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/settings/16.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/settings/20.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/settings/24.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/settings/32.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/settings/48.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/settings/64.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/sync/16.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/sync/20.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/sync/24.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/sync/32.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/sync/48.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/sync/64.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/dark/update/16.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/dark/update/20.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/dark/update/24.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/dark/update/32.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/dark/update/48.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/dark/update/64.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/active/16.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/active/20.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/active/24.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/active/32.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/active/48.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/active/64.png",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-0",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-1",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-2",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-3",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-4",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-5",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-6",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-7",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-8",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-9",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-10",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/16/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-16-11",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-0",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-1",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-2",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-3",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-4",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-5",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-6",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-7",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-8",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-9",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-10",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/20/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-20-11",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-0",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-1",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-2",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-3",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-4",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-5",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-6",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-7",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-8",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-9",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-10",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/24/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-24-11",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-00.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-0",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-01.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-1",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-02.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-2",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-03.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-3",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-04.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-4",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-05.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-5",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-06.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-6",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-07.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-7",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-08.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-8",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-09.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-9",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-10.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-10",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy-frames/32/frame-11.png",
+      "family": "tray-icon",
+      "name": "busy-frame",
+      "variant": "light-32-11",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy/16.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/busy/20.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/busy/24.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/busy/32.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/busy/48.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/busy/64.png",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/error/16.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/error/20.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/error/24.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/error/32.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/error/48.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/error/64.png",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/exit/16.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/exit/20.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/exit/24.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/exit/32.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/exit/48.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/exit/64.png",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/idle/16.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/idle/20.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/idle/24.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/idle/32.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/idle/48.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/idle/64.png",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/notification/16.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/notification/20.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/notification/24.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/notification/32.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/notification/48.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/notification/64.png",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/settings/16.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/settings/20.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/settings/24.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/settings/32.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/settings/48.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/settings/64.png",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/sync/16.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/sync/20.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/sync/24.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/sync/32.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/sync/48.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/sync/64.png",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/png/light/update/16.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light-16",
+      "format": "png",
+      "dimensions": {
+        "width": 16,
+        "height": 16
+      }
+    },
+    {
+      "path": "tray/png/light/update/20.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light-20",
+      "format": "png",
+      "dimensions": {
+        "width": 20,
+        "height": 20
+      }
+    },
+    {
+      "path": "tray/png/light/update/24.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light-24",
+      "format": "png",
+      "dimensions": {
+        "width": 24,
+        "height": 24
+      }
+    },
+    {
+      "path": "tray/png/light/update/32.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light-32",
+      "format": "png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    {
+      "path": "tray/png/light/update/48.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light-48",
+      "format": "png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    {
+      "path": "tray/png/light/update/64.png",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light-64",
+      "format": "png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "path": "tray/svg/dark/active.svg",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/busy.svg",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/error.svg",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/exit.svg",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/idle.svg",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/notification.svg",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/settings.svg",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/sync.svg",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/dark/update.svg",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "dark",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/active.svg",
+      "family": "tray-icon",
+      "name": "active",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/busy.svg",
+      "family": "tray-icon",
+      "name": "busy",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/error.svg",
+      "family": "tray-icon",
+      "name": "error",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/exit.svg",
+      "family": "tray-icon",
+      "name": "exit",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/idle.svg",
+      "family": "tray-icon",
+      "name": "idle",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/notification.svg",
+      "family": "tray-icon",
+      "name": "notification",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/settings.svg",
+      "family": "tray-icon",
+      "name": "settings",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/sync.svg",
+      "family": "tray-icon",
+      "name": "sync",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    {
+      "path": "tray/svg/light/update.svg",
+      "family": "tray-icon",
+      "name": "update",
+      "variant": "light",
+      "format": "svg",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    }
+  ]
+}

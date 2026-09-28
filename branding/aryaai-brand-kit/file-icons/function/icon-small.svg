@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AryaAI function file icon</title>
+  <desc id="desc">AryaAI production brand asset. Vector artwork contains no external resources.</desc>
+
+
+    <path d="M122 58H310L390 138V454H122Z" fill="#171D26" stroke="#E6E8EB" stroke-width="15" stroke-linejoin="round"/>
+    <path d="M310 58V138H390" fill="none" stroke="#2B6CFF" stroke-width="15" stroke-linejoin="round"/>
+    <g transform="translate(0 66) scale(1 .78)">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="17">
+      <path d="M214 174Q178 174 184 218L202 338M172 246H228" stroke="#E6E8EB"/>
+      <path d="M258 214Q238 256 258 298M326 214Q346 256 326 298" stroke="#E6E8EB"/>
+      <path d="M278 230L310 282M310 230L278 282" stroke="#2B6CFF"/>
+    </g></g>
+
+</svg>

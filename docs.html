@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation — AryaAI</title>
+<meta name="description" content="Install AryaAI on Windows, what it needs, how updates and plugins behave, the safety model, and the full published list of what AryaAI does not do yet.">
+<meta name="theme-color" content="#0F141B">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/img/mark.svg" alt="" width="32" height="32">
+      <span class="brand__name">AryaAI</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-nav-toggle>
+      <svg class="nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a class="nav__link" href="features.html">Features</a>
+      <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Download
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-head">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Documentation</span></p>
+      <p class="eyebrow">Get running</p>
+      <h1>Install it, then decide what it may touch</h1>
+      <p class="lead">
+        AryaAI is a Windows desktop application. It carries its own Node and Python, so the
+        engineering servers work without you installing a toolchain first.
+      </p>
+    </div>
+  </div>
+
+  <!-- Install ------------------------------------------------------------- -->
+  <section class="section section--tight" id="install">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Install</p>
+        <h2>Download and run</h2>
+      </div>
+
+      <ol class="checklist mb-3">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <span>Download the latest Windows installer from the
+          <a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">AryaAI releases page</a>.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7z"/></svg>
+          <span>Run it. <strong>The installer is unsigned</strong>, so Windows may ask you to confirm
+          it. Check the file came from the releases page above before you agree.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          <span>When it finishes, AryaAI reopens on its own. Chats and settings stay.</span>
+        </li>
+      </ol>
+
+      <div class="callout callout--warn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
+        <p>
+          <span class="callout__title">The installer is not code-signed yet</span>
+          A SmartScreen prompt is expected, not a sign that something is wrong. Verify the download
+          against the releases page rather than clicking through a prompt from anywhere else.
+        </p>
+      </div>
+
+      <div class="dl mt-4">
+        <div class="dl__row">
+          <dt>Operating system</dt>
+          <dd>Windows desktop. The engineering servers run on the Node and Python that AryaAI
+          ships with, so they need no separate install.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Shell</dt>
+          <dd>The agent&rsquo;s shell on Windows is PowerShell.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Current line</dt>
+          <dd><code>0.1.7-rc.2.AryaAI.0.3.0</code>, on DeepSeek Harness <code>0.1.7-rc.2</code>.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>License</dt>
+          <dd>MIT. Third-party dependencies are disclosed in
+          <code>THIRD_PARTY_NOTICES.md</code>.</dd>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- First run ----------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">First run</p>
+        <h2>Four things worth doing before you trust it with a plant</h2>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card">
+          <h3>1. Open a workspace</h3>
+          <p>Point it at the folder your project already lives in, or use a No Repo chat for a
+          question with no folder attached.</p>
+        </article>
+        <article class="card">
+          <h3>2. Turn on only what you need</h3>
+          <p>Engineering servers stay off until you enable them, so a tool you do not have on this
+          machine never blocks startup.</p>
+        </article>
+        <article class="card">
+          <h3>3. Leave the desktop dry run on</h3>
+          <p>Windows Computer Use can look at a window without clicking it. Keep it that way until
+          you have a reason not to.</p>
+        </article>
+        <article class="card">
+          <h3>4. Add your shop standard as a skill</h3>
+          <p>Naming, alarm text, the cam library, the HMI face. A skill is loaded when it applies,
+          rather than pasted into every chat.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Running from source ------------------------------------------------- -->
+  <section class="section section--tight" id="source">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">For developers</p>
+        <h2>Run the same UI from source</h2>
+        <p class="lead">
+          The web UI is how the product is tested; the desktop window is what ships. Both load the
+          same plugin list.
+        </p>
+      </div>
+
+      <div class="code">
+        <div class="code__head">
+          <span class="code__title">PowerShell</span>
+          <button class="code__copy" type="button" data-copy>Copy</button>
+        </div>
+        <pre><code><span class="c"># From a development checkout</span>
+pnpm install
+pnpm run build
+
+<span class="c"># Serve the same UI the desktop window uses, at http://127.0.0.1:3080</span>
+pnpm dsh web</code></pre>
+      </div>
+
+      <div class="callout callout--info">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p>
+          <span class="callout__title">The development checkout is not published at a public URL yet</span>
+          These commands apply to a checkout you already have. The Windows installer above is the
+          supported way to run AryaAI today.
+        </p>
+      </div>
+
+      <p class="small muted">
+        The Windows installer is built from <code>apps/desktop</code>. Review <code>SAFETY.md</code>
+        before running a checkout — the harness underneath is in developer preview and keeps
+        changing.
+      </p>
+    </div>
+  </section>
+
+  <!-- Updates and plugins ------------------------------------------------- -->
+  <section class="section section--tight" id="updates">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Updates and plugins</p>
+        <h2>What an update does, and what it leaves alone</h2>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <p class="panel__label">An update</p>
+          <ul class="checklist checklist--ok">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Replaces the application</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Offers itself from Check for Updates</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Shows installer progress, then starts again</li>
+          </ul>
+        </div>
+
+        <div class="panel panel--muted">
+          <p class="panel__label">An update does not touch</p>
+          <ul class="checklist checklist--ok">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Your chats</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Your settings</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Plugins you added yourself</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--info mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p>
+          <span class="callout__title">Uninstalling removes the application, not your workspace</span>
+          It does not delete the Harness home where sessions and plugins live. Install plugins from
+          <strong>Settings &rarr; Plugin Market</strong>, a package name, a Git repository, or a
+          folder on this PC.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security ------------------------------------------------------------ -->
+  <section class="section section--tight" id="security">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Safety model</p>
+        <h2>The principles that do not change</h2>
+      </div>
+
+      <div class="accordion">
+        <details open>
+          <summary>Reading a project and changing a running controller are different acts</summary>
+          <div class="accordion__body">
+            <p>Nothing here downloads to a controller. Going online and downloading are planned as
+            their own plugins, with their own confirmation against a named controller, and a backup
+            of what is in the controller comes before a download.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>A tool that cannot see its target says so, and AryaAI still starts</summary>
+          <div class="accordion__body">
+            <p>A missing factory tool reports itself in the MCP panel. It does not block the
+            application from opening, and it does not silently pretend to be available.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>A writer that can destroy a program and report success does not ship</summary>
+          <div class="accordion__body">
+            <p>A writer for the MotionWorks IEC format was tried and withdrawn for exactly this
+            reason — it could replace a real program body with an empty one and report success.
+            Editing that format waits until the result can be proved.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>Desktop control starts as a dry run</summary>
+          <div class="accordion__body">
+            <p>Mouse, keyboard, element clicks and shortcuts begin in a dry run, so the agent can
+            look and cannot click until you allow it. Face recognition and the keylogger are not
+            enabled.</p>
+          </div>
+        </details>
+
+        <details>
+          <summary>If it can be a plugin, it is a plugin</summary>
+          <div class="accordion__body">
+            <p>The desktop window and the web UI load the same list. Disabling a row removes that
+            capability on the next start without rebuilding the shell.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Limits -------------------------------------------------------------- -->
+  <section class="section section--tight" id="limits">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stated plainly</p>
+        <h2>What AryaAI does not do yet</h2>
+        <p class="lead">
+          An agent that overstates what it can reach is dangerous in a plant. This section is part
+          of the product, not a disclaimer bolted onto it.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data">
+          <caption>Published limits</caption>
+          <thead>
+            <tr>
+              <th scope="col">Area</th>
+              <th scope="col">The limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Logix</th>
+              <td data-label="The limit">Does not open Studio 5000, go online, or download to a controller. The Logix path is an export you choose.</td>
+            </tr>
+            <tr>
+              <th scope="row">Motion</th>
+              <td data-label="The limit">Does not edit a MotionWorks IEC project. A writer was tried and withdrawn, and there is no MotionWorks plugin in this line.</td>
+            </tr>
+            <tr>
+              <th scope="row">HMI</th>
+              <td data-label="The limit">Does not edit a FactoryTalk View application. FactoryTalk Optix is a different product, and the Optix row talks to Optix Studio only when you turn it on.</td>
+            </tr>
+            <tr>
+              <th scope="row">Desktop</th>
+              <td data-label="The limit">Does not drive the mouse in those IDEs until the Windows Computer Use dry run is turned off — and turning it off means real clicks on this desktop.</td>
+            </tr>
+            <tr>
+              <th scope="row">Desktop driver</th>
+              <td data-label="The limit">The experimental Cua desktop driver is in the source tree and is not mounted. Windows Computer Use is the shipped desktop path.</td>
+            </tr>
+            <tr>
+              <th scope="row">Drawings</th>
+              <td data-label="The limit">Does not convert DWG. The drawing you open from the file tree is a DXF.</td>
+            </tr>
+            <tr>
+              <th scope="row">Ignition</th>
+              <td data-label="The limit">The shipped Ignition copy does not talk to a live gateway and does not write tags.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--ok mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        <p>
+          <span class="callout__title">A milestone is finished when the limit is written down</span>
+          Not when the feature demos. The roadmap adds editing that proves its result, a reading-only
+          motion plugin, and controllers reached only through an explicit, confirmed act.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta">
+        <h2>Still deciding?</h2>
+        <p class="lead">Read the source, or open an issue with the export that did not behave. Both
+        go to the same place.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="https://github.com/KphungFROMM/kphungfromm.github.io">View on GitHub</a>
+          <a class="btn btn--ghost btn--lg" href="contact.html">Contact and support</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/img/mark.svg" alt="" width="26" height="26">
+          <span>AryaAI</span>
+        </div>
+        <p class="footer__tagline">
+          Your AI engineering pal. A coding and automation engineering companion for the people who
+          program machines.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io">Repository</a></li>
+          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/issues">Issues</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="docs.html#limits">Known limits</a></li>
+          <li><a href="docs.html#security">Safety model</a></li>
+          <li><a href="docs.html#updates">Updates and plugins</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>
+        &copy; <span data-year>2026</span> AryaAI. Released under the MIT license. AryaAI is built on
+        DeepSeek Harness; DeepSeek Harness is a trademark of DeepSeek, and this project is not
+        endorsed by or affiliated with DeepSeek.
+      </p>
+      <p>Built for the desk that programs machines.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>
