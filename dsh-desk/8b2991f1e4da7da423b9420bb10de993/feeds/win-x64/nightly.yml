@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.3.0
+version: 0.1.7-rc.2.AryaAI.0.4.0
 files:
-  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.3.0/aryaai-0.1.7-rc.2.AryaAI.0.3.0-win-x64-unsigned.exe
-    sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
-    size: 567860131
-path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.3.0/aryaai-0.1.7-rc.2.AryaAI.0.3.0-win-x64-unsigned.exe
-sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
-releaseDate: '2026-09-28T08:00:13.369Z'
-releaseNotes: '{"en": ["Right-click a workspace in the left panel to rename or delete it. Right-click a chat to pin, rename, fork, or archive it. The same menu opens at your cursor, without opening what you clicked.", "The account area names the account instead of reporting a sign-in state. Your name and picture appear once DeepSeek returns them; until then the account card says why they are missing.", "Fixed an auto pet that kept the whole interface from loading. The interface now opens reliably; the pet returns once it can load with it."], "zh": ["在左侧面板右键点击工作区即可重命名或删除。右键点击对话即可置顶、重命名、分支或归档。同样的菜单会出现在光标位置，不会打开你点的那一项。", "账号区域显示账号名称，而不是登录状态。DeepSeek 返回后就会显示你的名字和头像；在此之前，账号卡片会说明缺失原因。", "修复了导致整个界面无法加载的内置宠物。界面现在可以可靠打开；宠物会在能同时加载后回归。"]}'
+  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.4.0/aryaai-0.1.7-rc.2.AryaAI.0.4.0-win-x64-unsigned.exe
+    sha512: xQqXtLsfehB8c3fa2SHgOrADNm1S9ScefJxI58lpKiZAFwPQ1Gnr+CwSIDlRMYMkh5Kk1iTTX65smXIlUjWsnA==
+    size: 567924470
+path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.4.0/aryaai-0.1.7-rc.2.AryaAI.0.4.0-win-x64-unsigned.exe
+sha512: xQqXtLsfehB8c3fa2SHgOrADNm1S9ScefJxI58lpKiZAFwPQ1Gnr+CwSIDlRMYMkh5Kk1iTTX65smXIlUjWsnA==
+releaseDate: '2026-09-28T16:16:36.630Z'
+releaseNotes: '{"en":["Right-click a workspace in the left panel to rename or delete it. Right-click a chat to pin, rename, fork, or archive it. The same menu opens at your cursor, without opening what you clicked.","The account area names the account instead of reporting a sign-in state. Your name and picture appear once DeepSeek returns them; until then the account card says why they are missing.","Arya now loads. Her overlay ships enabled on Desktop, and it no longer keeps the whole interface from opening.","The Files panel keeps the folders you expanded. Switch to another tab and come back, and the tree is still open where you left it.","A task that starts opens in the bottom panel, so the right panel stays where you put it.","The Windows Computer Use MCP server is listed again in the MCP server list, ready to switch on or off.","A file opened from a chat renders in its own viewer, HTML included, instead of failing to load."],"zh":["在左侧面板右键点击工作区即可重命名或删除。右键点击对话即可置顶、重命名、分支或归档。同样的菜单会出现在光标位置，不会打开你点的那一项。","账号区域显示账号名称，而不是登录状态。DeepSeek 返回后就会显示你的名字和头像；在此之前，账号卡片会说明缺失原因。","Arya 现在可以加载了。她的浮层在桌面端默认开启，也不会再阻止整个界面打开。","文件面板会记住你展开的文件夹。切到别的标签再回来，树还是你离开时的样子。","任务开始时会打开在底部面板，右侧面板保持在原处。","Windows 计算机使用 MCP 服务器重新出现在 MCP 服务器列表里，可以随时打开或关闭。","从对话里打开的文件会用它自己的查看器渲染，包括 HTML，而不会再加载失败。"]}'
