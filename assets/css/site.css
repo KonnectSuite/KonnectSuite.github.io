@@ -1140,6 +1140,57 @@ table.data th[scope="row"] {
 }
 
 /* --------------------------------------------------------------------------
+   15b. Product screenshots
+   The images are captured from the running application, so they arrive framed by
+   the application's own chrome. They get a border and a caption rather than a
+   fake browser frame, which would misrepresent what the reader is looking at.
+   -------------------------------------------------------------------------- */
+
+.shot {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  background: #0b1017;
+  box-shadow: var(--shadow-lg);
+}
+
+.shot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.shot figcaption {
+  padding: 0.9rem 1.15rem;
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.shot figcaption strong {
+  color: var(--text-light);
+}
+
+.shot--accent {
+  border-color: rgba(43, 108, 255, 0.4);
+  box-shadow: var(--shadow-glow);
+}
+
+.shot__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-teal);
+}
+
+/* --------------------------------------------------------------------------
    16. Code blocks
    -------------------------------------------------------------------------- */
 
