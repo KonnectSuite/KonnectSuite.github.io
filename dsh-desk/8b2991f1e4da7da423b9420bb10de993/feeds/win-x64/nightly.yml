@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.2.0
+version: 0.1.7-rc.2.AryaAI.0.3.0
 files:
-  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.2.0/aryaai-0.1.7-rc.2.AryaAI.0.2.0-win-x64-unsigned.exe
-    sha512: eWEOjUcMhdoPG1rVXcSUmJdPVfbLoJ6Ca/m0knkGUKlTt4FEd9JadXfgABnIIVN6xfYLWNYVkA7NQRy3XlG8uw==
-    size: 567597622
-path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.2.0/aryaai-0.1.7-rc.2.AryaAI.0.2.0-win-x64-unsigned.exe
-sha512: eWEOjUcMhdoPG1rVXcSUmJdPVfbLoJ6Ca/m0knkGUKlTt4FEd9JadXfgABnIIVN6xfYLWNYVkA7NQRy3XlG8uw==
-releaseDate: '2026-09-28T02:04:19.308Z'
-releaseNotes: '{"en":["Images is now a built-in Cordis plugin for AryaAI WebUI and Desktop. It creates images with the local ComfyUI installation.","Choose a compatible saved ComfyUI workflow, including Z-Image-Turbo-improved, and reuse its generation settings.","Recent image cards show the workflow used and can remove a generation from the gallery after confirmation."],"zh":["Images 现在是 AryaAI WebUI 和桌面端的内置 Cordis 插件，可使用本机 ComfyUI 创建图像。","可以选择兼容的 ComfyUI 已保存工作流（包括 Z-Image-Turbo-improved），并复用其生成设置。","最近图像卡片会显示所用工作流，并可在确认后从图库中移除一次生成。"]}'
+  - url: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.3.0/aryaai-0.1.7-rc.2.AryaAI.0.3.0-win-x64-unsigned.exe
+    sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
+    size: 567860131
+path: https://github.com/KphungFROMM/kphungfromm.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.3.0/aryaai-0.1.7-rc.2.AryaAI.0.3.0-win-x64-unsigned.exe
+    sha512: 2bUdReWQy7802B947y+jQ9GNAl/KdtD87KX+OFiQGo2bbdnZTkeajfk2k5sVrS+XomVqFOw2EDUBROCSBwdkFg==
+releaseDate: '2026-09-28T07:48:02.927Z'
+releaseNotes: '{"en": ["Right-click a workspace in the left panel to rename or delete it. Right-click a chat to pin, rename, fork, or archive it. The same menu opens at your cursor, without opening what you clicked.", "The account area names the account instead of reporting a sign-in state. Your name and picture appear once DeepSeek returns them; until then the account card says why they are missing.", "Fixed an auto pet that kept the whole interface from loading. The interface now opens reliably; the pet returns once it can load with it."], "zh": ["在左侧面板右键点击工作区即可重命名或删除。右键点击对话即可置顶、重命名、分支或归档。同样的菜单会出现在光标位置，不会打开你点的那一项。", "账号区域显示账号名称，而不是登录状态。DeepSeek 返回后就会显示你的名字和头像；在此之前，账号卡片会说明缺失原因。", "修复了导致整个界面无法加载的内置宠物。界面现在可以可靠打开；宠物会在能同时加载后回归。"]}'
