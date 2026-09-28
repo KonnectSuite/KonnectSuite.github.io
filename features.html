@@ -143,6 +143,69 @@
     </div>
   </section>
 
+  <!-- Images and video (ComfyUI) ------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Images and video</p>
+        <h2>A ComfyUI canvas inside the application</h2>
+        <p class="lead">
+          The built-in ComfyUI plugin adds a conversation tab, a split canvas, settings, workflow
+          tools, run history, media export, and the bundled bridge node that lets the agent work
+          against the live graph. The WebUI and the desktop window share the same feature.
+        </p>
+      </div>
+
+      <figure class="shot">
+        <img src="assets/img/app-skills.png"
+             alt="The AryaAI Skills panel showing the four bundled ComfyUI skills and what each one does."
+             width="1600" height="733" loading="lazy">
+        <figcaption>
+          <span class="shot__tag">Four skills, shipped with Arya</span>
+          <strong>Environment, canvas, node development and video.</strong>
+          Each is inert until you switch it on, and each says what it does before you do.
+        </figcaption>
+      </figure>
+
+      <div class="dl mt-3">
+        <div class="dl__row">
+          <dt>Operating the canvas</dt>
+          <dd>Read and edit the workflow, add and connect nodes, change parameters, run the job,
+          inspect the error when it fails, and fetch the output.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Managing the environment</dt>
+          <dd>Configure, launch, upgrade, and list or install custom nodes. The local ComfyUI
+          process is something the agent can drive, not something you have to babysit.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Developing a node</dt>
+          <dd>Read a custom node&rsquo;s source from the conversation, edit it, reload ComfyUI, and
+          verify the change on the canvas.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Video with audio</dt>
+          <dd>Generate video, attach an audio track or voiceover, and fetch the merged file.</dd>
+        </div>
+        <div class="dl__row">
+          <dt>Updates</dt>
+          <dd>The plugin ships and updates with AryaAI releases. It never replaces itself from npm.</dd>
+        </div>
+      </div>
+
+      <div class="callout callout--info mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p>
+          <span class="callout__title">ComfyUI has to be reachable</span>
+          Either the install on this PC, or a remote instance at an address you configure. Full
+          live editing needs the bundled <code>ComfyUI-DSH-Canvas</code> folder in ComfyUI&rsquo;s
+          <code>custom_nodes</code> directory and a restart, and embedding a remote instance can be
+          limited by browser security policy unless it permits the AryaAI origin.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- Skills, workflows, plugins ----------------------------------------- -->
   <section class="section section--tight">
     <div class="container">
