@@ -4,11 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The engineering desk — AryaAI</title>
-<meta name="description" content="The seven engineering servers shipped inside AryaAI: Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, and Windows Computer Use — each bounded on purpose.">
+<meta name="description" content="The engineering servers inside AryaAI: Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, and Windows Computer Use — six of them shipped in the installer, each bounded on purpose.">
 <meta name="theme-color" content="#0F141B">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
 <link rel="stylesheet" href="assets/css/site.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="The engineering desk — AryaAI">
+<meta property="og:description" content="The engineering servers inside AryaAI: Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, and Windows Computer Use — six of them shipped in the installer, each bounded on purpose.">
+<meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
+<meta property="og:image:alt" content="AryaAI horizontal logo lockup">
+<meta name="twitter:card" content="summary_large_image">
+
 <script>document.documentElement.classList.replace('no-js', 'js');</script>
 </head>
 <body>
@@ -27,10 +35,11 @@
     </button>
     <nav class="nav" id="site-nav" aria-label="Main">
       <a class="nav__link" href="features.html">Features</a>
-      <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="engineering.html" aria-current="page">Engineering desk</a>
       <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
-      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
         Download
       </a>
@@ -45,11 +54,10 @@
       <p class="breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Engineering desk</span></p>
       <p class="eyebrow">Inside the installer</p>
       <h1>It knows the difference between reading a project and touching a controller</h1>
-      <p class="lead">
-        These servers ship inside AryaAI and run on the Python or Node the application carries, so
-        the PC does not need its own toolchain for them. Enable a row from the MCP list or the slash
-        menu; the list stays open while you switch a server.
-      </p>
+        <p class="lead">Six of these servers ship inside AryaAI and run on the Python or Node the
+        application carries, so the PC does not need its own toolchain for them. The seventh,
+        FactoryTalk Optix Tools, talks to Optix Studio&rsquo;s own service on this PC. Enable a row
+        from the MCP list or the slash menu; the list stays open while you switch a server.</p>
     </div>
   </div>
 
@@ -58,20 +66,21 @@
     <div class="container">
       <figure class="shot">
         <img src="assets/img/app-mcp.png"
-             alt="The AryaAI Skills and MCP panel listing the shipped servers — SCADA to PLC Bridge, ComfyUI MCP, FT Optix Tools, Ignition SCADA, IronPLC Compiler, NetLogic Cheat Sheet, Studio 5000 Projects and Windows Computer Use — each with an enable toggle. Windows Computer Use reports 20 tools and a Connected status."
+             alt="The AryaAI Skills and MCP panel listing the shipped servers — SCADA to PLC Bridge, ComfyUI MCP, FT Optix Tools, Ignition SCADA, IronPLC Compiler, NetLogic Cheat Sheet, Studio 5000 Projects and Windows Computer Use — each with an enable toggle. All report Disabled except Windows Computer Use, which reports Connected."
              width="1600" height="1042">
         <figcaption>
           <span class="shot__tag">Captured from the application</span>
           <strong>Every automation server is a row with a switch.</strong>
           The state shown is the state after a fresh install: the engineering servers are present
-          but off. Nothing spawns until you turn it on, and nothing fails if the vendor tool is not
-          installed on this PC.
+          but off, and Windows Computer Use — the last row, reporting Connected — starts with the
+          application. Nothing else spawns until you turn it on, and nothing fails if the vendor
+          tool is not installed on this PC.
         </figcaption>
       </figure>
 
       <figure class="shot mt-3">
         <img src="assets/img/app-skills.png"
-             alt="The AryaAI Skills panel showing a single built-in skill, motionworks-iec-use, described as operating a running Yaskawa MotionWorks IEC 3 Pro IDE and editing its code, with a toggle that is off."
+             alt="The AryaAI Skills panel showing a single built-in skill, motionworks-iec-use, described as operating a running Yaskawa MotionWorks IEC 3 Pro IDE and editing its code. The row is marked Built-in and notes that it ships with Arya and is view only."
              width="1600" height="272" loading="lazy">
         <figcaption>
           <span class="shot__tag">The MotionWorks path, and why it is a skill</span>
@@ -348,10 +357,12 @@
     <div class="container">
       <div class="cta">
         <h2>Install it, then switch on one row</h2>
-        <p class="lead">The engineering servers are already in the installer. Nothing extra to
-        download, and nothing running until you turn it on.</p>
+        <p class="lead">Six of the seven engineering servers ship in the installer, with nothing
+        extra to download. FactoryTalk Optix Tools is the exception &mdash; it uses Optix
+        Studio&rsquo;s own service on this PC. Windows Computer Use starts with the app; the others
+        wait until you switch them on.</p>
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download for Windows</a>
+          <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download for Windows</a>
           <a class="btn btn--ghost btn--lg" href="docs.html">Install and docs</a>
         </div>
       </div>
@@ -361,6 +372,7 @@
 </main>
 
 <footer class="site-footer">
+  <h2 class="visually-hidden">Site footer</h2>
   <div class="container">
     <div class="footer__grid">
       <div>
@@ -374,25 +386,26 @@
         </p>
       </div>
       <div class="footer__col">
-        <h4>Product</h4>
+        <h3>Product</h3>
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Project</h4>
+        <h3>Project</h3>
         <ul>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io">Repository</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/issues">Issues</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io">Repository</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/issues">Issues</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Trust</h4>
+        <h3>Trust</h3>
         <ul>
           <li><a href="docs.html#limits">Known limits</a></li>
           <li><a href="docs.html#security">Safety model</a></li>

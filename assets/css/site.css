@@ -47,6 +47,13 @@
   --bg: var(--dark-background);
   --surface-2: #1d2531;
   --surface-3: #232c3a;
+
+  /* Recessed panel behind code and screenshots. It is darker than the page here
+     — an inset well — and it is a token rather than a raw hex precisely so the
+     light block can reach it. A literal here is what stranded dark text on a
+     dark panel in light mode. */
+  --panel: #0b1017;
+
   --line: rgba(230, 232, 235, 0.1);
   --line-strong: rgba(230, 232, 235, 0.18);
   --muted: rgba(230, 232, 235, 0.66);
@@ -54,6 +61,35 @@
 
   --gradient-brand: linear-gradient(135deg, var(--accent-purple) 0%, var(--primary-blue) 32%, var(--accent-teal) 100%);
   --gradient-soft: linear-gradient(135deg, rgba(138, 92, 255, 0.16), rgba(43, 108, 255, 0.14) 45%, rgba(0, 224, 210, 0.14));
+
+  /* An accent has two jobs, and only one of them is theme-independent.
+     As a FILL it is the brand colour and must not move: it still reads as the
+     brand on either page. As TEXT or as an INDICATOR it has to stay legible on
+     whatever it sits on, and these accents are luminous colours chosen to glow
+     against #0F141B, so they cannot serve both themes. The -ink tokens are the
+     text/indicator form; the light block swaps in a darker sibling of the same
+     hue. Four of the five ARE the brand value in this theme, so nothing changes
+     here. --primary-blue is the exception: the brand blue measures 4.13:1 on
+     this page, under the 4.5 bar, so its ink form is a lighter sibling even
+     here. That makes blue the one accent whose ink/fill split is visible in the
+     dark theme; every fill below still uses --primary-blue. */
+  --primary-blue-ink: #6e9bff;
+  --accent-teal-ink: var(--accent-teal);
+  --accent-purple-ink: var(--accent-purple);
+  --status-success-ink: var(--status-success);
+  --status-warning-ink: var(--status-warning);
+  --status-error-ink: var(--status-error);
+
+  /* The skip link is a FILL carrying white text in BOTH themes, so it must not
+     take the theme-split --primary-blue-ink. White text on a fill needs
+     L_fill <= 0.1833 to reach 4.5:1, and #2b6cff is 0.18457, so white on the
+     brand blue is 4.48:1 — just short. Darkening the fill is what raises white's
+     contrast, because the ratio is 1.05 / (L_fill + 0.05): a lower L is a higher
+     ratio, and brightening the fill would make this worse rather than better.
+     This value is the brand hue with L 0.16849, so white reaches 4.81:1, and it
+     keeps the hue (221.5 deg vs 222 deg) so it still reads as the brand blue
+     beside the gradient and the primary button. */
+  --skip-link-bg: #2767f7;
 
   /* Type */
   --font-display: "Sora", "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, sans-serif;
@@ -77,7 +113,11 @@
   --r-xl: 28px;
   --r-pill: 999px;
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  /* No --shadow-sm: it was defined here and referenced nowhere in the file, and
+     it was never overridden for light, so the first person to use it would have
+     drawn this theme's 40%-black shadow on a pale page. Deleted rather than
+     given a light value, because nothing consumed it and inventing a use would
+     be a design change. */
   --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.36);
   --shadow-lg: 0 32px 80px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 0 1px rgba(43, 108, 255, 0.28), 0 20px 60px rgba(43, 108, 255, 0.22);
@@ -88,13 +128,23 @@
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-/* Light theme — uses the light-background logo variants on pale surfaces */
+/* Light theme — remaps the neutral ramp, the panel and the ink accents for a
+   pale page. The mark is deliberately NOT swapped: assets/img/mark.svg carries
+   its own frame and dark hexagon, so it stays legible on a pale surface and
+   needs no light-background variant. */
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f6f8fb;
     --surface: #ffffff;
     --surface-2: #eef2f8;
     --surface-3: #e4eaf3;
+
+    /* The panel keeps the same relationship as in the dark theme — a well set
+       into the page — which here means one step down the neutral ramp, the only
+       direction available below #ffffff. Referencing --surface-2 rather than a
+       new hex keeps the panel tied to the ramp. */
+    --panel: var(--surface-2);
+
     --text-light: #101722;
     --line: rgba(16, 23, 34, 0.1);
     --line-strong: rgba(16, 23, 34, 0.18);
@@ -102,6 +152,27 @@
     --muted-2: rgba(16, 23, 34, 0.48);
     --shadow-md: 0 12px 32px rgba(16, 23, 34, 0.1);
     --shadow-lg: 0 32px 80px rgba(16, 23, 34, 0.14);
+
+    /* The ink form of each accent: same hue, taken far enough down in lightness
+       to clear 4.5:1 on the darkest light surface an accent actually sits on,
+       which is --surface-2 #eef2f8 (inline code and the code panel) at relative
+       luminance 0.885. That requires L <= 0.158. The fill tokens above are
+       untouched, so the brand accents still read as the brand. */
+    --primary-blue-ink: #1e5ce6;
+    --accent-teal-ink: #00786f;
+    --accent-purple-ink: #6a3ed6;
+    --status-success-ink: #0f7a36;
+    --status-warning-ink: #8a5a00;
+    --status-error-ink: #b3261e;
+  }
+
+  /* .gradient-text paints the brand sweep AS TEXT, which is the one place the
+     gradient needs an ink form rather than the fill form. It has no uses in the
+     five pages today, so this is latent, not live: the point is that a future
+     author does not inherit a 1.57:1 teal tail. All three stops are ink values
+     now, so it is legible at body size rather than only at >= 24px. */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--accent-purple-ink) 0%, var(--primary-blue-ink) 32%, var(--accent-teal-ink) 100%);
   }
 }
 
@@ -162,11 +233,15 @@ a {
 }
 
 a:hover {
-  color: var(--primary-blue);
+  color: var(--primary-blue-ink);
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent-teal);
+  /* --primary-blue-ink, not --accent-teal: the teal is a dark-theme luminous
+     colour measuring 1.57:1 on the light page, far under the 3:1 WCAG 2.2
+     SC 1.4.11 asks of a focus indicator. The ink blue measures 6.86:1 on the
+     dark page and 5.29:1 on the light one. */
+  outline: 2px solid var(--primary-blue-ink);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -225,7 +300,7 @@ li strong {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
   margin: 0 0 var(--s-2);
   display: flex;
   align-items: center;
@@ -236,7 +311,7 @@ li strong {
   content: "";
   width: 22px;
   height: 1px;
-  background: var(--accent-teal);
+  background: var(--accent-teal-ink);
   opacity: 0.7;
   flex: none;
 }
@@ -270,7 +345,7 @@ pre {
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 0.12em 0.4em;
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
   white-space: nowrap;
 }
 
@@ -337,7 +412,7 @@ pre {
   left: var(--s-2);
   top: -100px;
   z-index: 200;
-  background: var(--primary-blue);
+  background: var(--skip-link-bg);
   color: #fff;
   padding: 0.7rem 1.1rem;
   border-radius: var(--r-sm);
@@ -412,7 +487,7 @@ pre {
 }
 
 .nav__link {
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.625rem;
   border-radius: var(--r-sm);
   font-size: 0.9375rem;
   font-weight: 500;
@@ -466,11 +541,18 @@ pre {
 }
 
 @media (max-width: 900px) {
-  .nav-toggle {
+  /* The collapsed panel is created by the `site-js` class that site.js adds to
+     <html> itself. Nothing here is conditioned on the head script's `no-js`
+     swap, because that swap happens before site.js loads and therefore proves
+     nothing about whether site.js ran. With the class absent — script blocked,
+     parse error, 404 — every rule below is inert and the nav stays a plain,
+     wrapped link list, so the header is never left with an inert toggle and no
+     navigation. */
+  .site-js .nav-toggle {
     display: flex;
   }
 
-  .nav {
+  .site-js .nav {
     position: fixed;
     inset: var(--header-h) 0 auto 0;
     flex-direction: column;
@@ -486,22 +568,65 @@ pre {
     transition: opacity 0.18s var(--ease), transform 0.18s var(--ease), visibility 0.18s;
   }
 
-  .nav.is-open {
+  .site-js .nav.is-open {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
   }
 
-  .nav__link {
+  .site-js .nav__link {
     padding: 0.85rem 0.5rem;
     border-radius: var(--r-sm);
     font-size: 1rem;
     border-bottom: 1px solid var(--line);
   }
 
-  .nav__cta {
+  .site-js .nav__cta {
     margin: var(--s-2) 0 0;
     justify-content: center;
+  }
+
+  /* No-JS fallback, mobile widths: the header grows to two rows and the links
+     wrap onto their own line rather than overflowing the 68px sticky bar. */
+  html:not(.site-js) .site-header {
+    height: auto;
+  }
+
+  html:not(.site-js) .site-header > .container {
+    flex-wrap: wrap;
+    padding-block: var(--s-1);
+  }
+
+  html:not(.site-js) .nav {
+    flex-basis: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+  }
+
+  html:not(.site-js) .nav__cta {
+    margin-left: 0;
+  }
+
+  /* Without JavaScript the header wraps into rows, so on this path only it stops being sticky.
+     A three-row header is ~173px, which is a fifth to a third of a small phone viewport pinned
+     permanently to the top of the screen — a bad trade in the path that exists to serve readers
+     who have no script. Static costs the always-visible nav, but every link is repeated in the
+     footer, and it removes the covered-anchor problem outright: a header that scrolls away cannot
+     hide the target an in-page link just jumped to.
+
+     scroll-padding-top must therefore be zeroed here, and the zero is the principled value rather
+     than a tuned one. The base rule pads anchors for a sticky header; a static header contributes
+     no offset, so leaving 92px of padding would land every in-page target 92px low — the same bug
+     as before, mirrored into over-padding. Note what has changed in kind: the old value here was a
+     constant tuned to a link count and it broke whenever a link was added. This one is zero because
+     there is nothing to offset, so it cannot go stale no matter how many links there are. */
+  html:not(.site-js) {
+    scroll-padding-top: 0;
+  }
+
+  html:not(.site-js) .site-header {
+    position: static;
   }
 }
 
@@ -602,7 +727,7 @@ pre {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--status-success);
+  background: var(--status-success-ink);
   flex: none;
   box-shadow: 0 0 0 3px rgba(48, 209, 88, 0.18);
 }
@@ -623,25 +748,25 @@ pre {
 }
 
 .tag--ok {
-  color: var(--status-success);
+  color: var(--status-success-ink);
   border-color: rgba(48, 209, 88, 0.32);
   background: rgba(48, 209, 88, 0.1);
 }
 
 .tag--no {
-  color: var(--status-error);
+  color: var(--status-error-ink);
   border-color: rgba(255, 59, 48, 0.32);
   background: rgba(255, 59, 48, 0.1);
 }
 
 .tag--warn {
-  color: var(--status-warning);
+  color: var(--status-warning-ink);
   border-color: rgba(255, 176, 32, 0.32);
   background: rgba(255, 176, 32, 0.1);
 }
 
 .tag--info {
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
   border-color: rgba(0, 224, 210, 0.3);
   background: rgba(0, 224, 210, 0.1);
 }
@@ -677,7 +802,7 @@ pre {
   place-items: center;
   background: var(--gradient-soft);
   border: 1px solid var(--line);
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
   margin-bottom: var(--s-2);
 }
 
@@ -865,7 +990,7 @@ pre {
 .transcript__line:nth-child(5) { animation-delay: 2.15s; }
 
 .transcript__prompt {
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
   flex: none;
 }
 
@@ -874,7 +999,7 @@ pre {
 }
 
 .transcript__ok {
-  color: var(--status-success);
+  color: var(--status-success-ink);
 }
 
 @keyframes line-in {
@@ -916,7 +1041,7 @@ pre {
 .trust__list svg {
   width: 17px;
   height: 17px;
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
   flex: none;
 }
 
@@ -974,7 +1099,7 @@ pre {
   height: 18px;
   flex: none;
   margin-top: 0.22rem;
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
 }
 
 .checklist--fail svg {
@@ -982,7 +1107,7 @@ pre {
 }
 
 .checklist--ok svg {
-  color: var(--status-success);
+  color: var(--status-success-ink);
 }
 
 /* --------------------------------------------------------------------------
@@ -1151,7 +1276,7 @@ table.data th[scope="row"] {
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
   overflow: hidden;
-  background: #0b1017;
+  background: var(--panel);
   box-shadow: var(--shadow-lg);
 }
 
@@ -1187,7 +1312,7 @@ table.data th[scope="row"] {
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
 }
 
 /* --------------------------------------------------------------------------
@@ -1196,7 +1321,7 @@ table.data th[scope="row"] {
 
 .code {
   position: relative;
-  background: #0b1017;
+  background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--r-md);
   overflow: hidden;
@@ -1219,6 +1344,9 @@ table.data th[scope="row"] {
 }
 
 .code__copy {
+  /* Hidden until site.js announces itself: without it this is an inert button
+     that claims to copy and does nothing. The code text stays selectable. */
+  display: none;
   margin-left: auto;
   background: transparent;
   border: 1px solid var(--line);
@@ -1231,13 +1359,17 @@ table.data th[scope="row"] {
   transition: color 0.15s var(--ease), border-color 0.15s var(--ease);
 }
 
+.site-js .code__copy {
+  display: inline-flex;
+}
+
 .code__copy:hover {
   color: var(--text-light);
   border-color: var(--line-strong);
 }
 
 .code__copy.is-copied {
-  color: var(--status-success);
+  color: var(--status-success-ink);
   border-color: rgba(48, 209, 88, 0.4);
 }
 
@@ -1256,11 +1388,11 @@ table.data th[scope="row"] {
 }
 
 .code pre .k {
-  color: var(--accent-purple);
+  color: var(--accent-purple-ink);
 }
 
 .code pre .s {
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
 }
 
 /* --------------------------------------------------------------------------
@@ -1302,7 +1434,7 @@ table.data th[scope="row"] {
 }
 
 .callout--warn svg {
-  color: var(--status-warning);
+  color: var(--status-warning-ink);
 }
 
 .callout--info {
@@ -1311,7 +1443,7 @@ table.data th[scope="row"] {
 }
 
 .callout--info svg {
-  color: var(--accent-teal);
+  color: var(--accent-teal-ink);
 }
 
 .callout--ok {
@@ -1320,7 +1452,7 @@ table.data th[scope="row"] {
 }
 
 .callout--ok svg {
-  color: var(--status-success);
+  color: var(--status-success-ink);
 }
 
 /* --------------------------------------------------------------------------
@@ -1468,7 +1600,7 @@ table.data th[scope="row"] {
   max-width: 24rem;
 }
 
-.footer__col h4 {
+.footer__col :is(h3, h4) {
   font-size: 0.75rem;
   font-family: var(--font-mono);
   letter-spacing: 0.1em;
@@ -1491,7 +1623,7 @@ table.data th[scope="row"] {
 }
 
 .footer__col a:hover {
-  color: var(--primary-blue);
+  color: var(--primary-blue-ink);
 }
 
 .footer__legal {
@@ -1542,7 +1674,7 @@ table.data th[scope="row"] {
 }
 
 .breadcrumb a:hover {
-  color: var(--primary-blue);
+  color: var(--primary-blue-ink);
 }
 
 /* --------------------------------------------------------------------------
@@ -1592,20 +1724,17 @@ table.data th[scope="row"] {
    23. Scroll reveal
    -------------------------------------------------------------------------- */
 
-.reveal {
+/* Reveal is fail-open. The hidden state exists only under the `site-js` class
+   that site.js adds itself, so a script that never runs — or throws before
+   initReveal — leaves every item visible instead of at opacity 0. */
+.site-js .reveal {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
   will-change: opacity, transform;
 }
 
-.reveal.is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-/* Without JS nothing must stay hidden */
-.no-js .reveal {
+.site-js .reveal.is-visible {
   opacity: 1;
   transform: none;
 }
@@ -1667,7 +1796,7 @@ table.data th[scope="row"] {
   align-items: center;
   gap: 0.4rem;
   font-weight: 600;
-  color: var(--primary-blue);
+  color: var(--primary-blue-ink);
 }
 
 .link-arrow svg {
@@ -1698,7 +1827,9 @@ table.data th[scope="row"] {
     scroll-behavior: auto !important;
   }
 
-  .reveal {
+  /* Must out-specify `.site-js .reveal` above, and must not depend on
+     initReveal having run, so this pair is repeated at that specificity. */
+  .site-js .reveal {
     opacity: 1;
     transform: none;
   }
@@ -1710,7 +1841,8 @@ table.data th[scope="row"] {
 
   .btn:hover,
   .card:hover,
-  .state:hover {
+  .state:hover,
+  .link-arrow:hover svg {
     transform: none;
   }
 }

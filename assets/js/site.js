@@ -3,12 +3,28 @@
    Progressive enhancement only. With JavaScript unavailable the navigation is
    a plain link list, every accordion is a native <details>, and all content is
    already in the HTML. Nothing here is required to read the site.
+
+   The stylesheet hides the reveal items, the collapsed mobile panel and the
+   copy buttons ONLY under the `site-js` class added below. If this script is
+   blocked, fails to parse, or throws, the site fails OPEN: the mobile panel
+   never collapses, nothing sits at opacity 0, and no inert button is drawn.
    ========================================================================== */
 
 (function () {
   "use strict";
 
+  document.documentElement.classList.add("site-js");
+
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  // MediaQueryList.addEventListener is absent in older Safari; fall back to it.
+  function onMotionChange(handler) {
+    if (typeof reduceMotion.addEventListener === "function") {
+      reduceMotion.addEventListener("change", handler);
+    } else if (typeof reduceMotion.addListener === "function") {
+      reduceMotion.addListener(handler);
+    }
+  }
 
   /* ----------------------------------------------------------------------
      Mobile navigation
@@ -167,14 +183,21 @@
 
   /* ----------------------------------------------------------------------
      Companion state cycler
+
+     Under prefers-reduced-motion the timer never runs and the kit's
+     `reduced-motion.png` still is swapped in for the animated WebP, on every
+     page — index.html's <picture> does this in markup, but features.html's bare
+     <img> has no <source>, and CSS cannot stop a WebP's frames nor rewrite an
+     <img> src. Cycling one still to another every 4.2s is itself motion, so
+     under reduce the state is held as well as the frame.
      ---------------------------------------------------------------------- */
 
   function initCompanion() {
     var stage = document.querySelector("[data-companion]");
-    if (!stage || reduceMotion.matches) return;
+    if (!stage) return;
 
     var states = (stage.getAttribute("data-companion") || "").split(",").filter(Boolean);
-    if (states.length < 2) return;
+    if (!states.length) return;
 
     var image = stage.querySelector("img");
     var label = stage.querySelector("[data-companion-label]");
@@ -185,18 +208,23 @@
 
     var index = 0;
     var timer = null;
+    var inView = false;
+    var pageVisible = !document.hidden;
 
-    function advance() {
-      index = (index + 1) % states.length;
+    function show(i) {
+      index = i;
       var state = states[index];
-      image.src = base + state + "/animated/256.webp";
+      image.src = base + state + (reduceMotion.matches ? "/reduced-motion.png" : "/animated/256.webp");
       image.alt = "Arya in her " + state.replace(/-/g, " ") + " state";
       if (label) label.textContent = state.replace(/-/g, " ");
     }
 
     function start() {
-      if (timer) return;
-      timer = window.setInterval(advance, 4200);
+      // Under reduce this is a no-op, so no timer can be left running.
+      if (timer || reduceMotion.matches || states.length < 2) return;
+      timer = window.setInterval(function () {
+        show((index + 1) % states.length);
+      }, 4200);
     }
 
     function stop() {
@@ -204,24 +232,42 @@
       timer = null;
     }
 
-    // Only animate while the stage is actually on screen.
+    function sync() {
+      if (inView && pageVisible) start();
+      else stop();
+    }
+
+    show(index);
+
+    // A mid-session change of the OS setting must take effect with no reload:
+    // stop or hold the still, re-point the source, then resume if it is on screen.
+    onMotionChange(function () {
+      stop();
+      show(index);
+      sync();
+    });
+
+    // Only animate while the stage is on screen and the tab is visible. The
+    // observer is registered even under reduce, so turning motion back on
+    // mid-session can still find the stage and start.
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(
         function (entries) {
           entries.forEach(function (entry) {
-            if (entry.isIntersecting) start();
-            else stop();
+            inView = entry.isIntersecting;
+            sync();
           });
         },
         { threshold: 0.25 }
       ).observe(stage);
     } else {
-      start();
+      inView = true;
+      sync();
     }
 
     document.addEventListener("visibilitychange", function () {
-      if (document.hidden) stop();
-      else start();
+      pageVisible = !document.hidden;
+      sync();
     });
   }
 
@@ -238,14 +284,27 @@
 
   /* ---------------------------------------------------------------------- */
 
+  // One broken enhancement must not take the others down with it. Without this
+  // a throw in, say, initNav would stop initReveal from running and leave every
+  // reveal item at opacity 0 for the rest of the visit.
+  function safe(name, fn) {
+    try {
+      fn();
+    } catch (error) {
+      if (window.console && window.console.warn) {
+        window.console.warn("site.js: " + name + " failed", error);
+      }
+    }
+  }
+
   function init() {
-    initNav();
-    initHeader();
-    initActiveNav();
-    initReveal();
-    initCopy();
-    initCompanion();
-    initYear();
+    safe("nav", initNav);
+    safe("header", initHeader);
+    safe("activeNav", initActiveNav);
+    safe("reveal", initReveal);
+    safe("copy", initCopy);
+    safe("companion", initCompanion);
+    safe("year", initYear);
   }
 
   if (document.readyState === "loading") {

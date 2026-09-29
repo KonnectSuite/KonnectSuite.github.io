@@ -9,6 +9,14 @@
 <meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
 <link rel="stylesheet" href="assets/css/site.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Documentation — AryaAI">
+<meta property="og:description" content="Install AryaAI on Windows, what it needs, how updates and plugins behave, the safety model, and the full published list of what AryaAI does not do yet.">
+<meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
+<meta property="og:image:alt" content="AryaAI horizontal logo lockup">
+<meta name="twitter:card" content="summary_large_image">
+
 <script>document.documentElement.classList.replace('no-js', 'js');</script>
 </head>
 <body>
@@ -28,9 +36,10 @@
     <nav class="nav" id="site-nav" aria-label="Main">
       <a class="nav__link" href="features.html">Features</a>
       <a class="nav__link" href="engineering.html">Engineering desk</a>
-      <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="docs.html" aria-current="page">Docs</a>
+      <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
-      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
         Download
       </a>
@@ -46,8 +55,9 @@
       <p class="eyebrow">Get running</p>
       <h1>Install it, then decide what it may touch</h1>
       <p class="lead">
-        AryaAI is a Windows desktop application. It carries its own Node and Python, so the
-        engineering servers work without you installing a toolchain first.
+        AryaAI is a Windows desktop application. It carries its own Node and Python, so its
+        engineering servers work without you installing a toolchain &mdash; with one exception,
+        FactoryTalk Optix Tools, which uses the service of an Optix Studio already on the PC.
       </p>
     </div>
   </div>
@@ -64,7 +74,7 @@
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
           <span>Download the latest Windows installer from the
-          <a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">AryaAI releases page</a>.</span>
+          <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">AryaAI releases page</a>.</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7z"/></svg>
@@ -89,8 +99,9 @@
       <div class="dl mt-4">
         <div class="dl__row">
           <dt>Operating system</dt>
-          <dd>Windows desktop. The engineering servers run on the Node and Python that AryaAI
-          ships with, so they need no separate install.</dd>
+          <dd>Windows desktop. Six of the seven engineering servers run on the Node and Python that
+          AryaAI ships with, so they need no separate install; FactoryTalk Optix Tools uses Optix
+          Studio&rsquo;s own service on this PC.</dd>
         </div>
         <div class="dl__row">
           <dt>Shell</dt>
@@ -98,7 +109,7 @@
         </div>
         <div class="dl__row">
           <dt>Current line</dt>
-          <dd><code>0.1.7-rc.2.AryaAI.0.3.0</code>, on DeepSeek Harness <code>0.1.7-rc.2</code>.</dd>
+          <dd>The current line is whatever the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a> lists; it runs on DeepSeek Harness <code>0.1.7-rc.2</code>.</dd>
         </div>
         <div class="dl__row">
           <dt>License</dt>
@@ -125,8 +136,8 @@
         </article>
         <article class="card">
           <h3>2. Turn on only what you need</h3>
-          <p>Engineering servers stay off until you enable them, so a tool you do not have on this
-          machine never blocks startup.</p>
+          <p>Windows Computer Use starts with the app; the other engineering servers stay off until
+          you enable them, so a tool you do not have on this machine never blocks startup.</p>
         </article>
         <article class="card">
           <h3>3. Leave the desktop dry run on</h3>
@@ -353,7 +364,7 @@ pnpm dsh web</code></pre>
         <p class="lead">Read the source, or open an issue with the export that did not behave. Both
         go to the same place.</p>
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="https://github.com/KphungFROMM/kphungfromm.github.io">View on GitHub</a>
+          <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io">View on GitHub</a>
           <a class="btn btn--ghost btn--lg" href="contact.html">Contact and support</a>
         </div>
       </div>
@@ -363,6 +374,7 @@ pnpm dsh web</code></pre>
 </main>
 
 <footer class="site-footer">
+  <h2 class="visually-hidden">Site footer</h2>
   <div class="container">
     <div class="footer__grid">
       <div>
@@ -376,25 +388,26 @@ pnpm dsh web</code></pre>
         </p>
       </div>
       <div class="footer__col">
-        <h4>Product</h4>
+        <h3>Product</h3>
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Project</h4>
+        <h3>Project</h3>
         <ul>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io">Repository</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/issues">Issues</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io">Repository</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/issues">Issues</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Trust</h4>
+        <h3>Trust</h3>
         <ul>
           <li><a href="docs.html#limits">Known limits</a></li>
           <li><a href="docs.html#security">Safety model</a></li>

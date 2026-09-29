@@ -42,8 +42,9 @@
       <a class="nav__link" href="features.html">Features</a>
       <a class="nav__link" href="engineering.html">Engineering desk</a>
       <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
-      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
         Download
       </a>
@@ -80,7 +81,7 @@
           </p>
 
           <div class="btn-row hero__actions">
-            <a class="btn btn--primary btn--lg" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+            <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
               Download for Windows
             </a>
@@ -91,8 +92,8 @@
           </div>
 
           <p class="hero__note">
-            Current line <code>0.1.7-rc.2.AryaAI.0.3.0</code> · installer is unsigned — Windows
-            may ask you to confirm it.
+            Current line &mdash; see the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a> ·
+            installer is unsigned — Windows may ask you to confirm it.
           </p>
         </div>
 
@@ -112,7 +113,7 @@
               </picture>
             </div>
 
-            <div class="transcript" aria-label="Example session transcript">
+            <div class="transcript" role="group" aria-label="Example session transcript">
               <div class="transcript__line">
                 <span class="transcript__prompt">PS&gt;</span>
                 <span class="transcript__cmd">dsh "read the Logix export and list the cam tags"</span>
@@ -215,16 +216,17 @@
 
       <figure class="shot shot--accent">
         <img src="assets/img/app-mcp.png"
-             alt="The AryaAI Skills and MCP panel listing the automation servers: SCADA to PLC Bridge, ComfyUI Canvas, FT Optix Tools, Ignition SCADA, IronPLC Compiler, NetLogic Cheat Sheet, Studio 5000 Projects, and Windows Computer Use shown connected with 20 tools."
-             width="1600" height="1128" loading="lazy">
+             alt="The AryaAI Skills and MCP panel on its MCP servers tab, listing eight rows: the seven automation servers — SCADA to PLC Bridge, FT Optix Tools, Ignition SCADA, IronPLC Compiler, NetLogic Cheat Sheet, Studio 5000 Projects and Windows Computer Use — and ComfyUI MCP. Each row carries an enable toggle; all report Disabled except Windows Computer Use, which reports Connected. FT Optix Tools adds that its status endpoint is not answering."
+             width="1600" height="1042" loading="lazy">
         <figcaption>
           <span class="shot__tag">The engineering desk</span>
-          <strong>Seven automation servers, inside the installer.</strong>
+          <strong>Seven automation servers, six of them inside the installer.</strong>
           Studio 5000 Projects, Ignition SCADA, the SCADA ↔ PLC Bridge, IronPLC Compiler, the
-          NetLogic Cheat Sheet, FactoryTalk Optix Tools and Windows Computer Use. Each row stays
-          off until you switch it on, so a factory tool you do not have on this machine never
-          blocks startup — and Windows Computer Use, shown here connected with its 20 tools, is
-          how the agent reaches an application that has no project plugin yet.
+          NetLogic Cheat Sheet, FactoryTalk Optix Tools and Windows Computer Use. Windows Computer
+          Use starts with the app, and the other six stay off until you switch them on, so a
+          factory tool you do not have on this machine never blocks startup — and Windows Computer
+          Use, shown here connected, is how the agent reaches an application that
+          has no project plugin yet.
         </figcaption>
       </figure>
 
@@ -243,12 +245,12 @@
       <div class="grid grid--2 mt-3">
         <figure class="shot">
           <img src="assets/img/app-plugins.png"
-               alt="The AryaAI plugins panel listing seven official plugins: Agent Teams, Auto Authorization Review, Voice input, Shell, Agent loop, Subagent and Web search."
-               width="1600" height="633" loading="lazy">
+               alt="The AryaAI Plugins panel showing its Official section: four plugins, Shell, Agent loop, Subagent and Web search, each with a one-line description."
+               width="1600" height="422" loading="lazy">
           <figcaption>
             <span class="shot__tag">Everything is a plugin</span>
-            Agent Teams, authorization review, voice input, shell limits, subagent depth and web
-            search are all rows you own. Disable one and the capability is gone on the next start.
+            The Official section in the installed application: Shell, Agent loop, Subagent and Web
+            search, each a row you own. Disable one and the capability is gone on the next start.
           </figcaption>
         </figure>
 
@@ -426,10 +428,12 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">The engineering desk</p>
-        <h2>Seven tools, shipped inside the installer</h2>
+        <h2>Seven tools &mdash; six of them inside the installer</h2>
         <p class="lead">
-          These run on the Python or Node that AryaAI carries, so your plant PC does not need its
-          own toolchain for them. Enable a row from the MCP list, and turn it off again.
+          Six of the seven run on the Python or Node that AryaAI carries, so your plant PC does not
+          need its own toolchain for them. FactoryTalk Optix Tools cannot be packed into the
+          installer &mdash; it speaks to Optix Studio&rsquo;s own service on this PC, and reports when
+          that service is absent. Enable a row from the MCP list, and turn it off again.
         </p>
       </div>
 
@@ -535,8 +539,9 @@
 
         <article class="card">
           <h3>Engineering servers</h3>
-          <p>Also in the installer, but off until you enable them. A factory tool you do not have
-          reports itself in the MCP panel instead of blocking startup.</p>
+          <p>Also in the installer, and off until you enable them — except Windows Computer Use,
+          which starts with the app. A factory tool you do not have reports itself in the MCP panel
+          instead of blocking startup.</p>
           <div class="card__meta"><span class="tag">You switch them on</span></div>
         </article>
 
@@ -630,16 +635,16 @@
           front of you. Chats, settings and any plugin you add stay through the next update.
         </p>
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+          <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
             Download for Windows
           </a>
-          <a class="btn btn--ghost btn--lg" href="https://github.com/KphungFROMM/kphungfromm.github.io">
+          <a class="btn btn--ghost btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.47c.52.1.71-.23.71-.5v-1.8c-2.9.63-3.52-1.4-3.52-1.4-.48-1.2-1.16-1.53-1.16-1.53-.95-.65.07-.63.07-.63 1.05.07 1.6 1.08 1.6 1.08.93 1.6 2.45 1.14 3.05.87.09-.68.36-1.14.66-1.4-2.32-.27-4.76-1.16-4.76-5.16 0-1.14.4-2.07 1.07-2.8-.11-.27-.47-1.33.1-2.77 0 0 .88-.28 2.88 1.07a9.9 9.9 0 0 1 5.24 0c2-1.35 2.88-1.07 2.88-1.07.57 1.44.21 2.5.1 2.77.67.73 1.07 1.66 1.07 2.8 0 4.01-2.45 4.88-4.78 5.14.37.32.7.95.7 1.92v2.85c0 .28.19.6.72.5A10.5 10.5 0 0 0 12 1.5z"/></svg>
             View on GitHub
           </a>
         </div>
-        <p class="hero__note mb-0">Version 0.1.7-rc.2.AryaAI.0.3.0 · on DeepSeek Harness 0.1.7-rc.2 · MIT licensed</p>
+        <p class="hero__note mb-0">Current version &mdash; see the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a> · on DeepSeek Harness 0.1.7-rc.2 · MIT licensed</p>
       </div>
     </div>
   </section>
@@ -647,6 +652,7 @@
 </main>
 
 <footer class="site-footer">
+  <h2 class="visually-hidden">Site footer</h2>
   <div class="container">
     <div class="footer__grid">
       <div>
@@ -661,26 +667,27 @@
       </div>
 
       <div class="footer__col">
-        <h4>Product</h4>
+        <h3>Product</h3>
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Project</h4>
+        <h3>Project</h3>
         <ul>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io">Repository</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/issues">Issues</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io">Repository</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/issues">Issues</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Trust</h4>
+        <h3>Trust</h3>
         <ul>
           <li><a href="docs.html#limits">Known limits</a></li>
           <li><a href="docs.html#security">Safety model</a></li>

@@ -9,6 +9,14 @@
 <meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
 <link rel="stylesheet" href="assets/css/site.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Features — AryaAI">
+<meta property="og:description" content="What AryaAI can do today: a workspace agent with readable plans, a DXF drawing viewer, GitHub clone, skills, multi-agent workflows, background jobs, and a companion whose pose follows the work.">
+<meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
+<meta property="og:image:alt" content="AryaAI horizontal logo lockup">
+<meta name="twitter:card" content="summary_large_image">
+
 <script>document.documentElement.classList.replace('no-js', 'js');</script>
 </head>
 <body>
@@ -26,11 +34,12 @@
       <svg class="nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
     </button>
     <nav class="nav" id="site-nav" aria-label="Main">
-      <a class="nav__link" href="features.html">Features</a>
+      <a class="nav__link" href="features.html" aria-current="page">Features</a>
       <a class="nav__link" href="engineering.html">Engineering desk</a>
       <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
-      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
         Download
       </a>
@@ -303,9 +312,15 @@
           <div class="stage__body">
             <div class="companion">
               <span class="companion__glow" aria-hidden="true"></span>
-              <img data-base="branding/aryaai-brand-kit/companion/"
-                   src="branding/aryaai-brand-kit/companion/thinking/animated/256.webp"
-                   alt="Arya in her thinking state" width="256" height="256">
+              <picture>
+                <!-- Reduced motion is settled in markup, so it holds with site.js blocked. No
+                     type="image/webp" source is added on purpose: a selected <source> outranks the
+                     img's src, which would freeze the companion cycler in site.js. -->
+                <source media="(prefers-reduced-motion: reduce)" srcset="branding/aryaai-brand-kit/companion/thinking/reduced-motion.png">
+                <img data-base="branding/aryaai-brand-kit/companion/"
+                     src="branding/aryaai-brand-kit/companion/thinking/animated/256.webp"
+                     alt="Arya in her thinking state" width="256" height="256">
+              </picture>
             </div>
             <div>
               <p class="mb-0 small muted">
@@ -368,6 +383,7 @@
 </main>
 
 <footer class="site-footer">
+  <h2 class="visually-hidden">Site footer</h2>
   <div class="container">
     <div class="footer__grid">
       <div>
@@ -381,25 +397,26 @@
         </p>
       </div>
       <div class="footer__col">
-        <h4>Product</h4>
+        <h3>Product</h3>
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/releases">Download</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>
         </ul>
       </div>
       <div class="footer__col">
-        <h4>Project</h4>
+        <h3>Project</h3>
         <ul>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io">Repository</a></li>
-          <li><a href="https://github.com/KphungFROMM/kphungfromm.github.io/issues">Issues</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io">Repository</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/issues">Issues</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Trust</h4>
+        <h3>Trust</h3>
         <ul>
           <li><a href="docs.html#limits">Known limits</a></li>
           <li><a href="docs.html#security">Safety model</a></li>
