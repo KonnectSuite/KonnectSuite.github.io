@@ -1456,6 +1456,72 @@ table.data th[scope="row"] {
 }
 
 /* --------------------------------------------------------------------------
+   17b. Prerelease / safety banner
+   A full-width notice, not a callout: it states the risk, what the product
+   promises on a live controller, and the milestone. It sits above the fold on
+   the pages where a reader decides to download or to buy, and it wraps rather
+   than scrolls at every width.
+   -------------------------------------------------------------------------- */
+
+.prerelease {
+  border: 1px solid rgba(255, 176, 32, 0.34);
+  border-radius: var(--r-md);
+  background: rgba(255, 176, 32, 0.07);
+  padding: var(--s-2) var(--s-3);
+}
+
+.prerelease__head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--status-warning-ink);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+}
+
+.prerelease__head svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
+.prerelease__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.prerelease__list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.prerelease__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--status-warning-ink);
+}
+
+.prerelease__list strong {
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
    18. Accordion (native <details>, works without JavaScript)
    -------------------------------------------------------------------------- */
 
