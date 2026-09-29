@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.4.0
+version: 0.1.7-rc.2.AryaAI.0.5.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.4.0/aryaai-0.1.7-rc.2.AryaAI.0.4.0-win-x64-unsigned.exe
-    sha512: xQqXtLsfehB8c3fa2SHgOrADNm1S9ScefJxI58lpKiZAFwPQ1Gnr+CwSIDlRMYMkh5Kk1iTTX65smXIlUjWsnA==
-    size: 567924470
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.4.0/aryaai-0.1.7-rc.2.AryaAI.0.4.0-win-x64-unsigned.exe
-sha512: xQqXtLsfehB8c3fa2SHgOrADNm1S9ScefJxI58lpKiZAFwPQ1Gnr+CwSIDlRMYMkh5Kk1iTTX65smXIlUjWsnA==
-releaseDate: '2026-09-28T16:16:36.630Z'
-releaseNotes: '{"en":["Right-click a workspace in the left panel to rename or delete it. Right-click a chat to pin, rename, fork, or archive it. The same menu opens at your cursor, without opening what you clicked.","The account area names the account instead of reporting a sign-in state. Your name and picture appear once DeepSeek returns them; until then the account card says why they are missing.","Arya now loads. Her overlay ships enabled on Desktop, and it no longer keeps the whole interface from opening.","The Files panel keeps the folders you expanded. Switch to another tab and come back, and the tree is still open where you left it.","A task that starts opens in the bottom panel, so the right panel stays where you put it.","The Windows Computer Use MCP server is listed again in the MCP server list, ready to switch on or off.","A file opened from a chat renders in its own viewer, HTML included, instead of failing to load."],"zh":["在左侧面板右键点击工作区即可重命名或删除。右键点击对话即可置顶、重命名、分支或归档。同样的菜单会出现在光标位置，不会打开你点的那一项。","账号区域显示账号名称，而不是登录状态。DeepSeek 返回后就会显示你的名字和头像；在此之前，账号卡片会说明缺失原因。","Arya 现在可以加载了。她的浮层在桌面端默认开启，也不会再阻止整个界面打开。","文件面板会记住你展开的文件夹。切到别的标签再回来，树还是你离开时的样子。","任务开始时会打开在底部面板，右侧面板保持在原处。","Windows 计算机使用 MCP 服务器重新出现在 MCP 服务器列表里，可以随时打开或关闭。","从对话里打开的文件会用它自己的查看器渲染，包括 HTML，而不会再加载失败。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.5.0/aryaai-0.1.7-rc.2.AryaAI.0.5.0-win-x64-unsigned.exe
+    sha512: j48G/nAF/Vxl7SQtqY7OPxpHGuv7OwXUHYpOuoBkdy7X/et9poh8DoX5Rp9Zrweq4Ixm6f6Y7XP289DRDW/b/g==
+    size: 567911252
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.5.0/aryaai-0.1.7-rc.2.AryaAI.0.5.0-win-x64-unsigned.exe
+sha512: j48G/nAF/Vxl7SQtqY7OPxpHGuv7OwXUHYpOuoBkdy7X/et9poh8DoX5Rp9Zrweq4Ixm6f6Y7XP289DRDW/b/g==
+releaseDate: '2026-09-29T09:54:51.239Z'
+releaseNotes: '{"en":["The MotionWorks IEC plugin is reliable. Adding a variable no longer fails because some other variable in the same program carries a mismatch between its declaration and its worksheet record — the mismatch is reported, and the edit goes through.","A program that declares none of the type you are adding borrows that record layout from another program in the same project, instead of refusing the edit.","Make and Build report what the compiler actually did. They previously reported a failure after 90 seconds on a project that was already compiled.","The IDE bridge waits for a MotionWorks window that is still starting, instead of refusing to open the project."],"zh":["MotionWorks IEC 插件现在稳定可靠。添加变量不再因为同一程序中另一个变量的声明与工作表记录不一致而失败——该不一致会被报告出来，编辑照常完成。","如果要添加的类型在目标程序中没有声明，会改为从同一项目的另一个程序借用该记录布局，而不是直接拒绝。","Make 和 Build 现在如实报告编译器的结果。此前对已经编译完成的项目，它们会在 90 秒后报告失败。","IDE 桥接会等待仍在启动中的 MotionWorks 窗口，而不是拒绝打开项目。"]}'
