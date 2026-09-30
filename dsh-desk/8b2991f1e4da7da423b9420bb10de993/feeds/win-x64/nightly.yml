@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.5.0
+version: 0.1.7-rc.2.AryaAI.0.6.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.5.0/aryaai-0.1.7-rc.2.AryaAI.0.5.0-win-x64-unsigned.exe
-    sha512: j48G/nAF/Vxl7SQtqY7OPxpHGuv7OwXUHYpOuoBkdy7X/et9poh8DoX5Rp9Zrweq4Ixm6f6Y7XP289DRDW/b/g==
-    size: 567911252
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.5.0/aryaai-0.1.7-rc.2.AryaAI.0.5.0-win-x64-unsigned.exe
-sha512: j48G/nAF/Vxl7SQtqY7OPxpHGuv7OwXUHYpOuoBkdy7X/et9poh8DoX5Rp9Zrweq4Ixm6f6Y7XP289DRDW/b/g==
-releaseDate: '2026-09-29T09:54:51.239Z'
-releaseNotes: '{"en":["The MotionWorks IEC plugin is reliable. Adding a variable no longer fails because some other variable in the same program carries a mismatch between its declaration and its worksheet record — the mismatch is reported, and the edit goes through.","A program that declares none of the type you are adding borrows that record layout from another program in the same project, instead of refusing the edit.","Make and Build report what the compiler actually did. They previously reported a failure after 90 seconds on a project that was already compiled.","The IDE bridge waits for a MotionWorks window that is still starting, instead of refusing to open the project."],"zh":["MotionWorks IEC 插件现在稳定可靠。添加变量不再因为同一程序中另一个变量的声明与工作表记录不一致而失败——该不一致会被报告出来，编辑照常完成。","如果要添加的类型在目标程序中没有声明，会改为从同一项目的另一个程序借用该记录布局，而不是直接拒绝。","Make 和 Build 现在如实报告编译器的结果。此前对已经编译完成的项目，它们会在 90 秒后报告失败。","IDE 桥接会等待仍在启动中的 MotionWorks 窗口，而不是拒绝打开项目。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.0/aryaai-0.1.7-rc.2.AryaAI.0.6.0-win-x64-unsigned.exe
+    sha512: XDM5CbtBDK3YTYuaGTRn0brn+/hh2uLxBZI72zjdf2wbDbz9EfNxsftAvod1Wx/BLL3IuwkYuW01y51QylC+Jw==
+    size: 576762885
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.0/aryaai-0.1.7-rc.2.AryaAI.0.6.0-win-x64-unsigned.exe
+sha512: XDM5CbtBDK3YTYuaGTRn0brn+/hh2uLxBZI72zjdf2wbDbz9EfNxsftAvod1Wx/BLL3IuwkYuW01y51QylC+Jw==
+releaseDate: '2026-09-30T10:03:45.244Z'
+releaseNotes: '{"en":["Remote access is included in new Arya profiles. Pair this computer through dsh.r2049.cn to reach its sessions and workspaces from another device.","The updated Studio 5000 L5X tools and Logix project viewer let you inspect controller projects inside Arya.","The Images library can select multiple local images or videos for download or deletion.","Skills & MCP has a redesigned manager for viewing skills and MCP server status."],"zh":["新建的 Arya 配置包含远程访问。通过 dsh.r2049.cn 配对这台电脑，即可从其他设备访问会话和工作区。","更新后的 Studio 5000 L5X 工具和 Logix 项目查看器可在 Arya 内检查控制器项目。","图片库可批量选择本地图片或视频并下载或删除。","技能与 MCP 管理页经过重新设计，可查看技能和 MCP 服务器状态。"]}'
