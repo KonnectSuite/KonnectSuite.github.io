@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.6.0
+version: 0.1.7-rc.2.AryaAI.0.6.1
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.0/aryaai-0.1.7-rc.2.AryaAI.0.6.0-win-x64-unsigned.exe
-    sha512: XDM5CbtBDK3YTYuaGTRn0brn+/hh2uLxBZI72zjdf2wbDbz9EfNxsftAvod1Wx/BLL3IuwkYuW01y51QylC+Jw==
-    size: 576762885
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.0/aryaai-0.1.7-rc.2.AryaAI.0.6.0-win-x64-unsigned.exe
-sha512: XDM5CbtBDK3YTYuaGTRn0brn+/hh2uLxBZI72zjdf2wbDbz9EfNxsftAvod1Wx/BLL3IuwkYuW01y51QylC+Jw==
-releaseDate: '2026-09-30T10:03:45.244Z'
-releaseNotes: '{"en":["Remote access is included in new Arya profiles. Pair this computer through dsh.r2049.cn to reach its sessions and workspaces from another device.","The updated Studio 5000 L5X tools and Logix project viewer let you inspect controller projects inside Arya.","The Images library can select multiple local images or videos for download or deletion.","Skills & MCP has a redesigned manager for viewing skills and MCP server status."],"zh":["新建的 Arya 配置包含远程访问。通过 dsh.r2049.cn 配对这台电脑，即可从其他设备访问会话和工作区。","更新后的 Studio 5000 L5X 工具和 Logix 项目查看器可在 Arya 内检查控制器项目。","图片库可批量选择本地图片或视频并下载或删除。","技能与 MCP 管理页经过重新设计，可查看技能和 MCP 服务器状态。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.1/aryaai-0.1.7-rc.2.AryaAI.0.6.1-win-x64-unsigned.exe
+    sha512: 1OCoPhacsgXJrdd6KxPnQ+SvwZ6kOYTQFJ3LiLcNsMZ2aKCakOyN3ltWJdKlZ66mZIRFBaJuKGJyhH0b9Lkkmg==
+    size: 576833933
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.1/aryaai-0.1.7-rc.2.AryaAI.0.6.1-win-x64-unsigned.exe
+sha512: 1OCoPhacsgXJrdd6KxPnQ+SvwZ6kOYTQFJ3LiLcNsMZ2aKCakOyN3ltWJdKlZ66mZIRFBaJuKGJyhH0b9Lkkmg==
+releaseDate: '2026-09-30T14:29:39.600Z'
+releaseNotes: '{"en":["Studio 5000 L5X tools now keep large draft proposals valid, write new tag descriptions in export order, and report the stage and diagnostics when an offline build fails.","The Logix Designer SDK bridge checks that its Windows service is running before opening or building a project. Controller upload, mode change, and download require an Ask approval session."],"zh":["Studio 5000 L5X 工具现在能正确保留大型草案的文件哈希、按导出顺序写入新标签的描述，并在离线构建失败时报告失败阶段和诊断信息。","Logix Designer SDK 桥接会在打开或构建项目前检查其 Windows 服务是否正在运行。控制器上传、模式切换和下载需要使用“询问审批”会话。"]}'
