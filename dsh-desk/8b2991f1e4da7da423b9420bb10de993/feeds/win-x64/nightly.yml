@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.6.2
+version: 0.1.7-rc.2.AryaAI.0.6.3
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.2/aryaai-0.1.7-rc.2.AryaAI.0.6.2-win-x64-unsigned.exe
-    sha512: 2Qdi6YDor4GzegfIrNnDqagFwD3ki6l/R3KKB99v2SMIiRNaHpFc7rFvMqY3h1qToAb5cI7ThjhWs6S5Vcet8A==
-    size: 576878019
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.2/aryaai-0.1.7-rc.2.AryaAI.0.6.2-win-x64-unsigned.exe
-sha512: 2Qdi6YDor4GzegfIrNnDqagFwD3ki6l/R3KKB99v2SMIiRNaHpFc7rFvMqY3h1qToAb5cI7ThjhWs6S5Vcet8A==
-releaseDate: '2026-10-01T03:32:24.908Z'
-releaseNotes: '{"en":["Creator mode opens again. Its filesystem search setting is now assigned to the search plugin, so the preset loads instead of reporting a configuration error.","The GitHub account action remains visible in the sidebar when Remote is present. A workspace menu can open its root folder in Explorer."],"zh":["创造模式现在可以重新打开。文件系统搜索设置已分配给搜索插件，预设不再因配置错误而加载失败。","启用远程访问时，侧边栏仍会显示 GitHub 账户入口。工作区菜单可以在资源管理器中打开其根文件夹。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.3/aryaai-0.1.7-rc.2.AryaAI.0.6.3-win-x64-unsigned.exe
+    sha512: ADNvNAjk4qGce4bsZbCMzhfYrhbUkkUx8bvHbHOuEs7frIJj3V2oC7apuxSLUd2wj5rnxH0pzUdSIZsb/L22/A==
+    size: 576890005
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.3/aryaai-0.1.7-rc.2.AryaAI.0.6.3-win-x64-unsigned.exe
+sha512: ADNvNAjk4qGce4bsZbCMzhfYrhbUkkUx8bvHbHOuEs7frIJj3V2oC7apuxSLUd2wj5rnxH0pzUdSIZsb/L22/A==
+releaseDate: '2026-10-01T04:14:30.227Z'
+releaseNotes: '{"en":["Studio 5000 L5X tools now report clearer SDK diagnostics and support typed live tag reads and bounded sampling.","Controller operations check the supplied IP against the saved Linx route. Downloads require a reviewed offline build based on an approved upload from the same session."],"zh":["Studio 5000 L5X 工具现在提供更清晰的 SDK 诊断，并支持按类型读取实时标签和有界采样。","控制器操作会核对提供的 IP 与已保存的 Linx 路由。下载需要基于同一会话中已获批准的上传，且离线构建已经过审查。"]}'
