@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.6.1
+version: 0.1.7-rc.2.AryaAI.0.6.2
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.1/aryaai-0.1.7-rc.2.AryaAI.0.6.1-win-x64-unsigned.exe
-    sha512: 1OCoPhacsgXJrdd6KxPnQ+SvwZ6kOYTQFJ3LiLcNsMZ2aKCakOyN3ltWJdKlZ66mZIRFBaJuKGJyhH0b9Lkkmg==
-    size: 576833933
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.1/aryaai-0.1.7-rc.2.AryaAI.0.6.1-win-x64-unsigned.exe
-sha512: 1OCoPhacsgXJrdd6KxPnQ+SvwZ6kOYTQFJ3LiLcNsMZ2aKCakOyN3ltWJdKlZ66mZIRFBaJuKGJyhH0b9Lkkmg==
-releaseDate: '2026-09-30T14:29:39.600Z'
-releaseNotes: '{"en":["Studio 5000 L5X tools now keep large draft proposals valid, write new tag descriptions in export order, and report the stage and diagnostics when an offline build fails.","The Logix Designer SDK bridge checks that its Windows service is running before opening or building a project. Controller upload, mode change, and download require an Ask approval session."],"zh":["Studio 5000 L5X 工具现在能正确保留大型草案的文件哈希、按导出顺序写入新标签的描述，并在离线构建失败时报告失败阶段和诊断信息。","Logix Designer SDK 桥接会在打开或构建项目前检查其 Windows 服务是否正在运行。控制器上传、模式切换和下载需要使用“询问审批”会话。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.2/aryaai-0.1.7-rc.2.AryaAI.0.6.2-win-x64-unsigned.exe
+    sha512: 2Qdi6YDor4GzegfIrNnDqagFwD3ki6l/R3KKB99v2SMIiRNaHpFc7rFvMqY3h1qToAb5cI7ThjhWs6S5Vcet8A==
+    size: 576878019
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.2/aryaai-0.1.7-rc.2.AryaAI.0.6.2-win-x64-unsigned.exe
+sha512: 2Qdi6YDor4GzegfIrNnDqagFwD3ki6l/R3KKB99v2SMIiRNaHpFc7rFvMqY3h1qToAb5cI7ThjhWs6S5Vcet8A==
+releaseDate: '2026-10-01T03:32:24.908Z'
+releaseNotes: '{"en":["Creator mode opens again. Its filesystem search setting is now assigned to the search plugin, so the preset loads instead of reporting a configuration error.","The GitHub account action remains visible in the sidebar when Remote is present. A workspace menu can open its root folder in Explorer."],"zh":["创造模式现在可以重新打开。文件系统搜索设置已分配给搜索插件，预设不再因配置错误而加载失败。","启用远程访问时，侧边栏仍会显示 GitHub 账户入口。工作区菜单可以在资源管理器中打开其根文件夹。"]}'
