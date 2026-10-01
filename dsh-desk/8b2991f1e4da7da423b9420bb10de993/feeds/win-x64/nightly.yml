@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.6.4
+version: 0.1.7-rc.2.AryaAI.0.6.5
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.4/aryaai-0.1.7-rc.2.AryaAI.0.6.4-win-x64-unsigned.exe
-    sha512: hXoeTryjnoYvEoKVoP1DiZmGKCho+EDjCmM7JCKp8LE7OgH26MmgaLNyOPZqkhPbtdXW7l3mwwR/XNgObqmu5A==
-    size: 576961452
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.4/aryaai-0.1.7-rc.2.AryaAI.0.6.4-win-x64-unsigned.exe
-sha512: hXoeTryjnoYvEoKVoP1DiZmGKCho+EDjCmM7JCKp8LE7OgH26MmgaLNyOPZqkhPbtdXW7l3mwwR/XNgObqmu5A==
-releaseDate: '2026-10-01T09:57:15.083Z'
-releaseNotes: '{"en":["MotionWorks IEC 0.5.1 adds engineering guides, fresh Build/Make verification after reopening, and reports that retain failed-step diagnostics.","The latest pinned Studio 5000 L5X update is bundled. Opening a workspace in Explorer now launches Windows File Explorer correctly.","The Images prompt supports dictation and reference-image editing, including Flux 2 Klein when its model files are installed. Local images and videos support bulk selection, ZIP download, and deletion.","ComfyUI MCP is enabled by default for new profiles. Existing explicit disable choices are preserved. The Images Auto conversation remains an opt-in preview."],"zh":["MotionWorks IEC 0.5.1 新增工程指南，重新打开项目后会执行新的 Build/Make 验证，报告也会保留失败步骤的诊断信息。","包含固定版本的最新 Studio 5000 L5X 更新。在资源管理器中打开工作区现在会正确启动 Windows 文件资源管理器。","图片提示词支持语音输入和参考图片编辑；安装相应模型后可使用 Flux 2 Klein。本地图片和视频支持批量选择、ZIP 下载和删除。","新配置默认启用 ComfyUI MCP，保留现有用户明确禁用的选择。图片 Auto 对话仍为需要主动启用的预览功能。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.5/aryaai-0.1.7-rc.2.AryaAI.0.6.5-win-x64-unsigned.exe
+    sha512: yergMvN7jeACDwYLl4SXJjVZUjJXmINxPHajt08JUZkewGOsfg5vv3U5Lfx9t5SQb/MD0xCYFdbKuOAMivCmBg==
+    size: 576787069
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.5/aryaai-0.1.7-rc.2.AryaAI.0.6.5-win-x64-unsigned.exe
+sha512: yergMvN7jeACDwYLl4SXJjVZUjJXmINxPHajt08JUZkewGOsfg5vv3U5Lfx9t5SQb/MD0xCYFdbKuOAMivCmBg==
+releaseDate: '2026-10-01T11:12:34.107Z'
+releaseNotes: '{"en":["Fixes the JavaScript startup error in the 0.6.4 Windows installer. Desktop now bundles its remote-stream protocol dependencies, and packaging verifies external Desktop imports before release."],"zh":["修复 0.6.4 Windows 安装程序的 JavaScript 启动错误。桌面入口现在内置远程流协议依赖，打包流程会在发布前验证桌面外部模块导入。"]}'
