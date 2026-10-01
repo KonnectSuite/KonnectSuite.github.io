@@ -1,9 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.6.6
+version: 0.1.7-rc.2.AryaAI.0.6.7
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.6/aryaai-0.1.7-rc.2.AryaAI.0.6.6-win-x64-unsigned.exe
-    sha512: JVZs9rdxbHlSQ3BTRT8gS2xDv6kPATsUij86zdr8o4LeLQhaJyUcdLSh9JoQFxrnMwpDwZR18ad2HgNNtJXc1Q==
-    size: 577500276
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.6/aryaai-0.1.7-rc.2.AryaAI.0.6.6-win-x64-unsigned.exe
-sha512: JVZs9rdxbHlSQ3BTRT8gS2xDv6kPATsUij86zdr8o4LeLQhaJyUcdLSh9JoQFxrnMwpDwZR18ad2HgNNtJXc1Q==
-releaseDate: '2026-10-01T13:54:20.922Z'
-releaseNotes: '{"en":["Images opens a conversation room where Arya uses enabled ComfyUI MCP tools to choose image and video workflows. Reference photos, follow-up edits, saved conversations, recent runs and the local media library remain available alongside Advanced controls.","New image conversation creates a saved room immediately. Images can continue its Auto conversation when the separately configured ComfyUI controller is offline.","Skills & MCP exposes Windows Computer Use kill switch and dry run settings with Save and restart. The server checks every mutating tool path; read-only inspection remains available.","Safety controls wrap within their MCP card on narrow windows, and neighboring server cards keep independent heights."],"zh":["图片页面提供对话房间，Arya 通过已启用的 ComfyUI MCP 工具选择图片和视频工作流。参考图片、后续编辑、已保存对话、最近运行和本地媒体库与高级设置均保留。","新图片对话会立即创建并保存房间。单独配置的 ComfyUI 控制器离线时，图片页面仍可继续 Auto 对话。","技能与 MCP 提供 Windows Computer Use 的紧急停止和试运行设置，可保存并重启服务。服务端检查所有会修改桌面的工具调用，只读检查仍可使用。","窄窗口内的安全控件会在 MCP 卡片中换行，相邻服务器卡片保持独立高度。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.7/aryaai-0.1.7-rc.2.AryaAI.0.6.7-win-x64-unsigned.exe
+    sha512: nhXxbO/FI/cD17DP+2KKJBMfgRxC7I4UFqrFT6xc+YmOPFuHFSRcrp2rRYpd1AXJRSrXatDNo2WM/mb85PuOTQ==
+    size: 577466422
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.7/aryaai-0.1.7-rc.2.AryaAI.0.6.7-win-x64-unsigned.exe
+sha512: nhXxbO/FI/cD17DP+2KKJBMfgRxC7I4UFqrFT6xc+YmOPFuHFSRcrp2rRYpd1AXJRSrXatDNo2WM/mb85PuOTQ==
+releaseDate: '2026-10-01T16:35:19.198Z'
+releaseNotes: '{"en":["Images uses a chat-style conversation with a persistent composer, inline generated media, recent runs below the chat and local media below recents. Advanced generation and media-management actions remain available.","Reference photos support multiple attachments, drag and drop, paste and individual removal. Follow-up messages use the Images agent instructions while preserving model, permission, dictation and stop controls.","ComfyUI connection settings support local or remote server addresses, connection testing and Save and reconnect. Image conversations and Advanced generation use the same configured endpoint; a shared output directory is optional.","Saved image conversations switch without releasing the displayed session early. Long transcripts scroll independently of the composer, including at laptop window sizes."],"zh":["图片页面采用聊天式对话，输入框始终可见，生成的媒体显示在对话中，最近运行位于聊天下方，本地媒体位于最近运行下方。高级生成和媒体管理功能均保留。","参考图片支持多附件、拖放、粘贴和逐项移除。后续消息使用图片代理指令，并保留模型、权限、语音输入和停止控件。","ComfyUI 连接设置支持本地或远程服务器地址、连接测试及保存后重新连接。图片对话和高级生成使用同一个配置地址，共享输出目录可选。","切换已保存的图片对话时，不再提前释放正在显示的会话。长对话可独立滚动，输入框在笔记本窗口尺寸下也保持可见。"]}'
