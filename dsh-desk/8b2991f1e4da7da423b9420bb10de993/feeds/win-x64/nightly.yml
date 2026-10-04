@@ -1,8 +1,9 @@
-version: 0.1.7-rc.2.AryaAI.0.6.8
+version: 0.2.0-rc.2.AryaAI.0.6.10
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.8/aryaai-0.1.7-rc.2.AryaAI.0.6.8-win-x64-unsigned.exe
-    sha512: fWQKnGviv7GKeMQiMb9Nck9X9gw75txCuWdivG7M+Oz0B61RxHmPKEP9vIZj+nBZ3uJifIDBV0Ttq+cy1M4k0Q==
-    size: 739314502
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.1.7-rc.2.AryaAI.0.6.8/aryaai-0.1.7-rc.2.AryaAI.0.6.8-win-x64-unsigned.exe
-sha512: fWQKnGviv7GKeMQiMb9Nck9X9gw75txCuWdivG7M+Oz0B61RxHmPKEP9vIZj+nBZ3uJifIDBV0Ttq+cy1M4k0Q==
-releaseDate: '2026-10-02T01:52:04.249Z'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.6.10/aryaai-0.2.0-rc.2.AryaAI.0.6.10-win-x64-unsigned.exe
+    sha512: i4AQHXIvFH0xiTJGAPdiqcYTvp+pU8/EH70QxYY4J4mYsqb+3doyQhh8R6RfCgvDgoB+H01hwSHakyd60ELZFw==
+    size: 744618781
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.6.10/aryaai-0.2.0-rc.2.AryaAI.0.6.10-win-x64-unsigned.exe
+sha512: i4AQHXIvFH0xiTJGAPdiqcYTvp+pU8/EH70QxYY4J4mYsqb+3doyQhh8R6RfCgvDgoB+H01hwSHakyd60ELZFw==
+releaseDate: '2026-10-04T19:04:28.344Z'
+releaseNotes: '{"en":["Adds a mobile shell, browser pairing and installable Web app icons while preserving Arya branding and built-in engineering plugins.","Adds token-efficiency settings and conversation context controls, and updates Images workflow routing and media management.","Refreshes built-in MotionWorks tools for guarded native function-block edits, complete compiler diagnostics and longer project inspections.","Repairs development build test classification and incomplete Images test fixtures. Installer publication is a separate release step."],"zh":["新增移动外壳、浏览器配对和可安装 Web 应用图标，并保留 Arya 品牌与内置工程插件。","新增 token 效率设置和对话上下文控制，并更新图片工作流路由与媒体管理。","更新内置 MotionWorks 工具，支持受保护的原生功能块编辑、完整编译器诊断和耗时较长的项目检查。","修复开发构建中的测试分类和不完整的图片测试配置。安装包发布仍是独立的发布步骤。"]}'
