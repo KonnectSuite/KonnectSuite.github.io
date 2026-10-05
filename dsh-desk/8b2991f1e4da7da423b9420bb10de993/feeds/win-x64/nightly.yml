@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.6.11
+version: 0.2.0-rc.2.AryaAI.0.7.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.6.11/aryaai-0.2.0-rc.2.AryaAI.0.6.11-win-x64-unsigned.exe
-    sha512: GOag+AiliyRHrUr815TM+SvQs4RbevrrmJEIGxsQlB3gT83oNejYrJk589t3ubYQ95YIJuMLgLVdLJkup8mCzA==
-    size: 744613974
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.6.11/aryaai-0.2.0-rc.2.AryaAI.0.6.11-win-x64-unsigned.exe
-sha512: GOag+AiliyRHrUr815TM+SvQs4RbevrrmJEIGxsQlB3gT83oNejYrJk589t3ubYQ95YIJuMLgLVdLJkup8mCzA==
-releaseDate: '2026-10-05T02:23:44.148Z'
-releaseNotes: '{"en":["Restores \"Download session log\" in the session header menu. A header layout change began clipping that menu, so it opened empty in both the Web and desktop shells; the /export command and its download route were unaffected."],"zh":["恢复会话标题菜单中的“下载 Session 日志”。标题布局改动开始裁剪该菜单，使其在 Web 与桌面外壳中打开为空；/export 命令及其下载路由不受影响。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.7.0/aryaai-0.2.0-rc.2.AryaAI.0.7.0-win-x64-unsigned.exe
+    sha512: 0KqFJ0E3Fd/Jm9bQlZzIqVMVGJKHkbZQrbt1VFbirFePpUoGMh7BGfTYPc0+kS+qUBFxYpKPG4znXuXUVTS+vA==
+    size: 778943618
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.7.0/aryaai-0.2.0-rc.2.AryaAI.0.7.0-win-x64-unsigned.exe
+sha512: 0KqFJ0E3Fd/Jm9bQlZzIqVMVGJKHkbZQrbt1VFbirFePpUoGMh7BGfTYPc0+kS+qUBFxYpKPG4znXuXUVTS+vA==
+releaseDate: '2026-10-05T10:11:58.851Z'
+releaseNotes: '{"en":["Ships pinned community plugins, including billion-context, and exposes optional Arya features as individually managed Plugin Market bundles.","Images now uses ordinary conversations and tools from the included community image plugin, with reference-image editing and saved conversations.","Adds a live ComfyUI status card, visible start/stop/restart controls, and animated lifecycle progress. Local image chat waits until the server is ready.","Preserves recent images, local media, multi-selection, bulk downloads, and deletion below chat. Repairs directory-picker typing for reliable rebuilds."],"zh":["提供固定版本的社区插件（包括 billion-context），并将可选 Arya 功能作为可单独管理的插件市场 bundle。","图片页面现使用随安装包提供的社区图像插件提供普通对话和工具，支持参考图编辑与已保存对话。","新增实时 ComfyUI 状态卡片、启动/停止/重启控制和生命周期进度动画。本地图像聊天需等待服务器就绪。","保留聊天下方的最近图片、本地媒体、多选、批量下载和删除，并修复目录选择器类型以确保重新构建。"]}'

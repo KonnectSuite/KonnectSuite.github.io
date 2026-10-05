@@ -172,22 +172,19 @@
         <figcaption>
           <span class="shot__tag">A dedicated surface, not a chat command</span>
           <strong>ComfyUI connected, driven by name.</strong>
-          The panel reports its own connection state and lets you pick the workflow before you
-          spend a generation on it.
+          The Images page shows server status and keeps generation, reference edits, and saved
+          media together.
         </figcaption>
       </figure>
 
       <div class="dl mt-3">
         <div class="dl__row">
           <dt>The Images page</dt>
-          <dd>Describe an image, choose a saved workflow, and set size, steps, prompt strength,
-          seed and how many to make. It discovers the checkpoint and Z-Image Turbo models you have
-          installed and checks a workflow against them before running it.</dd>
+          <dd>Create and edit images in ordinary conversation with the pinned dsh-image-gen community plugin. Configure a local or hosted image provider in plugin settings. Reference editing uses a compatible image-input workflow when ComfyUI is selected.</dd>
         </div>
         <div class="dl__row">
           <dt>Run history and outputs</dt>
-          <dd>Each generation keeps its prompt, workflow, dimensions, steps and seed, and can be
-          reused, downloaded or deleted. Queued and running work can be cancelled.</dd>
+          <dd>Recent runs and local saved media remain below chat. Select several items, use a range selection, download a ZIP, or delete selected entries. The server card shows checking, running, stopped, starting, stopping, restarting and failed states; local creation stays unavailable until ComfyUI is ready.</dd>
         </div>
         <div class="dl__row">
           <dt>The ComfyUI MCP server</dt>
@@ -209,12 +206,7 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
         <p>
           <span class="callout__title">What the Images page does not cover yet</span>
-          Saved-workflow support is the text-to-image node set, so ControlNet, LoRA, video, custom
-          nodes and three-dimensional graphs stay visible in ComfyUI but unavailable from the page.
-          Gallery entries over 50&nbsp;MB are refused, deleting an entry clears ComfyUI history but
-          leaves the generated file in ComfyUI&rsquo;s output folder, and one ComfyUI endpoint is
-          configured per install &mdash; changing servers means setting
-          <code>ARYAAI_COMFYUI_URL</code> and restarting.
+          Image quality and generation time depend on the configured provider, model and hardware. Local editing needs an API workflow with an image input; installing Arya does not install ComfyUI models. Start, stop, restart and connection settings are available on the Images page.
         </p>
       </div>
     </div>
@@ -247,9 +239,7 @@
 
         <article class="card reveal">
           <h3>Plugins and the Plugin Market</h3>
-          <p>Install more from <strong>Settings &rarr; Plugin Market</strong>, or from a package
-          name, a Git repository, or a folder on this PC. They live in your profile, under your
-          Harness home — not inside the application directory.</p>
+          <p>Each install includes pinned community plugins such as billion-context and image generation. Enable, disable, remove or restore optional Arya and community plugins through <strong>Settings &rarr; Plugin Market</strong>. Core runtime services stay protected. Additional plugins install from a package name, Git repository or local folder into your personal profile.</p>
         </article>
       </div>
 
