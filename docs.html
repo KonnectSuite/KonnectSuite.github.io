@@ -131,19 +131,21 @@
           Preview release &mdash; read before you install
         </p>
         <ul class="prerelease__list">
-          <li><strong>The two vendor engineering bundles are field tested, and they work.</strong>
-          The <strong>Studio 5000 L5X</strong> and <strong>MotionWorks IEC</strong> paths have been
-          exercised on real engineering work and both are in use; everything else in the installer is
+          <li><strong>The two vendor engineering bundles are proven in field use.</strong>
+          The <strong>Studio 5000 L5X</strong> and <strong>MotionWorks IEC</strong> paths have done real
+          engineering work on real machines &mdash; the MotionWorks path commissioned a production line
+          end to end &mdash; and everything else in the installer is
           untested against real production work. Read every tool&rsquo;s boundary before you rely on
           it for anything.</li>
-          <li><strong>Field tested is not the same as proven.</strong> The bar for <em>proven</em> is
-          engineers other than the authors, on real projects, with evidence a reader can check.
-          Nothing in this line has cleared that bar yet, which is why the preview label is still
-          there.</li>
-          <li><strong>What the field testing covers.</strong> The <strong>MotionWorks IEC</strong>
-          path has been exercised offline against staged projects: staging, editing through the
+          <li><strong>What that proof is, and what is still missing.</strong> Proven here means an
+          engineer brought the tool a real problem on a real machine and it answered safely. What the
+          two bundles do not have yet is a trial by an engineer outside the project, written down where
+          a reader can repeat it &mdash; that is the first milestone, and it is what the preview label
+          is waiting on.</li>
+          <li><strong>What the field use covers.</strong> The <strong>MotionWorks IEC</strong>
+          path runs offline against staged projects: staging, editing through the
           IDE&rsquo;s own APIs, Build and Make, and verification that a change survived a close and
-          reopen. The <strong>Studio 5000</strong> path has been exercised offline <em>and</em>
+          reopen. The <strong>Studio 5000</strong> path runs offline <em>and</em>
           online, by two routes &mdash; the export-only route that needs no Logix Designer SDK at all,
           and the SDK route that opens an <code>.acd</code>, builds it offline, and reaches a
           controller for mode reads, uploads and mode changes.</li>
@@ -161,9 +163,8 @@
           <li><strong>Everything else is an offline file</strong> &mdash; Studio 5000 work against an
           exported <code>.l5x</code> or an offline copy of an <code>.acd</code>, and each other tool
           bounded the same way.</li>
-          <li><strong>The first milestone is Version 1.0</strong> &mdash; when the tools and automation
-          skills are proven well enough to drop the preview label. Field testing by the people who
-          built them is a step towards that, not the thing itself.</li>
+          <li><strong>The first milestone is Version 1.0</strong> &mdash; when the whole line, not just
+          the two proven bundles, carries the evidence to drop the preview label.</li>
         </ul>
       </div>
     </div>
