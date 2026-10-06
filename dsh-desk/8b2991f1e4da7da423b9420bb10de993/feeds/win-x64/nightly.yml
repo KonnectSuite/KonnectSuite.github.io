@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.7.0
+version: 0.2.0-rc.2.AryaAI.0.8.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.7.0/aryaai-0.2.0-rc.2.AryaAI.0.7.0-win-x64-unsigned.exe
-    sha512: 0KqFJ0E3Fd/Jm9bQlZzIqVMVGJKHkbZQrbt1VFbirFePpUoGMh7BGfTYPc0+kS+qUBFxYpKPG4znXuXUVTS+vA==
-    size: 778943618
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.7.0/aryaai-0.2.0-rc.2.AryaAI.0.7.0-win-x64-unsigned.exe
-sha512: 0KqFJ0E3Fd/Jm9bQlZzIqVMVGJKHkbZQrbt1VFbirFePpUoGMh7BGfTYPc0+kS+qUBFxYpKPG4znXuXUVTS+vA==
-releaseDate: '2026-10-05T10:11:58.851Z'
-releaseNotes: '{"en":["Ships pinned community plugins, including billion-context, and exposes optional Arya features as individually managed Plugin Market bundles.","Images now uses ordinary conversations and tools from the included community image plugin, with reference-image editing and saved conversations.","Adds a live ComfyUI status card, visible start/stop/restart controls, and animated lifecycle progress. Local image chat waits until the server is ready.","Preserves recent images, local media, multi-selection, bulk downloads, and deletion below chat. Repairs directory-picker typing for reliable rebuilds."],"zh":["提供固定版本的社区插件（包括 billion-context），并将可选 Arya 功能作为可单独管理的插件市场 bundle。","图片页面现使用随安装包提供的社区图像插件提供普通对话和工具，支持参考图编辑与已保存对话。","新增实时 ComfyUI 状态卡片、启动/停止/重启控制和生命周期进度动画。本地图像聊天需等待服务器就绪。","保留聊天下方的最近图片、本地媒体、多选、批量下载和删除，并修复目录选择器类型以确保重新构建。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.0/aryaai-0.2.0-rc.2.AryaAI.0.8.0-win-x64-unsigned.exe
+    sha512: rFAa7jNWEljcaXdmN56Y+eN7KjPeKANN1d7XShtI7lbwfej58xWSHIYmFBico2M3Ormg9GWfIIjOEi3RK8QfOQ==
+    size: 778962789
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.0/aryaai-0.2.0-rc.2.AryaAI.0.8.0-win-x64-unsigned.exe
+sha512: rFAa7jNWEljcaXdmN56Y+eN7KjPeKANN1d7XShtI7lbwfej58xWSHIYmFBico2M3Ormg9GWfIIjOEi3RK8QfOQ==
+releaseDate: '2026-10-06T02:14:28.367Z'
+releaseNotes: '{"en":["Adds Projects above Workspaces: group several source folders, create chats beneath each project, and edit project folders through a shared popup.","Includes the Projects plugin in every installation, with search, view options, and folder browsing. Project chats appear once; disabling Projects restores their workspace listing.","Repairs plugin reloads so workspace and Images chats remain available. Upgrading preserves personal plugins, sessions, and previously removed optional features.","Multi-folder Workspace Write is supported on Windows; other platforms retain writes in the primary chat folder."],"zh":["在工作区上方新增项目：组织多个源文件夹，在项目下创建聊天，并通过统一弹窗编辑项目文件夹。","每次安装均包含项目插件，提供搜索、视图选项和文件夹浏览。项目聊天只显示一次；禁用项目后恢复工作区列表。","修复插件重载，保持工作区与图片聊天可用。升级保留个人插件、会话及此前移除的可选功能。","Windows 支持多文件夹工作区写入；其他平台仍仅允许在聊天主文件夹内写入。"]}'
