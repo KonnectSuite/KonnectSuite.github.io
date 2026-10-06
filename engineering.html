@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The engineering desk — AryaAI</title>
-<meta name="description" content="The engineering servers inside AryaAI: Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, and Windows Computer Use — six of them shipped in the installer, each bounded on purpose.">
+<meta name="description" content="The engineering servers inside AryaAI: MotionWorks IEC, Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, Windows Computer Use and ComfyUI MCP — seven of them shipped in the installer, each bounded on purpose.">
 <meta name="theme-color" content="#0F141B">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
@@ -12,7 +12,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="The engineering desk — AryaAI">
-<meta property="og:description" content="The engineering servers inside AryaAI: Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, and Windows Computer Use — six of them shipped in the installer, each bounded on purpose.">
+<meta property="og:description" content="The engineering servers inside AryaAI: MotionWorks IEC, Studio 5000 Projects, Ignition SCADA, SCADA to PLC Bridge, IronPLC Compiler, NetLogic Cheat Sheet, FactoryTalk Optix Tools, Windows Computer Use and ComfyUI MCP — seven of them shipped in the installer, each bounded on purpose.">
 <meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
 <meta property="og:image:alt" content="AryaAI horizontal logo lockup">
 <meta name="twitter:card" content="summary_large_image">
@@ -36,6 +36,7 @@
     <nav class="nav" id="site-nav" aria-label="Main">
       <a class="nav__link" href="features.html">Features</a>
       <a class="nav__link" href="engineering.html" aria-current="page">Engineering desk</a>
+      <a class="nav__link" href="logix.html">Logix</a>
       <a class="nav__link" href="docs.html">Docs</a>
       <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
@@ -54,10 +55,14 @@
       <p class="breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span>Engineering desk</span></p>
       <p class="eyebrow">Inside the installer</p>
       <h1>It knows the difference between reading a project and touching a controller</h1>
-        <p class="lead">Six of these servers ship inside AryaAI and run on the Python or Node the
-        application carries, so the PC does not need its own toolchain for them. The seventh,
+        <p class="lead">Seven of these servers ship inside AryaAI and run on the Python or Node the
+        application carries, so the PC does not need its own toolchain for them. The eighth,
         FactoryTalk Optix Tools, talks to Optix Studio&rsquo;s own service on this PC. Enable a row
         from the MCP list or the slash menu; the list stays open while you switch a server.</p>
+        <p class="lead mt-2">
+          The point of the desk is that the answer does not need a support contract. Each row below is
+          a capability that would otherwise be a phone call, a ticket queue, or a colleague who
+          happens to be free &mdash; and AryaAI is meant to be the line you reach instead.</p>
     </div>
   </div>
 
@@ -70,11 +75,11 @@
              width="1600" height="1042">
         <figcaption>
           <span class="shot__tag">Captured from the application</span>
-          <strong>Every automation server is a row with a switch.</strong>
-          The state shown is the state after a fresh install: the engineering servers are present
-          but off, and Windows Computer Use — the last row, reporting Connected — starts with the
-          application. Nothing else spawns until you turn it on, and nothing fails if the vendor
-          tool is not installed on this PC.
+          <strong>Every server is a row with a switch.</strong>
+          After a fresh install the servers are present but off, with two exceptions: Windows
+          Computer Use and ComfyUI MCP start with the application, and Windows Computer Use reports
+          Connected. Nothing else spawns until you turn it on, and nothing fails if the vendor tool
+          is not installed on this PC. This capture predates the MotionWorks IEC row.
         </figcaption>
       </figure>
 
@@ -86,9 +91,12 @@
           <span class="shot__tag">The MotionWorks path, and why it is a skill</span>
           <strong>It drives the running IDE rather than rewriting the project file.</strong>
           A file-format writer was tried and withdrawn because it could empty a real program body
-          and report success. This skill stages and opens a project, rewrites POU Structured Text,
-          and compiles — so the compiler is the evidence, and it still never downloads to a
-          controller.
+          and report success, and the offline writers that replaced it were retired for the same
+          reason. What ships works on a staged copy and drives the IDE&rsquo;s own editors: it reads
+          the project model, types, libraries and variables, changes POU Structured Text and
+          declarations, assigns tasks and POUs, runs Build and Make, and reads the compiler&rsquo;s
+          own error text — so the compiler is the evidence. It never downloads to a controller and
+          never commands motion.
         </figcaption>
       </figure>
     </div>
@@ -118,9 +126,14 @@
           </thead>
           <tbody>
             <tr>
+              <th scope="row">MotionWorks IEC</th>
+              <td data-label="Reaches">A staged copy of a MotionWorks IEC 3 Pro project, driven through the running IDE: POU Structured Text, variables, tasks, types, libraries, Build and Make, and the compiler&rsquo;s own error text.</td>
+              <td data-label="Stops at"><span class="tag tag--no">No controller</span> Never downloads to a controller and never commands motion. Ladder and function-block editing, libraries and POU lifecycle work are guided workflows awaiting broader live acceptance.</td>
+            </tr>
+            <tr>
               <th scope="row">Studio 5000 Projects</th>
-              <td data-label="Reaches">An exported <code>.l5x</code>: controller summary, tags, UDTs, add-on instructions, modules, programs, routines. Ladder returns as text with rung comments.</td>
-              <td data-label="Stops at"><span class="tag tag--no">No controller</span> Does not open Studio 5000, go online, or download.</td>
+              <td data-label="Reaches">An exported <code>.l5x</code> or an offline copy of an <code>.acd</code>: controller summary, tags, UDTs, add-on instructions, modules, programs, routines, cross-references and static checks. A live controller: its mode, tag values and diagnostics. Through the Logix Designer SDK, an offline build that proves the edit.</td>
+              <td data-label="Stops at"><span class="tag tag--warn">Approval per action</span> Upload, mode change and download each raise their own confirmation against a named controller. Online edits, forces, bit toggles and data writes are refused permanently. An SDK build needs revision 37 or later.</td>
             </tr>
             <tr>
               <th scope="row">Ignition SCADA</th>
@@ -149,8 +162,13 @@
             </tr>
             <tr>
               <th scope="row">Windows Computer Use</th>
-              <td data-label="Reaches">Finds windows, reads UI Automation elements, and sees the screen with OCR in English and Chinese — the path to an application that has no project plugin yet, including Studio 5000 and FactoryTalk View, and to the MotionWorks IEC actions that have no file equivalent.</td>
-              <td data-label="Stops at"><span class="tag tag--warn">Dry run by default</span> Mouse, keyboard, element clicks and shortcuts start in a dry run. Face recognition and the keylogger are not enabled.</td>
+              <td data-label="Reaches">Finds windows, reads UI Automation elements, and sees the screen with OCR in English and Chinese — the path to an application that has no project plugin yet, and to the MotionWorks IEC actions that have no file equivalent.</td>
+              <td data-label="Stops at"><span class="tag tag--warn">Kill switch on</span> Mutating automation — mouse, keyboard, element clicks, shortcuts — is refused while the kill switch is on, which is how it ships. Read-only inspection still runs. Face recognition and the keylogger are not enabled.</td>
+            </tr>
+            <tr>
+              <th scope="row">ComfyUI MCP</th>
+              <td data-label="Reaches">A local or remote ComfyUI installation: checkpoints, saved workflows, generations, jobs and outputs, driven from the Images page or from chat.</td>
+              <td data-label="Stops at"><span class="tag tag--warn">Your endpoint</span> Talks only to the server you configure. ControlNet, LoRA, custom nodes and three-dimensional graphs stay in ComfyUI.</td>
             </tr>
           </tbody>
         </table>
@@ -174,12 +192,27 @@
           </div>
           <h3>Studio 5000 Projects</h3>
           <p>
-            You point it at an export. It gives you the controller summary, tags, UDTs, add-on
-            instructions, modules, programs and routines. Ladder comes back as text with the rung
-            comments attached, which is what makes a routine reviewable in a chat at all.
+            You point it at an export, or at an offline copy of an <code>.acd</code>. It gives you
+            the controller summary, tags, UDTs, add-on instructions, modules, programs and routines,
+            with cross-references and static checks. Ladder comes back as text with the rung comments
+            attached &mdash; and the built-in Logix viewer draws the same ladder beside the chat.
+          </p>
+          <p>
+            It can also read a live controller: its mode, tag values and diagnostics. Through the
+            Logix Designer SDK it imports an edited export into a new offline <code>.acd</code> and
+            builds it, reporting the failing stage and the SDK diagnostics when a build does not
+            pass.
           </p>
           <p class="small muted mb-0">
-            It does not connect to a controller. The Logix path is an export you choose.
+            Uploading the controller, changing its mode, and downloading are separate tools, and each
+            one raises its own approval prompt against a named controller. No request from you
+            authorizes an online edit, a force, a bit toggle or a data write.
+          </p>
+          <p class="mb-0">
+            <a class="link-arrow" href="logix.html">
+              The Studio 5000 and Logix page
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
           </p>
         </article>
 
@@ -274,7 +307,7 @@
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-              Mouse, keyboard, element clicks and shortcuts start in a dry run
+              Mutating automation is refused while the kill switch is on
             </li>
           </ul>
         </div>
@@ -283,15 +316,17 @@
           <div class="callout callout--ok">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
             <p>
-              <span class="callout__title">It can look and cannot click until you allow it</span>
-              The dry run is the default, not a setting buried three menus deep.
+              <span class="callout__title">It can look while it cannot act</span>
+              Screenshots, OCR and the UI Automation tree keep working with the kill switch on.
+              Skills &amp; MCP puts the kill switch and the dry run beside each other, with Save and
+              restart.
             </p>
           </div>
 
           <div class="callout callout--warn">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
             <p>
-              <span class="callout__title">Turning the dry run off means real clicks on this desktop</span>
+              <span class="callout__title">Turning the kill switch off means real clicks on this desktop</span>
               It is a choice recorded for that session, and a click that already reached the
               application is not pretended to have been undone.
             </p>
@@ -345,9 +380,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
         <p>
           <span class="callout__title">Where stepping back from the desk is recorded</span>
-          Reading a project and changing a running controller are different acts. Going online and
-          downloading are planned as their own plugins, with their own confirmation against a named
-          controller — never implied by &ldquo;edit the project.&rdquo;
+          Reading a project and changing a running controller are different acts. Uploading the
+          controller, changing its mode and downloading are their own tools, each asking you first and
+          naming the controller it will touch &mdash; never implied by &ldquo;edit the
+          project.&rdquo;
         </p>
       </div>
     </div>
@@ -357,10 +393,10 @@
     <div class="container">
       <div class="cta">
         <h2>Install it, then switch on one row</h2>
-        <p class="lead">Six of the seven engineering servers ship in the installer, with nothing
+        <p class="lead">Seven of the eight engineering servers ship in the installer, with nothing
         extra to download. FactoryTalk Optix Tools is the exception &mdash; it uses Optix
-        Studio&rsquo;s own service on this PC. Windows Computer Use starts with the app; the others
-        wait until you switch them on.</p>
+        Studio&rsquo;s own service on this PC. Windows Computer Use and ComfyUI MCP start with the
+        app; the others wait until you switch them on.</p>
         <div class="btn-row">
           <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download for Windows</a>
           <a class="btn btn--ghost btn--lg" href="docs.html">Install and docs</a>
@@ -390,6 +426,7 @@
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="logix.html">Studio 5000 and Logix</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
           <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>

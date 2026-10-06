@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio 5000 and Logix &mdash; AryaAI</title>
+<meta name="description" content="AryaAI reads a Logix export or an offline ACD, draws the ladder in a built-in viewer, edits offline and proves the build through the Logix Designer SDK — and reads a live controller. Uploading, mode changes and downloads each ask you first.">
+<meta name="theme-color" content="#0F141B">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
+<link rel="stylesheet" href="assets/css/site.css">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Studio 5000 and Logix &mdash; AryaAI">
+<meta property="og:description" content="Read a Logix project, draw the ladder, edit offline and prove the build through the SDK. Read a live controller. Uploading, mode changes and downloads each ask you first.">
+<meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
+<meta property="og:image:alt" content="AryaAI horizontal logo lockup">
+<meta name="twitter:card" content="summary_large_image">
+
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header>
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/img/mark.svg" alt="" width="32" height="32">
+      <span class="brand__name">AryaAI</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-nav-toggle>
+      <svg class="nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a class="nav__link" href="features.html">Features</a>
+      <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="logix.html" aria-current="page">Logix</a>
+      <a class="nav__link" href="docs.html">Docs</a>
+      <a class="nav__link" href="pricing.html">Pricing</a>
+      <a class="nav__link" href="contact.html">Contact</a>
+      <a class="btn btn--primary btn--sm nav__cta" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+        Download
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-head">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <a href="engineering.html">Engineering desk</a> <span aria-hidden="true">/</span> <span>Studio 5000 and Logix</span></p>
+      <p class="eyebrow">For the Studio 5000 engineer</p>
+      <h1>Edits the project offline. Asks before it touches the controller.</h1>
+      <p class="lead">AryaAI reads a Logix export or an offline <code>.acd</code>, draws the ladder in a
+      viewer built into the application, changes the project and proves the build through the Logix
+      Designer SDK. It can also read a running controller &mdash; and the three actions that change one
+      are separate tools, each asking you first.</p>
+      <p class="lead mt-2">This is the page for the engineer who would otherwise be waiting on a
+      vendor support licence and a ticket queue to find out what a rung does. The tools are field
+      tested and working; the limits below are real, and they are written down rather than left to
+      discover on a running line.</p>
+    </div>
+  </div>
+
+  <!-- Controller boundary -------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="prerelease">
+        <p class="prerelease__head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+          The controller boundary &mdash; read this before you point it at a machine
+        </p>
+        <ul class="prerelease__list">
+          <li><strong>Reading a controller is read only.</strong> Its mode, live tag values and
+          diagnostics come back as observations, and the tool says so in every answer. No live write
+          of any kind.</li>
+          <li><strong>Uploading the controller, changing its mode, and downloading are three separate
+          tools, and each one raises its own approval prompt.</strong> The prompt names the
+          controller, the resolved FactoryTalk Linx route, the exact file and its hash, and the exact
+          change. No tool schema carries an approval flag, so the model cannot approve itself; one
+          approval covers one operation; and the plugin refuses the action outright when the approval
+          service is unavailable.</li>
+          <li><strong>Editing online, forcing, toggling a bit and writing runtime data are refused
+          permanently.</strong> No request from you authorizes them through this plugin.</li>
+          <li><strong>A download has never been exercised on a real controller.</strong> Upload and
+          mode change have, on bench hardware. The download path is written and gated; it is not yet
+          proven, and it says so.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Field tested --------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="callout callout--ok">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        <p>
+          <span class="callout__title">This integration is field tested and it works</span>
+          The Studio 5000 path has been exercised offline <em>and</em> online, by two routes: the
+          <strong>export-only route</strong> that needs no Logix Designer SDK at all, and the
+          <strong>SDK route</strong> that opens an <code>.acd</code>, builds it offline, and reaches
+          a controller for mode reads, uploads and mode changes. Upload and mode change have run
+          against bench hardware. A download has not &mdash; that gap is stated above rather than
+          left for you to discover.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two halves ----------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The whole picture, up front</p>
+        <h2>Two halves, and they do not blur</h2>
+        <p class="lead">Offline work is where everything happens. The controller is a separate reach
+        with its own confirmations, and it is never implied by &ldquo;edit the project.&rdquo;</p>
+      </div>
+
+      <div class="grid grid--2">
+        <article class="card card--accent reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h9l5 5v11H6z"/><path d="M15 4v5h5"/></svg>
+          </div>
+          <h3>Offline &mdash; a file you review, and a build that proves it</h3>
+          <p>Point it at an exported <code>.l5x</code> or an offline copy of an <code>.acd</code>.
+          You get the controller summary, tags, UDTs, add-on instructions, modules, programs and
+          routines, with cross-references and static checks. An edit is written as a <strong>new
+          file beside the source</strong>, never over it, and the SDK then imports that file into a
+          fresh offline <code>.acd</code> and builds it.</p>
+          <p class="mb-0">A build returns its own verdict: the failing stage, parsed import warnings
+          and errors, a log tail, the change summary, and any blockers. A successful build alone is
+          not treated as proof that your change survived — the tool compares the re-exported result
+          against what was requested and reports the difference.</p>
+          <div class="card__meta"><span class="tag tag--ok">Verified by the SDK</span><span class="tag">Source never overwritten</span></div>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+          </div>
+          <h3>Live &mdash; read it, and approve the three that change it</h3>
+          <p>With a route saved in your project, AryaAI reads the controller mode, a single tag, or a
+          bounded sweep of up to sixteen tags. The sweep reports <strong>achieved</strong> timing
+          rather than the interval you asked for, because each read is a sequential call and a
+          requested rate is not a guaranteed one.</p>
+          <p class="mb-0">Uploading the controller into a new local file, changing its mode, and
+          downloading are the only three actions that change a controller. A download is reachable
+          only from a build verified in the same session, with the controller already in
+          <strong>Program</strong> mode, and it does not change the mode back.</p>
+          <div class="card__meta"><span class="tag tag--warn">Approval per action</span><span class="tag tag--no">No online writes</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- The viewer ----------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Built into the application</p>
+        <h2>The ladder, drawn beside the conversation</h2>
+        <p class="lead">An <code>.l5x</code> opens as a project, not a wall of XML. The editor panel
+        draws the rungs from the export&rsquo;s own logic, and every value on screen is labelled as
+        coming from the saved file rather than from a controller.</p>
+      </div>
+
+      <!-- SHOT: assets/img/logix-viewer-full.png — pending. Capture by opening a demo .l5x in
+           the right sidebar at 1600x1000 and exporting the panel. Not available yet, so the page
+           carries no image here rather than a rendering. -->
+
+      <div class="grid grid--3">
+        <article class="card">
+          <h3>The Controller Organizer</h3>
+          <p>The tree you already know: controller and its tag count, tasks with their rate and type,
+          scheduled programs and their routines, unscheduled programs, I/O configuration with catalog
+          numbers and slots, add-on instructions, and data types. Search filters the whole tree.</p>
+          <p class="small muted mb-0">Sections an export does not carry &mdash; the fault handler, motion
+          groups, the alarm manager &mdash; are shown greyed and marked as not included, rather than
+          quietly missing.</p>
+        </article>
+        <article class="card">
+          <h3>Drawn rungs, not text</h3>
+          <p>Ladder comes back as real contact and coil geometry: <code>XIC</code> and <code>XIO</code>
+          with the negation slash, <code>OTL</code>/<code>OTU</code>/<code>OTE</code>, function-block
+          cards with labelled operands, right-aligned outputs, and rung comments centred above the
+          rail. Structured Text renders as source.</p>
+          <p class="small muted mb-0">A rung the parser cannot read falls back to its source text
+          instead of guessing. Long routines load the first eighty rungs and offer more.</p>
+        </article>
+        <article class="card">
+          <h3>Evidence on hover, and on right-click</h3>
+          <p>Hovering an operand shows its scope, type, exported value and description. Right-clicking
+          an instruction offers <em>Explain this instruction</em>, <em>Open called routine</em>,
+          <em>Cross References</em>, <em>Add to offline watch</em>, and <em>Ask Arya to change offline
+          file</em>.</p>
+          <p class="small muted mb-0">The Ask Arya actions only draft a prompt into the composer. You
+          decide whether to send it.</p>
+        </article>
+      </div>
+
+      <div class="callout callout--info mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p>
+          <span class="callout__title">The viewer is offline, and it says so</span>
+          A blue <strong>OFFLINE</strong> chip sits in the header, and the source bar reads out the
+          file version and the Studio export revision. The watch and the inspector both state that
+          the values shown are the saved export values and <strong>not the current controller
+          state</strong>. A live feed is the agent&rsquo;s tool calls, not this panel.
+        </p>
+      </div>
+
+      <div class="callout callout--warn mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
+        <p>
+          <span class="callout__title">An <code>.acd</code> is not opened here</span>
+          A binary Studio 5000 project shows export guidance and an <em>Ask Arya to prepare an
+          L5X</em> button instead of a tree. The button drafts a request that says, in the prompt
+          itself, not to overwrite the ACD, connect online, download, or modify controller state.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approval ------------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Where stepping back is recorded</p>
+        <h2>What the approval prompt actually names</h2>
+        <p class="lead">An approval that says &ldquo;allow this?&rdquo; is not worth much. The prompt
+        names the machine and the bytes, and it covers one operation.</p>
+      </div>
+
+      <div class="split">
+        <div class="stack">
+          <div class="callout callout--warn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
+            <p>
+              <span class="callout__title">Waiting for approval</span>
+              The conversation is taken over by the request: the controller IP you supplied, the route
+              resolved from your own project&rsquo;s saved FactoryTalk Linx path, the ACD path and its
+              SHA-256, and the exact target mode or change list. <strong>Reject</strong> is
+              <kbd>Esc</kbd>; <strong>Allow once</strong> is <kbd>Enter</kbd>.
+            </p>
+          </div>
+        </div>
+        <div class="stack">
+          <ul class="checklist checklist--ok">
+            <li>The tool accepts one outcome only: <em>allowed once</em>. A rejection, a blanket
+            &ldquo;approved&rdquo;, or anything unrecognised is denied.</li>
+            <li>There is no <code>approved</code> field in any tool schema, so the model cannot
+            authorize its own action.</li>
+            <li>If the approval service is missing or unreachable, the tool refuses. It fails closed.</li>
+            <li>The route is read from the project you name, and its final IP hop must match the IP
+            you gave. A mismatch stops the call with an explicit error rather than guessing a
+            driver path.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout callout--info mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <p>
+          <span class="callout__title">One session setting can make these unavailable</span>
+          Arya&rsquo;s <strong>Full access</strong> preset sets the approval policy to
+          <em>never</em>, and under it these three tools cannot request their approval at all. The
+          plugin tells you so and names the fix &mdash; switch the session to a preset that asks
+          &mdash; rather than searching your installation to work around it. Being <em>able</em> to
+          request is not approval; the human still answers each call.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Limits --------------------------------------------------------------- -->
+  <section class="section section--tight" id="limits">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Stated plainly</p>
+        <h2>What the Logix tools do not do</h2>
+        <p class="lead">An agent that overstates what it can reach is dangerous in a plant. These are
+        the boundaries the plugin itself publishes.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data">
+          <caption>Published boundaries</caption>
+          <thead>
+            <tr>
+              <th scope="col">Area</th>
+              <th scope="col">The limit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Controller writes</th>
+              <td data-label="The limit">No online edit, force, bit toggle, tag write or runtime data change, by any route. A human request cannot authorize one.</td>
+            </tr>
+            <tr>
+              <th scope="row">Download</th>
+              <td data-label="The limit">Written and gated, but never exercised on real hardware. Upload and mode change have been.</td>
+            </tr>
+            <tr>
+              <th scope="row">Protected logic</th>
+              <td data-label="The limit">Encoded add-on-instruction payloads can be re-encoded by the SDK on export, so their equivalence is unverified. That state blocks download eligibility by design rather than passing quietly.</td>
+            </tr>
+            <tr>
+              <th scope="row">Revisions</th>
+              <td data-label="The limit">Observed on 19.01, 33, 34, 36.00 and 37.00&ndash;37.02. Opening needs 31 or later; an SDK build needs 37 or later. Anything else is a target, not a verified release.</td>
+            </tr>
+            <tr>
+              <th scope="row">Languages</th>
+              <td data-label="The limit">Ladder and Structured Text are read closely. Function-block diagrams and sequential function charts are structurally read but only partly analysed; alarm data is metadata only.</td>
+            </tr>
+            <tr>
+              <th scope="row">ACD editing</th>
+              <td data-label="The limit">One existing ladder or Structured Text routine at a time, unchanged in type. New routines, tag changes, type changes, multi-routine edits and safety or protected targets are refused.</td>
+            </tr>
+            <tr>
+              <th scope="row">The checks</th>
+              <td data-label="The limit">Static findings are heuristics, not certification. No findings does not prove a program is safe, and a clean build is not a commissioning result.</td>
+            </tr>
+            <tr>
+              <th scope="row">The plugin itself</th>
+              <td data-label="The limit">These guards live in the plugin. An agent given unrestricted shell access, a generic Rockwell SDK client, or Studio 5000 automation could go around them. A deployment that needs the boundary must withhold those.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--ok mt-3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        <p>
+          <span class="callout__title">A milestone is finished when the limit is written down</span>
+          Not when the feature demos. That is why the download gap above is on this page rather than
+          in a changelog.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trademarks ----------------------------------------------------------- -->
+  <section class="section section--tight">
+    <div class="container">
+      <p class="small muted text-center">
+        Studio 5000, Allen-Bradley, Logix and FactoryTalk are trademarks of Rockwell Automation, used
+        here only to describe what this software reads and writes. AryaAI is not affiliated with,
+        sponsored by, or endorsed by Rockwell Automation, and it contains no Rockwell artwork or
+        logos.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta">
+        <h2>Install it, then point it at an export</h2>
+        <p class="lead">Nothing here needs a controller. Open a workspace, drop in an
+        <code>.l5x</code>, and start with the ladder it draws.</p>
+        <div class="btn-row">
+          <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download for Windows</a>
+          <a class="btn btn--ghost btn--lg" href="engineering.html">The engineering desk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <h2 class="visually-hidden">Site footer</h2>
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/img/mark.svg" alt="" width="26" height="26">
+          <span>AryaAI</span>
+        </div>
+        <p class="footer__tagline">
+          Your AI engineering pal. A coding and automation engineering companion for the people who
+          program machines.
+        </p>
+      </div>
+      <div class="footer__col">
+        <h3>Product</h3>
+        <ul>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="logix.html">Studio 5000 and Logix</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="docs.html">Documentation</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Project</h3>
+        <ul>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io">Repository</a></li>
+          <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/issues">Issues</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Trust</h3>
+        <ul>
+          <li><a href="docs.html#limits">Known limits</a></li>
+          <li><a href="docs.html#security">Safety model</a></li>
+          <li><a href="docs.html#updates">Updates and plugins</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <p>
+        &copy; <span data-year>2026</span> AryaAI. Released under the MIT license. AryaAI is built on
+        DeepSeek Harness; DeepSeek Harness is a trademark of DeepSeek, and this project is not
+        endorsed by or affiliated with DeepSeek.
+      </p>
+      <p>Built for the desk that programs machines.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

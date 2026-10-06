@@ -36,6 +36,7 @@
     <nav class="nav" id="site-nav" aria-label="Main">
       <a class="nav__link" href="features.html">Features</a>
       <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="logix.html">Logix</a>
       <a class="nav__link" href="docs.html">Docs</a>
       <a class="nav__link" href="pricing.html" aria-current="page">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
@@ -71,13 +72,16 @@
           Preview release &mdash; read before you install
         </p>
         <ul class="prerelease__list">
-          <li><strong>AryaAI is in beta, and none of its automation tools have been field tested or
-          proven.</strong> Free means free to evaluate, not ready for production work.</li>
+          <li><strong>The two vendor engineering bundles are field tested, and they work.</strong>
+          The Studio 5000 L5X and MotionWorks IEC paths have been exercised on real engineering work;
+          everything else is untested against production work. Free means free to evaluate, and free
+          of a vendor support licence &mdash; not ready for production work.</li>
           <li><strong>Installing an unsigned build to write PLC programs or HMI screens is done at
           your own risk.</strong> The installer is not code signed.</li>
-          <li><strong>While online with a controller, AryaAI is read only.</strong> It will never be
-          given the ability to download, force, toggle, write, or change data on a live PLC. Every
-          edit happens in offline files.</li>
+          <li><strong>While online with a controller, AryaAI is read only.</strong> Editing online,
+          forcing or toggling a bit, and writing tag or runtime data are refused permanently.
+          Uploading the controller, changing its mode, and downloading each raise their own approval
+          prompt naming the controller and the exact file. Everything else is an offline file.</li>
           <li><strong>The first milestone is Version 1.0.</strong> A paid tier is not one of them
           &mdash; see below.</li>
         </ul>
@@ -284,6 +288,7 @@
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="logix.html">Studio 5000 and Logix</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
           <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>

@@ -41,6 +41,7 @@
     <nav class="nav" id="site-nav" aria-label="Main">
       <a class="nav__link" href="features.html">Features</a>
       <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="logix.html">Logix</a>
       <a class="nav__link" href="docs.html">Docs</a>
       <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
@@ -92,7 +93,7 @@
           </div>
 
           <p class="hero__note">
-            Current line &mdash; see the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a> ·
+            Current version <strong>0.7.0</strong> &mdash; see the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a> ·
             installer is unsigned — Windows may ask you to confirm it.
           </p>
         </div>
@@ -132,7 +133,7 @@
               </div>
               <div class="transcript__line">
                 <span class="transcript__prompt">→</span>
-                <span>No download performed. This tool reads an export only.</span>
+                <span>Offline read only &mdash; no controller connection.</span>
               </div>
             </div>
           </div>
@@ -150,21 +151,43 @@
           Preview release &mdash; read before you install
         </p>
         <ul class="prerelease__list">
-          <li><strong>AryaAI is in beta, and none of its automation tools have been field tested or
-          proven.</strong> The engineering servers read real project files, but they have not been
-          through the years of service that would justify trusting them on production work.</li>
+          <li><strong>The two vendor engineering bundles are field tested, and they work.</strong>
+          <strong>Studio 5000 L5X</strong> and <strong>MotionWorks IEC</strong> have been exercised on
+          real engineering work &mdash; exported projects, staged motion projects and bench
+          controllers &mdash; and both are in use. The rest of the installer&rsquo;s automation
+          surface has not been through that, so treat it as beta: it is untested against real
+          production work, and none of it has the years of service that would justify trusting it on a
+          plant.</li>
+          <li><strong>Field tested is not the same as proven.</strong> The bar for <em>proven</em> is
+          engineers other than the authors, on real projects, with evidence a reader can check.
+          Nothing in this line has cleared that bar yet, which is why the preview label is still
+          there.</li>
+          <li><strong>What the field testing covers.</strong> The <strong>MotionWorks IEC</strong>
+          path has been exercised offline against staged projects: staging, editing through the
+          IDE&rsquo;s own APIs, Build and Make, and verification that a change survived a close and
+          reopen. The <strong>Studio 5000</strong> path has been exercised offline <em>and</em> online,
+          by two routes &mdash; the export-only route that needs no Logix Designer SDK at all, and the
+          SDK route that opens an <code>.acd</code>, builds it offline, and reaches a controller for
+          mode reads, uploads and mode changes.</li>
           <li><strong>If you install an unsigned build to write PLC programs or HMI screens, you do so
           at your own risk.</strong> The installer is not code signed. Check anything it produces
           against your own standards before it goes near a machine.</li>
-          <li><strong>While online with a controller, AryaAI is read only.</strong> It will never be
-          given the ability to download, force, toggle, write, or change data on a live PLC. Working
-          the running IDE &mdash; scrolling it, cross referencing tags, reading the screen with OCR
-          &mdash; is looking, and only looking.</li>
-          <li><strong>Every edit happens in offline files.</strong> Studio 5000 work is done against an
-          exported <code>.l5x</code>, and every other tool is bounded the same way. What AryaAI writes
-          is a file you review, never a controller you are connected to.</li>
+          <li><strong>While online with a controller, AryaAI is read only.</strong> Reading live tag
+          values, the controller mode and diagnostics is what it does by default. It cannot edit
+          online, force or toggle a bit, or write tag or runtime data &mdash; those actions are refused
+          permanently, and no request from you can authorize them.</li>
+          <li><strong>Three controller actions exist, and each one asks you first.</strong> Uploading
+          the controller into a new local file, changing the controller mode, and downloading are
+          separate tools. Every call raises its own approval prompt naming the controller, the resolved
+          FactoryTalk Linx route, the exact file and its hash. The model cannot approve itself, one
+          approval covers one operation, and a download is reachable only from a build verified in the
+          same session with the controller already in Program mode.</li>
+          <li><strong>Everything else is an offline file.</strong> Studio 5000 work happens against an
+          exported <code>.l5x</code> or an offline copy of an <code>.acd</code>, and every other tool
+          is bounded the same way. What AryaAI writes is a file you review.</li>
           <li><strong>The first milestone is Version 1.0</strong> &mdash; when the tools and automation
-          skills are proven well enough to drop the preview label.</li>
+          skills are proven well enough to drop the preview label. Field testing by the people who
+          built them is a step towards that, not the thing itself.</li>
         </ul>
       </div>
     </div>
@@ -181,7 +204,7 @@
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7z"/></svg>
-          Dry run by default on the desktop
+          Kill switch on by default on the desktop
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
@@ -205,6 +228,13 @@
           You are not in a monorepo. You are in Studio 5000 or another Logix tool, MotionWorks IEC
           or another motion IDE, FactoryTalk View or Optix or Ignition for the HMI, a stack of DXF
           prints — and a controller that must not be downloaded to by accident.
+        </p>
+        <p class="lead mt-2">
+          AryaAI is built to remove the support call. When something on the plant misbehaves, the
+          alternative to an answer is a vendor support licence, a ticket queue and a phone line that
+          keeps business hours. She is meant to be that support line instead: she reads the project
+          already on the PC — the Logix export, the motion project, the drawing set — and answers
+          where the work is.
         </p>
       </div>
 
@@ -250,13 +280,13 @@
              width="1600" height="1042" loading="lazy">
         <figcaption>
           <span class="shot__tag">The engineering desk</span>
-          <strong>Seven automation servers, six of them inside the installer.</strong>
+          <strong>Eight servers, seven of them inside the installer.</strong>
           Studio 5000 Projects, Ignition SCADA, the SCADA ↔ PLC Bridge, IronPLC Compiler, the
-          NetLogic Cheat Sheet, FactoryTalk Optix Tools and Windows Computer Use. Windows Computer
-          Use starts with the app, and the other six stay off until you switch them on, so a
-          factory tool you do not have on this machine never blocks startup — and Windows Computer
-          Use, shown here connected, is how the agent reaches an application that
-          has no project plugin yet.
+          NetLogic Cheat Sheet, Windows Computer Use and ComfyUI MCP all ship in the installer.
+          FactoryTalk Optix Tools is the exception &mdash; it speaks to Optix Studio&rsquo;s own
+          service on this PC. Windows Computer Use and ComfyUI MCP start with the app; the other
+          five wait until you switch them on, so a factory tool you do not have on this machine
+          never blocks startup.
         </figcaption>
       </figure>
 
@@ -369,6 +399,26 @@
           <p>A workflow can run multiple agents against the same task, with the work and its
           results kept where you can read them.</p>
         </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z"/></svg>
+          </div>
+          <h3>A browser she drives herself</h3>
+          <p>Browser use ships running, with Playwright&rsquo;s browser-control tools and a Chromium
+          that travels inside the installer. Every live session gets its own browser profile, so she
+          never reaches for the one you are signed into.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18"/><circle cx="6.5" cy="7" r=".7" fill="currentColor"/></svg>
+          </div>
+          <h3>A page beside the chat</h3>
+          <p>Open any HTTP(S) address &mdash; including a loopback service on this PC &mdash; in the
+          right sidebar and keep it there while you work. On the desktop window the toolbar can drop
+          a capture of the page into the chat.</p>
+        </article>
       </div>
 
       <p class="mt-3">
@@ -442,12 +492,10 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>
         <p>
           <span class="callout__title">What the Images page does not cover yet</span>
-          Saved-workflow support is the text-to-image node set. ControlNet, LoRA, video, custom
-          nodes and three-dimensional graphs stay visible in ComfyUI but unavailable from the
-          Images page. Generated files over 50&nbsp;MB are refused, deleting a gallery entry leaves
-          the file in ComfyUI&rsquo;s output folder, and one ComfyUI endpoint is configured per
-          install &mdash; switching servers means changing <code>ARYAAI_COMFYUI_URL</code> and
-          restarting.
+          ControlNet, LoRA, custom nodes and three-dimensional graphs stay visible in ComfyUI but
+          unavailable from the Images page. Generated files over 50&nbsp;MB are refused, and deleting
+          a gallery entry leaves the file in ComfyUI&rsquo;s output folder. Connection settings take a
+          local or a remote server address, test the connection, and save it without a restart.
         </p>
       </div>
     </div>
@@ -458,9 +506,9 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">The engineering desk</p>
-        <h2>Seven tools &mdash; six of them inside the installer</h2>
+        <h2>Eight servers &mdash; seven of them inside the installer</h2>
         <p class="lead">
-          Six of the seven run on the Python or Node that AryaAI carries, so your plant PC does not
+          Seven of the eight run on the Python or Node that AryaAI carries, so your plant PC does not
           need its own toolchain for them. FactoryTalk Optix Tools cannot be packed into the
           installer &mdash; it speaks to Optix Studio&rsquo;s own service on this PC, and reports when
           that service is absent. Enable a row from the MCP list, and turn it off again.
@@ -503,7 +551,7 @@
             </tr>
             <tr>
               <th scope="row">Windows Computer Use</th>
-              <td data-label="What the agent can do">Find windows, read UI Automation elements, and see the screen with OCR in English and Chinese. Mouse and keyboard start in a dry run.</td>
+              <td data-label="What the agent can do">Find windows, read UI Automation elements, and see the screen with OCR in English and Chinese. Mutating automation is refused while the kill switch is on.</td>
             </tr>
           </tbody>
         </table>
@@ -525,8 +573,11 @@
         <p class="eyebrow centered">Meet Arya</p>
         <h2>She has a face for every part of the job</h2>
         <p class="lead">
-          Arya appears as a full-body animated companion in the desktop workspace and the web UI,
-          and her pose follows what the agent is actually doing.
+          Arya is a companion you can pick up and move around the desktop: drag her, pin her, scale
+          her, and she follows the mouse. She shows progress while a task runs, and can give a short
+          first-person summary of what finished. The poses below are the design system she is drawn
+          from &mdash; the shipped pet animates from a sprite atlas, and not every pose has a signal
+          wired to it yet.
         </p>
       </div>
 
@@ -599,11 +650,15 @@
 
       <div class="accordion">
         <details open>
-          <summary>It does not open Studio 5000, go online, or download to a controller</summary>
+          <summary>It reads a controller, and three actions ask you first</summary>
           <div class="accordion__body">
-            <p>The Logix path is an export you choose yourself. Reading a project and changing a
-            running controller are deliberately different acts — going online and downloading are
-            planned as their own plugins, with their own confirmation against a named controller.</p>
+            <p>Reading a controller &mdash; its mode, live tag values, diagnostics &mdash; is read
+            only. Uploading the controller into a new local file, changing the controller mode, and
+            downloading are separate tools that each raise their own approval prompt naming the
+            controller, the resolved FactoryTalk Linx route, and the exact file and its hash. Online
+            edits, forces, bit toggles and data writes are refused permanently, and no request from
+            you authorizes them. Reading a project and changing a running controller stay
+            deliberately different acts.</p>
           </div>
         </details>
 
@@ -611,11 +666,13 @@
           <summary>MotionWorks IEC is edited through the running IDE, not by rewriting the file</summary>
           <div class="accordion__body">
             <p>A writer for the project file format was tried and withdrawn, because it could
-            replace a real program body with an empty one and report success. What ships instead is
-            a skill that operates the MotionWorks IEC IDE itself: it stages and opens a project,
-            reads the live object model, rewrites POU Structured Text, adds declarations, and
-            compiles &mdash; so the compiler verdict is the evidence, not the writer&rsquo;s own
-            claim. It still does not download to a controller.</p>
+            replace a real program body with an empty one and report success. The offline writers
+            that replaced it were retired for the same reason. What ships works on a staged copy and
+            drives the running MotionWorks IEC 3 Pro IDE through its own editors: it reads the
+            project model, types, libraries and variables, changes POU Structured Text and
+            declarations, assigns tasks and POUs, runs Build and Make, and reads the
+            compiler&rsquo;s own verdict and error text &mdash; so the compiler is the evidence, not
+            a writer&rsquo;s claim. It never downloads to a controller and never commands motion.</p>
           </div>
         </details>
 
@@ -628,11 +685,13 @@
         </details>
 
         <details>
-          <summary>The mouse and keyboard stay in a dry run until you turn that off</summary>
+          <summary>The desktop kill switch is on until you turn it off</summary>
           <div class="accordion__body">
-            <p>Windows Computer Use can look at a window without clicking it. Leaving the dry run is
-            a choice recorded for that session, and a click that already reached the application is
-            not pretended to have been undone.</p>
+            <p>Windows Computer Use can see a window, read its UI Automation tree and OCR the screen
+            without clicking anything. While the kill switch is on, every mutating action &mdash;
+            mouse, keyboard, element clicks, shortcuts &mdash; is refused, and only read-only
+            inspection runs. Skills &amp; MCP puts the kill switch and the dry run beside each other
+            with Save and restart.</p>
           </div>
         </details>
 
@@ -701,6 +760,7 @@
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="logix.html">Studio 5000 and Logix</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
           <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>

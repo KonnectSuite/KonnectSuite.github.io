@@ -36,6 +36,7 @@
     <nav class="nav" id="site-nav" aria-label="Main">
       <a class="nav__link" href="features.html">Features</a>
       <a class="nav__link" href="engineering.html">Engineering desk</a>
+      <a class="nav__link" href="logix.html">Logix</a>
       <a class="nav__link" href="docs.html" aria-current="page">Docs</a>
       <a class="nav__link" href="pricing.html">Pricing</a>
       <a class="nav__link" href="contact.html">Contact</a>
@@ -99,7 +100,7 @@
       <div class="dl mt-4">
         <div class="dl__row">
           <dt>Operating system</dt>
-          <dd>Windows desktop. Six of the seven engineering servers run on the Node and Python that
+          <dd>Windows desktop. Seven of the eight engineering servers run on the Node and Python that
           AryaAI ships with, so they need no separate install; FactoryTalk Optix Tools uses Optix
           Studio&rsquo;s own service on this PC.</dd>
         </div>
@@ -108,8 +109,9 @@
           <dd>The agent&rsquo;s shell on Windows is PowerShell.</dd>
         </div>
         <div class="dl__row">
-          <dt>Current line</dt>
-          <dd>The current line is whatever the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a> lists; it runs on DeepSeek Harness <code>0.1.7-rc.2</code>.</dd>
+          <dt>Current version</dt>
+          <dd><strong>0.7.0</strong>, on DeepSeek Harness <code>0.2.0-rc.2</code>. Every build is
+          listed on the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a>.</dd>
         </div>
         <div class="dl__row">
           <dt>License</dt>
@@ -129,17 +131,39 @@
           Preview release &mdash; read before you install
         </p>
         <ul class="prerelease__list">
-          <li><strong>AryaAI is in beta, and none of its automation tools have been field tested or
-          proven.</strong> Read every tool's boundary on the engineering desk page before you rely on
+          <li><strong>The two vendor engineering bundles are field tested, and they work.</strong>
+          The <strong>Studio 5000 L5X</strong> and <strong>MotionWorks IEC</strong> paths have been
+          exercised on real engineering work and both are in use; everything else in the installer is
+          untested against real production work. Read every tool&rsquo;s boundary before you rely on
           it for anything.</li>
+          <li><strong>Field tested is not the same as proven.</strong> The bar for <em>proven</em> is
+          engineers other than the authors, on real projects, with evidence a reader can check.
+          Nothing in this line has cleared that bar yet, which is why the preview label is still
+          there.</li>
+          <li><strong>What the field testing covers.</strong> The <strong>MotionWorks IEC</strong>
+          path has been exercised offline against staged projects: staging, editing through the
+          IDE&rsquo;s own APIs, Build and Make, and verification that a change survived a close and
+          reopen. The <strong>Studio 5000</strong> path has been exercised offline <em>and</em>
+          online, by two routes &mdash; the export-only route that needs no Logix Designer SDK at all,
+          and the SDK route that opens an <code>.acd</code>, builds it offline, and reaches a
+          controller for mode reads, uploads and mode changes.</li>
           <li><strong>Installing an unsigned build to write PLC programs or HMI screens is done at
           your own risk.</strong> The installer is not code signed.</li>
-          <li><strong>While online with a controller, AryaAI is read only.</strong> It will never be
-          given the ability to download, force, toggle, write, or change data on a live PLC.</li>
-          <li><strong>Every edit happens in offline files</strong> &mdash; Studio 5000 work against an
-          exported <code>.l5x</code>, and each other tool bounded the same way.</li>
+          <li><strong>While online with a controller, AryaAI is read only.</strong> Reading live tag
+          values, the controller mode and diagnostics is what it does by default. Editing online,
+          forcing or toggling a bit, and writing tag or runtime data are refused permanently, and no
+          request from you authorizes them.</li>
+          <li><strong>Three controller actions each ask you first.</strong> Uploading the controller
+          into a new local file, changing the controller mode, and downloading raise their own
+          approval prompt naming the controller, the resolved FactoryTalk Linx route, and the exact
+          file and its hash. One approval covers one operation, and the model cannot approve
+          itself.</li>
+          <li><strong>Everything else is an offline file</strong> &mdash; Studio 5000 work against an
+          exported <code>.l5x</code> or an offline copy of an <code>.acd</code>, and each other tool
+          bounded the same way.</li>
           <li><strong>The first milestone is Version 1.0</strong> &mdash; when the tools and automation
-          skills are proven well enough to drop the preview label.</li>
+          skills are proven well enough to drop the preview label. Field testing by the people who
+          built them is a step towards that, not the thing itself.</li>
         </ul>
       </div>
     </div>
@@ -161,13 +185,15 @@
         </article>
         <article class="card">
           <h3>2. Turn on only what you need</h3>
-          <p>Windows Computer Use starts with the app; the other engineering servers stay off until
-          you enable them, so a tool you do not have on this machine never blocks startup.</p>
+          <p>Windows Computer Use and ComfyUI MCP start with the app; the other engineering servers
+          stay off until you enable them, so a tool you do not have on this machine never blocks
+          startup.</p>
         </article>
         <article class="card">
-          <h3>3. Leave the desktop dry run on</h3>
-          <p>Windows Computer Use can look at a window without clicking it. Keep it that way until
-          you have a reason not to.</p>
+          <h3>3. Leave the kill switch on</h3>
+          <p>Windows Computer Use can see a window, read its UI Automation tree and OCR the screen
+          without clicking anything. Keep mutating automation refused until you have a reason not
+          to.</p>
         </article>
         <article class="card">
           <h3>4. Add your shop standard as a skill</h3>
@@ -298,11 +324,12 @@ pnpm dsh web</code></pre>
         </details>
 
         <details>
-          <summary>Desktop control starts as a dry run</summary>
+          <summary>The desktop kill switch refuses mutating automation</summary>
           <div class="accordion__body">
-            <p>Mouse, keyboard, element clicks and shortcuts begin in a dry run, so the agent can
-            look and cannot click until you allow it. Face recognition and the keylogger are not
-            enabled.</p>
+            <p>Mouse, keyboard, element clicks and shortcuts are refused while the kill switch is on,
+            so the agent can look at a window and cannot act on it. Read-only inspection &mdash;
+            screenshots, OCR and the element tree &mdash; keeps working. Face recognition and the
+            keylogger are not enabled.</p>
           </div>
         </details>
 
@@ -341,11 +368,11 @@ pnpm dsh web</code></pre>
           <tbody>
             <tr>
               <th scope="row">Logix</th>
-              <td data-label="The limit">Does not open Studio 5000, go online, or download to a controller. The Logix path is an export you choose.</td>
+              <td data-label="The limit">Reads a live controller for its mode, tag values and diagnostics. Upload, mode change and download each require their own per-call approval against a named controller. Online edits, forces, bit toggles and data writes are refused permanently. An SDK build needs revision 37 or later, and a download is reachable only from a build verified in the same session with the controller already in Program mode.</td>
             </tr>
             <tr>
               <th scope="row">Motion</th>
-              <td data-label="The limit">Editing goes through the running MotionWorks IEC IDE, not the project file. The file-format writer was tried and withdrawn and is not a starting point. It does not download to a controller.</td>
+              <td data-label="The limit">Editing goes through the running MotionWorks IEC 3 Pro IDE on a staged copy, not the project file. The file-format writer was tried and withdrawn and is not a starting point. It never downloads to a controller and never commands motion. Ladder and function-block editing and library work are guided workflows still awaiting broader live acceptance.</td>
             </tr>
             <tr>
               <th scope="row">HMI</th>
@@ -353,7 +380,7 @@ pnpm dsh web</code></pre>
             </tr>
             <tr>
               <th scope="row">Desktop</th>
-              <td data-label="The limit">Does not drive the mouse in those IDEs until the Windows Computer Use dry run is turned off — and turning it off means real clicks on this desktop.</td>
+              <td data-label="The limit">Does not drive the mouse or keyboard while the Windows Computer Use kill switch is on, which is how it ships. Read-only inspection still runs. Turning the kill switch off means real clicks on this desktop.</td>
             </tr>
             <tr>
               <th scope="row">Desktop driver</th>
@@ -375,8 +402,9 @@ pnpm dsh web</code></pre>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
         <p>
           <span class="callout__title">A milestone is finished when the limit is written down</span>
-          Not when the feature demos. The roadmap adds editing that proves its result, a reading-only
-          motion plugin, and controllers reached only through an explicit, confirmed act.
+          Not when the feature demos. What is still open: broader live acceptance for MotionWorks
+          ladder and function-block editing, an SDK build path for controller revisions below 37,
+          and a controller download exercised on real hardware.
         </p>
       </div>
     </div>
@@ -417,6 +445,7 @@ pnpm dsh web</code></pre>
         <ul>
           <li><a href="features.html">Features</a></li>
           <li><a href="engineering.html">Engineering desk</a></li>
+          <li><a href="logix.html">Studio 5000 and Logix</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="docs.html">Documentation</a></li>
           <li><a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">Download</a></li>
