@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.8.0
+version: 0.2.0-rc.2.AryaAI.0.8.1
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.0/aryaai-0.2.0-rc.2.AryaAI.0.8.0-win-x64-unsigned.exe
-    sha512: rFAa7jNWEljcaXdmN56Y+eN7KjPeKANN1d7XShtI7lbwfej58xWSHIYmFBico2M3Ormg9GWfIIjOEi3RK8QfOQ==
-    size: 778962789
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.0/aryaai-0.2.0-rc.2.AryaAI.0.8.0-win-x64-unsigned.exe
-sha512: rFAa7jNWEljcaXdmN56Y+eN7KjPeKANN1d7XShtI7lbwfej58xWSHIYmFBico2M3Ormg9GWfIIjOEi3RK8QfOQ==
-releaseDate: '2026-10-06T02:14:28.367Z'
-releaseNotes: '{"en":["Adds Projects above Workspaces: group several source folders, create chats beneath each project, and edit project folders through a shared popup.","Includes the Projects plugin in every installation, with search, view options, and folder browsing. Project chats appear once; disabling Projects restores their workspace listing.","Repairs plugin reloads so workspace and Images chats remain available. Upgrading preserves personal plugins, sessions, and previously removed optional features.","Multi-folder Workspace Write is supported on Windows; other platforms retain writes in the primary chat folder."],"zh":["在工作区上方新增项目：组织多个源文件夹，在项目下创建聊天，并通过统一弹窗编辑项目文件夹。","每次安装均包含项目插件，提供搜索、视图选项和文件夹浏览。项目聊天只显示一次；禁用项目后恢复工作区列表。","修复插件重载，保持工作区与图片聊天可用。升级保留个人插件、会话及此前移除的可选功能。","Windows 支持多文件夹工作区写入；其他平台仍仅允许在聊天主文件夹内写入。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.1/aryaai-0.2.0-rc.2.AryaAI.0.8.1-win-x64-unsigned.exe
+    sha512: kVQlwj7BlvL472FhilIJtyNo49ShF0nNT3rQMvTW5U/wuA3lG8vfPA4vV0SxtGA31mJX/XLh8R0JszOeAroehw==
+    size: 779272731
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.1/aryaai-0.2.0-rc.2.AryaAI.0.8.1-win-x64-unsigned.exe
+sha512: kVQlwj7BlvL472FhilIJtyNo49ShF0nNT3rQMvTW5U/wuA3lG8vfPA4vV0SxtGA31mJX/XLh8R0JszOeAroehw==
+releaseDate: '2026-10-07T16:38:49.422Z'
+releaseNotes: '{"en":["Updates the included MotionWorks IEC plugin with current compiler-artifact reviews, protected function-block verification, guarded library reads, and more reliable IDE diagnostics and checkpoint paths.","Removes the MCP token-efficiency plugin, its settings page, and conversation controls. The regular context meter remains, and sessions containing its recorded state remain readable."],"zh":["更新随附的 MotionWorks IEC 插件，支持当前编译产物审查、受保护功能块验证、受保护的库读取，以及更可靠的 IDE 诊断和检查点路径。","移除 MCP 工具效率插件、其设置页及对话控制。保留常规上下文计量，含有此前记录状态的会话仍可读取。"]}'
