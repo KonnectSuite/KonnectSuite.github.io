@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.8.1
+version: 0.2.0-rc.2.AryaAI.0.9.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.1/aryaai-0.2.0-rc.2.AryaAI.0.8.1-win-x64-unsigned.exe
-    sha512: kVQlwj7BlvL472FhilIJtyNo49ShF0nNT3rQMvTW5U/wuA3lG8vfPA4vV0SxtGA31mJX/XLh8R0JszOeAroehw==
-    size: 779272731
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.8.1/aryaai-0.2.0-rc.2.AryaAI.0.8.1-win-x64-unsigned.exe
-sha512: kVQlwj7BlvL472FhilIJtyNo49ShF0nNT3rQMvTW5U/wuA3lG8vfPA4vV0SxtGA31mJX/XLh8R0JszOeAroehw==
-releaseDate: '2026-10-07T16:38:49.422Z'
-releaseNotes: '{"en":["Updates the included MotionWorks IEC plugin with current compiler-artifact reviews, protected function-block verification, guarded library reads, and more reliable IDE diagnostics and checkpoint paths.","Removes the MCP token-efficiency plugin, its settings page, and conversation controls. The regular context meter remains, and sessions containing its recorded state remain readable."],"zh":["更新随附的 MotionWorks IEC 插件，支持当前编译产物审查、受保护功能块验证、受保护的库读取，以及更可靠的 IDE 诊断和检查点路径。","移除 MCP 工具效率插件、其设置页及对话控制。保留常规上下文计量，含有此前记录状态的会话仍可读取。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.9.0/aryaai-0.2.0-rc.2.AryaAI.0.9.0-win-x64-unsigned.exe
+    sha512: s+cnDSrBdHIVDtCjdtTwVw3OVwJmZh1q4B5yG+dmG4WoGyKZWstS91kNKVo6hEGfl+9cl7pYNJhhL0AHyTKfNw==
+    size: 779433289
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.9.0/aryaai-0.2.0-rc.2.AryaAI.0.9.0-win-x64-unsigned.exe
+sha512: s+cnDSrBdHIVDtCjdtTwVw3OVwJmZh1q4B5yG+dmG4WoGyKZWstS91kNKVo6hEGfl+9cl7pYNJhhL0AHyTKfNw==
+releaseDate: '2026-10-08T03:48:42.009Z'
+releaseNotes: '{"en":["Adds Native Window as an included plugin for docking Windows applications beside Arya conversations. Elevated applications require separately approved helper elevation.","Adds FactoryTalk View Use 0.1.4 with eleven tools and an engineering skill: discover workspace files and missing ME exports, analyze displays and tags, prepare guarded changes, and verify Studio imports.","Both plugins are enabled by default and managed through Plugin Market. Upgrades preserve sessions, personal plugins, and subsequent removal of these optional bundles.","Repairs the DeepSeek Chat caption layout and makes Reload act consistently."],"zh":["新增随安装包提供的 Native Window 插件，可将 Windows 应用停靠在 Arya 对话旁。提权应用需要另行批准辅助程序提权。","新增 FactoryTalk View Use 0.1.4，包含十一个工具及工程技能：查找工作区文件与缺失的 ME 导出，分析画面与标签，准备受保护的修改，并验证 Studio 导入。","两个插件默认启用，并通过插件市场管理。升级保留会话、个人插件以及用户随后对这些可选 bundle 的移除。","修复 DeepSeek Chat 标题栏布局，并使重新加载操作保持一致。"]}'
