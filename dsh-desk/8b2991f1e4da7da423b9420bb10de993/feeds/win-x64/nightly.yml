@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.10.0
+version: 0.2.0-rc.2.AryaAI.0.10.1
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.0/aryaai-0.2.0-rc.2.AryaAI.0.10.0-win-x64-unsigned.exe
-    sha512: 79kQWO7KmUlxKr4S7oo2KdIM8r+XQ1Op+zfQSPZBrvoB6VuASKYe9pr0EpjV8+w5tYUKZY5DIaw0tLgbIcJ9qw==
-    size: 779992227
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.0/aryaai-0.2.0-rc.2.AryaAI.0.10.0-win-x64-unsigned.exe
-sha512: 79kQWO7KmUlxKr4S7oo2KdIM8r+XQ1Op+zfQSPZBrvoB6VuASKYe9pr0EpjV8+w5tYUKZY5DIaw0tLgbIcJ9qw==
-releaseDate: '2026-10-09T11:32:31.134Z'
-releaseNotes: '{"en":["Adds Arya Plugin Market with public packaged releases, plugin updates, and restoration of retained versions. FactoryTalk View Use and Native Window appear with Arya built-in plugins.","Updates Native Window to 0.2.2: Arya can inspect docked applications, accessible controls, text, dialogs and screenshots, then edit or invoke observed controls and verify the result.","Screenshot reasoning requires an image-capable model; text-only models use accessible controls and text. Foreground mouse and keyboard actions depend on Windows focus and access permissions.","Upgrades preserve sessions, personal plugins and removal of optional built-in bundles."],"zh":["新增 Arya 插件市场，提供公开打包的插件版本、插件更新及保留版本的恢复。FactoryTalk View Use 与 Native Window 显示在 Arya 内置插件分组中。","将 Native Window 更新至 0.2.2：Arya 可检查停靠应用、可访问控件、文本、对话框与截图，然后编辑或调用已观察的控件并验证结果。","截图推理需要支持图像的模型；纯文本模型使用可访问控件与文本。前台鼠标及键盘操作取决于 Windows 焦点与访问权限。","升级保留会话、个人插件及用户对可选内置 bundle 的移除。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.1/aryaai-0.2.0-rc.2.AryaAI.0.10.1-win-x64-unsigned.exe
+    sha512: xSUTPt0rX4CNiKRRwSo8cBCjBnCeEbC1YpIXeHxqB1DJRRcuPkqvgK6kPhsabi1Zy/obPUK5C+8f+3BAvUkspw==
+    size: 779994350
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.1/aryaai-0.2.0-rc.2.AryaAI.0.10.1-win-x64-unsigned.exe
+sha512: xSUTPt0rX4CNiKRRwSo8cBCjBnCeEbC1YpIXeHxqB1DJRRcuPkqvgK6kPhsabi1Zy/obPUK5C+8f+3BAvUkspw==
+releaseDate: '2026-10-09T12:34:24.662Z'
+releaseNotes: '{"en":["Repairs Native Window loading after an update by correcting the bundled configuration in plugin version 0.2.3.","Installer checks reject shipped plugins whose bundle configuration cannot be loaded."],"zh":["修复更新后 Native Window 的加载问题，插件 0.2.3 更正随附配置。","安装包检查拒绝无法加载 bundle 配置的随附插件。"]}'
