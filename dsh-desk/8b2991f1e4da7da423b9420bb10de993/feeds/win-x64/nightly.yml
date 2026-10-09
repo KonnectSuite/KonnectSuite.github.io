@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.9.0
+version: 0.2.0-rc.2.AryaAI.0.10.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.9.0/aryaai-0.2.0-rc.2.AryaAI.0.9.0-win-x64-unsigned.exe
-    sha512: s+cnDSrBdHIVDtCjdtTwVw3OVwJmZh1q4B5yG+dmG4WoGyKZWstS91kNKVo6hEGfl+9cl7pYNJhhL0AHyTKfNw==
-    size: 779433289
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.9.0/aryaai-0.2.0-rc.2.AryaAI.0.9.0-win-x64-unsigned.exe
-sha512: s+cnDSrBdHIVDtCjdtTwVw3OVwJmZh1q4B5yG+dmG4WoGyKZWstS91kNKVo6hEGfl+9cl7pYNJhhL0AHyTKfNw==
-releaseDate: '2026-10-08T03:48:42.009Z'
-releaseNotes: '{"en":["Adds Native Window as an included plugin for docking Windows applications beside Arya conversations. Elevated applications require separately approved helper elevation.","Adds FactoryTalk View Use 0.1.4 with eleven tools and an engineering skill: discover workspace files and missing ME exports, analyze displays and tags, prepare guarded changes, and verify Studio imports.","Both plugins are enabled by default and managed through Plugin Market. Upgrades preserve sessions, personal plugins, and subsequent removal of these optional bundles.","Repairs the DeepSeek Chat caption layout and makes Reload act consistently."],"zh":["新增随安装包提供的 Native Window 插件，可将 Windows 应用停靠在 Arya 对话旁。提权应用需要另行批准辅助程序提权。","新增 FactoryTalk View Use 0.1.4，包含十一个工具及工程技能：查找工作区文件与缺失的 ME 导出，分析画面与标签，准备受保护的修改，并验证 Studio 导入。","两个插件默认启用，并通过插件市场管理。升级保留会话、个人插件以及用户随后对这些可选 bundle 的移除。","修复 DeepSeek Chat 标题栏布局，并使重新加载操作保持一致。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.0/aryaai-0.2.0-rc.2.AryaAI.0.10.0-win-x64-unsigned.exe
+    sha512: 79kQWO7KmUlxKr4S7oo2KdIM8r+XQ1Op+zfQSPZBrvoB6VuASKYe9pr0EpjV8+w5tYUKZY5DIaw0tLgbIcJ9qw==
+    size: 779992227
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.0/aryaai-0.2.0-rc.2.AryaAI.0.10.0-win-x64-unsigned.exe
+sha512: 79kQWO7KmUlxKr4S7oo2KdIM8r+XQ1Op+zfQSPZBrvoB6VuASKYe9pr0EpjV8+w5tYUKZY5DIaw0tLgbIcJ9qw==
+releaseDate: '2026-10-09T11:32:31.134Z'
+releaseNotes: '{"en":["Adds Arya Plugin Market with public packaged releases, plugin updates, and restoration of retained versions. FactoryTalk View Use and Native Window appear with Arya built-in plugins.","Updates Native Window to 0.2.2: Arya can inspect docked applications, accessible controls, text, dialogs and screenshots, then edit or invoke observed controls and verify the result.","Screenshot reasoning requires an image-capable model; text-only models use accessible controls and text. Foreground mouse and keyboard actions depend on Windows focus and access permissions.","Upgrades preserve sessions, personal plugins and removal of optional built-in bundles."],"zh":["新增 Arya 插件市场，提供公开打包的插件版本、插件更新及保留版本的恢复。FactoryTalk View Use 与 Native Window 显示在 Arya 内置插件分组中。","将 Native Window 更新至 0.2.2：Arya 可检查停靠应用、可访问控件、文本、对话框与截图，然后编辑或调用已观察的控件并验证结果。","截图推理需要支持图像的模型；纯文本模型使用可访问控件与文本。前台鼠标及键盘操作取决于 Windows 焦点与访问权限。","升级保留会话、个人插件及用户对可选内置 bundle 的移除。"]}'
