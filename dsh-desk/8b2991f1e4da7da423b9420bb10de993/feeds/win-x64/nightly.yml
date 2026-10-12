@@ -1,9 +1,9 @@
-version: 0.2.0-rc.2.AryaAI.0.10.1
+version: 0.2.0-rc.2.AryaAI.0.11.0
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.1/aryaai-0.2.0-rc.2.AryaAI.0.10.1-win-x64-unsigned.exe
-    sha512: xSUTPt0rX4CNiKRRwSo8cBCjBnCeEbC1YpIXeHxqB1DJRRcuPkqvgK6kPhsabi1Zy/obPUK5C+8f+3BAvUkspw==
-    size: 779994350
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.10.1/aryaai-0.2.0-rc.2.AryaAI.0.10.1-win-x64-unsigned.exe
-sha512: xSUTPt0rX4CNiKRRwSo8cBCjBnCeEbC1YpIXeHxqB1DJRRcuPkqvgK6kPhsabi1Zy/obPUK5C+8f+3BAvUkspw==
-releaseDate: '2026-10-09T12:34:24.662Z'
-releaseNotes: '{"en":["Repairs Native Window loading after an update by correcting the bundled configuration in plugin version 0.2.3.","Installer checks reject shipped plugins whose bundle configuration cannot be loaded."],"zh":["修复更新后 Native Window 的加载问题，插件 0.2.3 更正随附配置。","安装包检查拒绝无法加载 bundle 配置的随附插件。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.11.0/aryaai-0.2.0-rc.2.AryaAI.0.11.0-win-x64-unsigned.exe
+    sha512: jYPsZbkZhzAh1HzZThofZUOVe9f389fr8vqcIXqi2TOFBxXraGf0/iYsypgaYBC2f7lbgwlxFj1mS45hMby6vg==
+    size: 789808183
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.0-rc.2.AryaAI.0.11.0/aryaai-0.2.0-rc.2.AryaAI.0.11.0-win-x64-unsigned.exe
+sha512: jYPsZbkZhzAh1HzZThofZUOVe9f389fr8vqcIXqi2TOFBxXraGf0/iYsypgaYBC2f7lbgwlxFj1mS45hMby6vg==
+releaseDate: '2026-10-12T07:30:09.863Z'
+releaseNotes: '{"en":["Introduces the Content studio with photo and video conversations, reusable media references, search, and separate Studio and Library views.","Adds image editing, visual reference search, storyboards, timed scenes, saved LTX Director workflows, and film assembly through configured compatible ComfyUI workflows. Models and workflow dependencies require separate setup.","Updates Studio 5000 tools with parsed project analysis, symbol and logic inspection, and coordinated offline drafts. FactoryTalk Optix adds native authoring and preview inspection.","Adds optional SDK-independent, read-only PLC polling and live chat trends through Studio 5000 tools. Native polling is disabled by default; physical-controller performance remains unqualified.","Improves engineering browser sign-in and visible Playwright sessions, workspace projects, Native Window docking, and development launch reliability.","Restores the third-party community catalog alongside Arya plugins in Plugin Market. Updates preserve personal plugins and conversations.","LLM Control Center and the Local LLM Agent Preset remain separate plugins; local model weights and runtimes are not included in this installer."],"zh":["新增内容工作室，提供图片和视频对话、可复用媒体参考、搜索，以及独立的工作室和媒体库视图。","通过已配置的兼容 ComfyUI 工作流，新增图片编辑、视觉参考搜索、分镜、定时场景、已保存的 LTX Director 工作流和影片合成。模型与工作流依赖需要单独配置。","更新 Studio 5000 工具，支持解析项目分析、符号与逻辑检查，以及协同离线草稿。FactoryTalk Optix 新增原生创作与预览检查。","通过 Studio 5000 工具新增可选的独立于 SDK 的只读 PLC 轮询和实时对话趋势图。原生轮询默认关闭，实际控制器性能尚未验证。","改进工程浏览器登录、可见 Playwright 会话、工作区项目、Native Window 停靠和开发启动可靠性。","在插件市场中恢复第三方社区目录，并与 Arya 插件并列显示。更新保留个人插件和对话。","LLM 控制中心与本地 LLM 代理预设仍为独立插件；此安装包不包含本地模型权重和运行时。"]}'
