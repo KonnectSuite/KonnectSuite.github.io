@@ -1,9 +1,9 @@
-version: 0.2.1-rc.2.AryaAI.0.12.7
+version: 0.2.1-rc.2.AryaAI.0.12.8
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.7/aryaai-0.2.1-rc.2.AryaAI.0.12.7-win-x64-unsigned.exe
-    sha512: RnmzxRY8GRXBPGuTwXpOgyI/ID7qDvadlqe5qzzkcgHxcsujkyNPd87ISjed7R54+fZr56cGTSDqq4WUHNtpIA==
-    size: 776903349
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.7/aryaai-0.2.1-rc.2.AryaAI.0.12.7-win-x64-unsigned.exe
-sha512: RnmzxRY8GRXBPGuTwXpOgyI/ID7qDvadlqe5qzzkcgHxcsujkyNPd87ISjed7R54+fZr56cGTSDqq4WUHNtpIA==
-releaseDate: '2026-10-20T00:16:57.768Z'
-releaseNotes: '{"en":["The compression plugin is no longer bundled with the installer; install billion-context from Plugin Market when a profile needs it.","Every tool schema reaches the model from the first request again, so the agent no longer spends turns discovering tools."],"zh":["压缩插件不再随安装包一起安装；某个配置需要时，请在插件市场安装 billion-context。","工具定义从第一次请求起就全部提供给模型，智能体不再花轮次去发现工具。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.8/aryaai-0.2.1-rc.2.AryaAI.0.12.8-win-x64-unsigned.exe
+    sha512: yGRsjQuT3R30hWUBH4dhYG2PlpvZ9NMsdV2E8XV46XIbiR3MPWBLC64YBB4T9zbI3O807ArnynxIa8h3pxkuOQ==
+    size: 742899198
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.8/aryaai-0.2.1-rc.2.AryaAI.0.12.8-win-x64-unsigned.exe
+sha512: yGRsjQuT3R30hWUBH4dhYG2PlpvZ9NMsdV2E8XV46XIbiR3MPWBLC64YBB4T9zbI3O807ArnynxIa8h3pxkuOQ==
+releaseDate: '2026-10-20T07:10:53.643Z'
+releaseNotes: '{"en":["The MCP Servers page replaces the capability centre: the skills half is gone because plugins already own that surface, and a Discover tab lists well-known public MCP servers that install in one click.","The Studio 5000, Ignition and SCADA bridge MCP servers are uninstalled and deleted; their native Cordis tool packages keep the ladder, Optix and NetLogic work.","Bundled plugins are repacked so the Plugins page shows their real names and icons instead of package ids: dshmarket 1.66.14-arya.0.9, clear light 0.1.1, native window 0.2.7 and projects 0.2.2.","Mobile & Remote, the sidebar switcher, release notes and the L5X ladder viewer are individually switchable plugins, the workflow bundle is no longer shipped, and Google Remote Desktop installs from Plugin Market instead of the installer."],"zh":["MCP 服务器页面取代能力中心：技能部分已移除，因为插件已承担该能力；新增的“发现”标签页列出知名公共 MCP 服务器，一键即可安装。","Studio 5000、Ignition 与 SCADA 桥接 MCP 服务器已卸载并删除；梯形图、Optix 与 NetLogic 相关能力仍由原生 Cordis 工具包提供。","随包插件已重新打包，插件页显示真实名称与图标而非包名：dshmarket 1.66.14-arya.0.9、clear light 0.1.1、native window 0.2.7、projects 0.2.2。","移动与远程、侧边栏切换器、发行说明与 L5X 梯形图查看器成为可独立开关的插件；workflow 组合包不再随安装包提供；Google 远程桌面改为在插件市场安装。"]}'
