@@ -1,9 +1,9 @@
-version: 0.2.1-rc.2.AryaAI.0.12.11
+version: 0.2.1-rc.2.AryaAI.0.12.12
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.11/aryaai-0.2.1-rc.2.AryaAI.0.12.11-win-x64-unsigned.exe
-    sha512: dXTGOh7m9TZnmN9gJLlszYZzgjX0lid/2yqeIGdZC8OzD6olzO94U7AGr2CvFRRfxS1VIQmJkpQbMbTs8XZdew==
-    size: 742934270
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.11/aryaai-0.2.1-rc.2.AryaAI.0.12.11-win-x64-unsigned.exe
-sha512: dXTGOh7m9TZnmN9gJLlszYZzgjX0lid/2yqeIGdZC8OzD6olzO94U7AGr2CvFRRfxS1VIQmJkpQbMbTs8XZdew==
-releaseDate: '2026-10-21T04:06:18.805Z'
-releaseNotes: '{"en":["Built-in plugins now track their source versions systematically: every authored plugin the installer ships is pinned to a packed artifact of its current source at release time, so the installer and the plugin market always offer the same versions. This covers plugins added during development without a manual pin per release.","A local checkout no longer holds a built-in plugin back: a link or file pin older than the shipped copy is replaced by the installer version, while a newer checkout still wins. That also lets Restore bundled version work for plugins that were previously installed from a local directory.","Carries everything published as 0.12.10: the L5X tools at 0.5.0, built-in plugins that update with the application, and FactoryTalk Optix loading by default."],"zh":["内置插件现在按来源版本系统化跟进：安装程序自带的每个作者插件在发布时会固定到当前源码打出的压缩包，因此安装程序与插件市场始终提供相同版本。开发过程中新增的插件也自动覆盖，无需每次发布手工固定。","本地副本不再拖住内置插件：低于安装程序自带版本的 link 或 file 固定会被替换为安装程序版本，更新的副本仍然优先。此前从本地目录安装的插件也因此可以使用“恢复随应用提供的版本”。","包含 0.12.10 发布的所有内容：L5X 工具 0.5.0、随应用更新的内置插件，以及默认加载的 FactoryTalk Optix。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.12/aryaai-0.2.1-rc.2.AryaAI.0.12.12-win-x64-unsigned.exe
+    sha512: XeIHiO4oQZx00QB474jr+YigItoGLomqEykyq5xElJU8epxRG5gVwfFSWCi5W4Sl4W0IeoxzhYpCUPqROtfjCg==
+    size: 743540507
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.12/aryaai-0.2.1-rc.2.AryaAI.0.12.12-win-x64-unsigned.exe
+sha512: XeIHiO4oQZx00QB474jr+YigItoGLomqEykyq5xElJU8epxRG5gVwfFSWCi5W4Sl4W0IeoxzhYpCUPqROtfjCg==
+releaseDate: '2026-10-21T22:04:16.146Z'
+releaseNotes: '{"en":["Updating a community plugin from the market now works on the desktop app. The official plugin manager refuses to install over an installed copy while hot reload is active, so the market removes that copy first and retries once; if the removal fails, its own error is what you see.","Carries everything published as 0.12.11: built-in plugins shipped at their source versions and updated with the installer, local checkouts that no longer hold built-in plugins back, and FactoryTalk Optix loading by default."],"zh":["桌面版现在可以从市场更新社区插件。官方插件管理器在热重载启用时拒绝直接覆盖已安装副本，因此市场会先移除该副本再重试一次；如果移除失败，则显示管理器自己的错误。","包含 0.12.11 发布的所有内容：按来源版本随安装程序更新的内置插件、不再拖住内置插件的本地副本，以及默认加载的 FactoryTalk Optix。"]}'
