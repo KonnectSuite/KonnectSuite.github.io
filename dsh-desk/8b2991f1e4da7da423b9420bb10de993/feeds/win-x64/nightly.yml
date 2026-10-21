@@ -1,9 +1,9 @@
-version: 0.2.1-rc.2.AryaAI.0.12.9
+version: 0.2.1-rc.2.AryaAI.0.12.10
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.9/aryaai-0.2.1-rc.2.AryaAI.0.12.9-win-x64-unsigned.exe
-    sha512: jW15th8O1PWBXh/iPZLqt7jRSkUoLlF/JPaHVP3L2EipfCdbZGxHMN3pT2qNuaixmIMoD84LaSbJsOyZ6kaNwg==
-    size: 742929325
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.9/aryaai-0.2.1-rc.2.AryaAI.0.12.9-win-x64-unsigned.exe
-sha512: jW15th8O1PWBXh/iPZLqt7jRSkUoLlF/JPaHVP3L2EipfCdbZGxHMN3pT2qNuaixmIMoD84LaSbJsOyZ6kaNwg==
-releaseDate: '2026-10-21T01:53:34.821Z'
-releaseNotes: '{"en":["Built-in AryaAI plugins now update with the application: a plugin version pinned in the profile that is older than the shipped copy is dropped when a release is prepared, so updating Arya moves the bundled plugins forward. Community and user-installed plugins keep whatever version their user chose, and a newer pin or a local development checkout still wins.","The Arya Plugin Market lists every AryaAI-authored plugin with the versions the installer ships, shows installer-shipped plugins as installed, and can update or restore installer-owned versions. The catalog is published with each release, so update versions no longer go missing between releases.","The bundled market is built from the Arya fork branch (1.66.14-arya.0.10), which is where catalog, version selection and restore-bundled-version behavior live.","FactoryTalk Optix loads by default as a built-in plugin, with its tools available without starting an external service.","Carries everything published as 0.12.8: the MCP Servers page with its Discover catalog, the retired Studio 5000/ignition/SCADA bridge MCP servers deleted, and bundled plugin titles and icons."],"zh":["内置 AryaAI 插件现在随应用一起更新：准备发布时，如果 profile 中固定的插件版本低于安装程序自带副本，该固定会被移除，因此更新 Arya 会把随包插件同步更新。社区插件与用户自行安装的插件保持用户选择的版本；更高版本或本地开发副本仍然优先。","Arya 插件市场列出每个 AryaAI 作者插件及安装程序自带的版本，将随安装包提供的插件显示为已安装，并可更新或恢复安装程序拥有的版本。插件目录随每次发布更新，更新版本不再在两次发布之间缺席。","随包插件市场由 Arya 分支构建（1.66.14-arya.0.10），目录、版本选择与恢复自带版本的行为都在该分支中。","FactoryTalk Optix 作为内置插件默认加载，工具可直接使用，无需启动外部服务。","包含 0.12.8 发布的所有内容：带“发现”目录的 MCP 服务器页面、已删除的 Studio 5000、Ignition 与 SCADA 桥接 MCP 服务器，以及随包插件的名称与图标。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.10/aryaai-0.2.1-rc.2.AryaAI.0.12.10-win-x64-unsigned.exe
+    sha512: M8+BYCp00NuSufw3Lr9cV0O/ypQXHwgeio3q8obJgyL561u4I4lVAGQbPfAymh5Fi4zKbj8J5TFkQIGf5wmP1g==
+    size: 742935325
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.10/aryaai-0.2.1-rc.2.AryaAI.0.12.10-win-x64-unsigned.exe
+sha512: M8+BYCp00NuSufw3Lr9cV0O/ypQXHwgeio3q8obJgyL561u4I4lVAGQbPfAymh5Fi4zKbj8J5TFkQIGf5wmP1g==
+releaseDate: '2026-10-21T03:06:13.001Z'
+releaseNotes: '{"en":["Bundled plugins now ship the versions the plugin market lists. Updating Arya to this release moves the Studio 5000 L5X tools from 0.3.3 to 0.5.0, the version already offered in the market, so no separate plugin update is needed for it.","Carries everything published as 0.12.9: built-in plugins that update with the application, the catalog-backed plugin market with every authored plugin version, and FactoryTalk Optix loading by default."],"zh":["随包插件现在提供与插件市场列出的相同版本。更新 Arya 到本版本会把 Studio 5000 L5X 工具从 0.3.3 移到市场上已提供的 0.5.0，因此无需再单独更新该插件。","包含 0.12.9 发布的所有内容：随应用更新的内置插件、列有每个作者插件版本的目录型插件市场，以及默认加载的 FactoryTalk Optix。"]}'
