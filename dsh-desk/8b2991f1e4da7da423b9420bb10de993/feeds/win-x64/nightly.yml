@@ -1,9 +1,9 @@
-version: 0.2.1-rc.2.AryaAI.0.12.10
+version: 0.2.1-rc.2.AryaAI.0.12.11
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.10/aryaai-0.2.1-rc.2.AryaAI.0.12.10-win-x64-unsigned.exe
-    sha512: M8+BYCp00NuSufw3Lr9cV0O/ypQXHwgeio3q8obJgyL561u4I4lVAGQbPfAymh5Fi4zKbj8J5TFkQIGf5wmP1g==
-    size: 742935325
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.10/aryaai-0.2.1-rc.2.AryaAI.0.12.10-win-x64-unsigned.exe
-sha512: M8+BYCp00NuSufw3Lr9cV0O/ypQXHwgeio3q8obJgyL561u4I4lVAGQbPfAymh5Fi4zKbj8J5TFkQIGf5wmP1g==
-releaseDate: '2026-10-21T03:06:13.001Z'
-releaseNotes: '{"en":["Bundled plugins now ship the versions the plugin market lists. Updating Arya to this release moves the Studio 5000 L5X tools from 0.3.3 to 0.5.0, the version already offered in the market, so no separate plugin update is needed for it.","Carries everything published as 0.12.9: built-in plugins that update with the application, the catalog-backed plugin market with every authored plugin version, and FactoryTalk Optix loading by default."],"zh":["随包插件现在提供与插件市场列出的相同版本。更新 Arya 到本版本会把 Studio 5000 L5X 工具从 0.3.3 移到市场上已提供的 0.5.0，因此无需再单独更新该插件。","包含 0.12.9 发布的所有内容：随应用更新的内置插件、列有每个作者插件版本的目录型插件市场，以及默认加载的 FactoryTalk Optix。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.11/aryaai-0.2.1-rc.2.AryaAI.0.12.11-win-x64-unsigned.exe
+    sha512: dXTGOh7m9TZnmN9gJLlszYZzgjX0lid/2yqeIGdZC8OzD6olzO94U7AGr2CvFRRfxS1VIQmJkpQbMbTs8XZdew==
+    size: 742934270
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.11/aryaai-0.2.1-rc.2.AryaAI.0.12.11-win-x64-unsigned.exe
+sha512: dXTGOh7m9TZnmN9gJLlszYZzgjX0lid/2yqeIGdZC8OzD6olzO94U7AGr2CvFRRfxS1VIQmJkpQbMbTs8XZdew==
+releaseDate: '2026-10-21T04:06:18.805Z'
+releaseNotes: '{"en":["Built-in plugins now track their source versions systematically: every authored plugin the installer ships is pinned to a packed artifact of its current source at release time, so the installer and the plugin market always offer the same versions. This covers plugins added during development without a manual pin per release.","A local checkout no longer holds a built-in plugin back: a link or file pin older than the shipped copy is replaced by the installer version, while a newer checkout still wins. That also lets Restore bundled version work for plugins that were previously installed from a local directory.","Carries everything published as 0.12.10: the L5X tools at 0.5.0, built-in plugins that update with the application, and FactoryTalk Optix loading by default."],"zh":["内置插件现在按来源版本系统化跟进：安装程序自带的每个作者插件在发布时会固定到当前源码打出的压缩包，因此安装程序与插件市场始终提供相同版本。开发过程中新增的插件也自动覆盖，无需每次发布手工固定。","本地副本不再拖住内置插件：低于安装程序自带版本的 link 或 file 固定会被替换为安装程序版本，更新的副本仍然优先。此前从本地目录安装的插件也因此可以使用“恢复随应用提供的版本”。","包含 0.12.10 发布的所有内容：L5X 工具 0.5.0、随应用更新的内置插件，以及默认加载的 FactoryTalk Optix。"]}'
