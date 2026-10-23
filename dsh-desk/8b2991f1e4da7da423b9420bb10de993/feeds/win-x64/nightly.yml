@@ -1,9 +1,9 @@
-version: 0.2.1-rc.3.AryaAI.0.12.16
+version: 0.2.1-rc.3.AryaAI.0.12.17
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.16/aryaai-0.2.1-rc.3.AryaAI.0.12.16-win-x64-unsigned.exe
-    sha512: ZW3U2TJ5GnPVX7rjr8/M35u/p7tm8O9V1BzLTp9HAPRdKPK8+EzTwPp1Mj7Sly0iWu6ANXJ10nwqsDknNZF7Uw==
-    size: 743675206
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.16/aryaai-0.2.1-rc.3.AryaAI.0.12.16-win-x64-unsigned.exe
-sha512: ZW3U2TJ5GnPVX7rjr8/M35u/p7tm8O9V1BzLTp9HAPRdKPK8+EzTwPp1Mj7Sly0iWu6ANXJ10nwqsDknNZF7Uw==
-releaseDate: '2026-10-23T22:23:03.797Z'
-releaseNotes: '{"en":["Ships engineering bundle 0.2.0 with a redesigned MotionWorks IEC surface: 24 tools for staging, IDE control, saved-project reads, compile diagnostics and verified edits, in place of the retired standalone plugin.","MotionWorks editing is off by default, like the other engineering editing rows. The legacy MotionWorks plugin is uninstalled, and its tools no longer appear twice in a session."],"zh":["随附工程组合包 0.2.0，MotionWorks IEC 界面重新设计：24 个工具覆盖暂存、IDE 控制、已保存项目读取、编译诊断与经验证的编辑，取代已退役的独立插件。","与其他工程编辑行一样，MotionWorks 编辑默认关闭。旧版 MotionWorks 插件已卸载，会话中不再重复出现其工具。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.17/aryaai-0.2.1-rc.3.AryaAI.0.12.17-win-x64-unsigned.exe
+    sha512: Zlxs+rVU4naYL5LNzzLdlHQodFYBY8RhMzbzr8t67eX4bUTZYhlqCxOxb9AidYZpibAYsDoza6sJKyhu0zm0zQ==
+    size: 743671694
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.17/aryaai-0.2.1-rc.3.AryaAI.0.12.17-win-x64-unsigned.exe
+sha512: Zlxs+rVU4naYL5LNzzLdlHQodFYBY8RhMzbzr8t67eX4bUTZYhlqCxOxb9AidYZpibAYsDoza6sJKyhu0zm0zQ==
+releaseDate: '2026-10-23T23:26:00.153Z'
+releaseNotes: '{"en":["Removes retired engineering plugins from existing profiles on startup: the old MotionWorks, Studio 5000 L5X and ladder-viewer packages are dropped from the bundle list, dependencies and installed tree, so an upgrade no longer leaves stale or uninstallable entries on the Plugins page."],"zh":["应用启动时会从现有配置中移除已退役的工程插件：旧的 MotionWorks、Studio 5000 L5X 与梯形图查看器包会从 bundle 列表、依赖与已安装目录中删除，升级后插件页面不再残留陈旧或无法安装的条目。"]}'
