@@ -1,9 +1,9 @@
-version: 0.2.1-rc.3.AryaAI.0.12.13
+version: 0.2.1-rc.3.AryaAI.0.12.14
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.13/aryaai-0.2.1-rc.3.AryaAI.0.12.13-win-x64-unsigned.exe
-    sha512: wsCQjPdgvMlk3Yl6jerSP6qn529KtXMfXcP61sjQOdyKDUTbJni44PiHRT/QZ4AcRTweQzQv6sWKE6bkRMcZyA==
-    size: 743807348
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.13/aryaai-0.2.1-rc.3.AryaAI.0.12.13-win-x64-unsigned.exe
-sha512: wsCQjPdgvMlk3Yl6jerSP6qn529KtXMfXcP61sjQOdyKDUTbJni44PiHRT/QZ4AcRTweQzQv6sWKE6bkRMcZyA==
-releaseDate: '2026-10-23T11:50:28.240Z'
-releaseNotes: '{"en":["The engineering bundle now ships with the application: Studio 5000 L5X reading, offline editing, SDK builds, live reads and the ladder viewer, plus FactoryTalk View ME export analysis, staged editing and Studio handoff.","The separate Studio 5000 L5X Tools and FactoryTalk View plugins are retired. Each product keeps its own switch, so a reader can turn tools off without losing the viewers, and the old duplicated tool namespaces are gone."],"zh":["工程套件现在随应用提供：Studio 5000 L5X 的读取、离线编辑、SDK 构建、实时读取与梯形图查看器，以及 FactoryTalk View ME 的导出分析、分阶段编辑与 Studio 交接。","独立的 Studio 5000 L5X 工具与 FactoryTalk View 插件已退役。每个产品保留自己的开关，因此关闭工具不会失去查看器，旧的重复工具命名空间也已移除。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.14/aryaai-0.2.1-rc.3.AryaAI.0.12.14-win-x64-unsigned.exe
+    sha512: cRIS/S1rQGSwT6LER+Xrv/UW1DSQUL8tZSjNYAD2brpyUDZTiT21Ay+5igOzXvqYJ4MLT8b7RJ1hwauysfLJwQ==
+    size: 743665861
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.14/aryaai-0.2.1-rc.3.AryaAI.0.12.14-win-x64-unsigned.exe
+sha512: cRIS/S1rQGSwT6LER+Xrv/UW1DSQUL8tZSjNYAD2brpyUDZTiT21Ay+5igOzXvqYJ4MLT8b7RJ1hwauysfLJwQ==
+releaseDate: '2026-10-23T18:06:33.726Z'
+releaseNotes: '{"en":["The retired Studio 5000 L5X ladder viewer is gone from the installation: its package, installer dependency and market listing were removed, so the engineering bundle is the only entry that carries it.","The FactoryTalk View tools now activate: their declarations publish the output contract the tool registry requires. Components of the engineering bundle no longer appear as standalone plugins on the Plugins page."],"zh":["已退役的 Studio 5000 L5X 梯形图查看器已从安装中移除：其软件包、安装依赖与市场条目均已删除，现在只有工程套件提供该功能。","FactoryTalk View 工具现在可以正常启用：其声明已发布工具注册表要求的输出约定。工程套件的组件不再作为独立插件出现在插件页面。"]}'
