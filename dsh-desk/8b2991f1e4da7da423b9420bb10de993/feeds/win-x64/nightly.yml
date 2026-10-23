@@ -1,9 +1,9 @@
-version: 0.2.1-rc.2.AryaAI.0.12.12
+version: 0.2.1-rc.3.AryaAI.0.12.13
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.12/aryaai-0.2.1-rc.2.AryaAI.0.12.12-win-x64-unsigned.exe
-    sha512: XeIHiO4oQZx00QB474jr+YigItoGLomqEykyq5xElJU8epxRG5gVwfFSWCi5W4Sl4W0IeoxzhYpCUPqROtfjCg==
-    size: 743540507
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.2.AryaAI.0.12.12/aryaai-0.2.1-rc.2.AryaAI.0.12.12-win-x64-unsigned.exe
-sha512: XeIHiO4oQZx00QB474jr+YigItoGLomqEykyq5xElJU8epxRG5gVwfFSWCi5W4Sl4W0IeoxzhYpCUPqROtfjCg==
-releaseDate: '2026-10-21T22:04:16.146Z'
-releaseNotes: '{"en":["Updating a community plugin from the market now works on the desktop app. The official plugin manager refuses to install over an installed copy while hot reload is active, so the market removes that copy first and retries once; if the removal fails, its own error is what you see.","Carries everything published as 0.12.11: built-in plugins shipped at their source versions and updated with the installer, local checkouts that no longer hold built-in plugins back, and FactoryTalk Optix loading by default."],"zh":["桌面版现在可以从市场更新社区插件。官方插件管理器在热重载启用时拒绝直接覆盖已安装副本，因此市场会先移除该副本再重试一次；如果移除失败，则显示管理器自己的错误。","包含 0.12.11 发布的所有内容：按来源版本随安装程序更新的内置插件、不再拖住内置插件的本地副本，以及默认加载的 FactoryTalk Optix。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.13/aryaai-0.2.1-rc.3.AryaAI.0.12.13-win-x64-unsigned.exe
+    sha512: wsCQjPdgvMlk3Yl6jerSP6qn529KtXMfXcP61sjQOdyKDUTbJni44PiHRT/QZ4AcRTweQzQv6sWKE6bkRMcZyA==
+    size: 743807348
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.13/aryaai-0.2.1-rc.3.AryaAI.0.12.13-win-x64-unsigned.exe
+sha512: wsCQjPdgvMlk3Yl6jerSP6qn529KtXMfXcP61sjQOdyKDUTbJni44PiHRT/QZ4AcRTweQzQv6sWKE6bkRMcZyA==
+releaseDate: '2026-10-23T11:50:28.240Z'
+releaseNotes: '{"en":["The engineering bundle now ships with the application: Studio 5000 L5X reading, offline editing, SDK builds, live reads and the ladder viewer, plus FactoryTalk View ME export analysis, staged editing and Studio handoff.","The separate Studio 5000 L5X Tools and FactoryTalk View plugins are retired. Each product keeps its own switch, so a reader can turn tools off without losing the viewers, and the old duplicated tool namespaces are gone."],"zh":["工程套件现在随应用提供：Studio 5000 L5X 的读取、离线编辑、SDK 构建、实时读取与梯形图查看器，以及 FactoryTalk View ME 的导出分析、分阶段编辑与 Studio 交接。","独立的 Studio 5000 L5X 工具与 FactoryTalk View 插件已退役。每个产品保留自己的开关，因此关闭工具不会失去查看器，旧的重复工具命名空间也已移除。"]}'
