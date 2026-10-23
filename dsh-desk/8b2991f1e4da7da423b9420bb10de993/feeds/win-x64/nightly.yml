@@ -1,9 +1,9 @@
-version: 0.2.1-rc.3.AryaAI.0.12.15
+version: 0.2.1-rc.3.AryaAI.0.12.16
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.15/aryaai-0.2.1-rc.3.AryaAI.0.12.15-win-x64-unsigned.exe
-    sha512: mrt1v1KmoN9RueAUBhSac99KyoIeXUp7ICkMh+Osaw5IS7lxRwZKKV+TfHdCm0CcDnTRC1n+T36CQ6pgAR5+hg==
-    size: 743685352
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.15/aryaai-0.2.1-rc.3.AryaAI.0.12.15-win-x64-unsigned.exe
-sha512: mrt1v1KmoN9RueAUBhSac99KyoIeXUp7ICkMh+Osaw5IS7lxRwZKKV+TfHdCm0CcDnTRC1n+T36CQ6pgAR5+hg==
-releaseDate: '2026-10-23T19:59:42.492Z'
-releaseNotes: '{"en":["Fixes the engineering tools after the filesystem API change: ACD-to-L5X export, staged drafts and the Studio SDK tools work again, and FactoryTalk View reading, editing and Studio discovery follow the same contract.","Ships engineering bundle 0.1.2. The ACD-to-L5X export was verified end to end against Logix Designer SDK v37."],"zh":["修复文件系统 API 变更后的工程工具：ACD 到 L5X 导出、分阶段草稿和 Studio SDK 工具恢复可用，FactoryTalk View 的读取、编辑与 Studio 发现遵循同一约定。","随附工程组合包 0.1.2。ACD 到 L5X 导出已针对 Logix Designer SDK v37 完成端到端验证。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.16/aryaai-0.2.1-rc.3.AryaAI.0.12.16-win-x64-unsigned.exe
+    sha512: ZW3U2TJ5GnPVX7rjr8/M35u/p7tm8O9V1BzLTp9HAPRdKPK8+EzTwPp1Mj7Sly0iWu6ANXJ10nwqsDknNZF7Uw==
+    size: 743675206
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.16/aryaai-0.2.1-rc.3.AryaAI.0.12.16-win-x64-unsigned.exe
+sha512: ZW3U2TJ5GnPVX7rjr8/M35u/p7tm8O9V1BzLTp9HAPRdKPK8+EzTwPp1Mj7Sly0iWu6ANXJ10nwqsDknNZF7Uw==
+releaseDate: '2026-10-23T22:23:03.797Z'
+releaseNotes: '{"en":["Ships engineering bundle 0.2.0 with a redesigned MotionWorks IEC surface: 24 tools for staging, IDE control, saved-project reads, compile diagnostics and verified edits, in place of the retired standalone plugin.","MotionWorks editing is off by default, like the other engineering editing rows. The legacy MotionWorks plugin is uninstalled, and its tools no longer appear twice in a session."],"zh":["随附工程组合包 0.2.0，MotionWorks IEC 界面重新设计：24 个工具覆盖暂存、IDE 控制、已保存项目读取、编译诊断与经验证的编辑，取代已退役的独立插件。","与其他工程编辑行一样，MotionWorks 编辑默认关闭。旧版 MotionWorks 插件已卸载，会话中不再重复出现其工具。"]}'
