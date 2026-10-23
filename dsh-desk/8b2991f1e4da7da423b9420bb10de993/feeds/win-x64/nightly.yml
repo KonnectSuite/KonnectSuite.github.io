@@ -1,9 +1,9 @@
-version: 0.2.1-rc.3.AryaAI.0.12.14
+version: 0.2.1-rc.3.AryaAI.0.12.15
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.14/aryaai-0.2.1-rc.3.AryaAI.0.12.14-win-x64-unsigned.exe
-    sha512: cRIS/S1rQGSwT6LER+Xrv/UW1DSQUL8tZSjNYAD2brpyUDZTiT21Ay+5igOzXvqYJ4MLT8b7RJ1hwauysfLJwQ==
-    size: 743665861
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.14/aryaai-0.2.1-rc.3.AryaAI.0.12.14-win-x64-unsigned.exe
-sha512: cRIS/S1rQGSwT6LER+Xrv/UW1DSQUL8tZSjNYAD2brpyUDZTiT21Ay+5igOzXvqYJ4MLT8b7RJ1hwauysfLJwQ==
-releaseDate: '2026-10-23T18:06:33.726Z'
-releaseNotes: '{"en":["The retired Studio 5000 L5X ladder viewer is gone from the installation: its package, installer dependency and market listing were removed, so the engineering bundle is the only entry that carries it.","The FactoryTalk View tools now activate: their declarations publish the output contract the tool registry requires. Components of the engineering bundle no longer appear as standalone plugins on the Plugins page."],"zh":["已退役的 Studio 5000 L5X 梯形图查看器已从安装中移除：其软件包、安装依赖与市场条目均已删除，现在只有工程套件提供该功能。","FactoryTalk View 工具现在可以正常启用：其声明已发布工具注册表要求的输出约定。工程套件的组件不再作为独立插件出现在插件页面。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.15/aryaai-0.2.1-rc.3.AryaAI.0.12.15-win-x64-unsigned.exe
+    sha512: mrt1v1KmoN9RueAUBhSac99KyoIeXUp7ICkMh+Osaw5IS7lxRwZKKV+TfHdCm0CcDnTRC1n+T36CQ6pgAR5+hg==
+    size: 743685352
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.15/aryaai-0.2.1-rc.3.AryaAI.0.12.15-win-x64-unsigned.exe
+sha512: mrt1v1KmoN9RueAUBhSac99KyoIeXUp7ICkMh+Osaw5IS7lxRwZKKV+TfHdCm0CcDnTRC1n+T36CQ6pgAR5+hg==
+releaseDate: '2026-10-23T19:59:42.492Z'
+releaseNotes: '{"en":["Fixes the engineering tools after the filesystem API change: ACD-to-L5X export, staged drafts and the Studio SDK tools work again, and FactoryTalk View reading, editing and Studio discovery follow the same contract.","Ships engineering bundle 0.1.2. The ACD-to-L5X export was verified end to end against Logix Designer SDK v37."],"zh":["修复文件系统 API 变更后的工程工具：ACD 到 L5X 导出、分阶段草稿和 Studio SDK 工具恢复可用，FactoryTalk View 的读取、编辑与 Studio 发现遵循同一约定。","随附工程组合包 0.1.2。ACD 到 L5X 导出已针对 Logix Designer SDK v37 完成端到端验证。"]}'
