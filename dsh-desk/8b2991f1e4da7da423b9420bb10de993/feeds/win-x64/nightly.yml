@@ -1,9 +1,9 @@
-version: 0.2.1-rc.3.AryaAI.0.12.17
+version: 0.2.1-rc.3.AryaAI.0.12.19
 files:
-  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.17/aryaai-0.2.1-rc.3.AryaAI.0.12.17-win-x64-unsigned.exe
-    sha512: Zlxs+rVU4naYL5LNzzLdlHQodFYBY8RhMzbzr8t67eX4bUTZYhlqCxOxb9AidYZpibAYsDoza6sJKyhu0zm0zQ==
-    size: 743671694
-path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.17/aryaai-0.2.1-rc.3.AryaAI.0.12.17-win-x64-unsigned.exe
-sha512: Zlxs+rVU4naYL5LNzzLdlHQodFYBY8RhMzbzr8t67eX4bUTZYhlqCxOxb9AidYZpibAYsDoza6sJKyhu0zm0zQ==
-releaseDate: '2026-10-23T23:26:00.153Z'
-releaseNotes: '{"en":["Removes retired engineering plugins from existing profiles on startup: the old MotionWorks, Studio 5000 L5X and ladder-viewer packages are dropped from the bundle list, dependencies and installed tree, so an upgrade no longer leaves stale or uninstallable entries on the Plugins page."],"zh":["应用启动时会从现有配置中移除已退役的工程插件：旧的 MotionWorks、Studio 5000 L5X 与梯形图查看器包会从 bundle 列表、依赖与已安装目录中删除，升级后插件页面不再残留陈旧或无法安装的条目。"]}'
+  - url: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.19/aryaai-0.2.1-rc.3.AryaAI.0.12.19-win-x64-unsigned.exe
+    sha512: kkMIaTrXRcs9VnzDrAayVDGhvp5hjL6G9ggHRPkwVs3/qHRHNO4wx+NkDSmuGKiqFOC+AsYJvAbOsQs4nYvfHQ==
+    size: 743670089
+path: https://github.com/KonnectSuite/KonnectSuite.github.io/releases/download/desktop-v0.2.1-rc.3.AryaAI.0.12.19/aryaai-0.2.1-rc.3.AryaAI.0.12.19-win-x64-unsigned.exe
+sha512: kkMIaTrXRcs9VnzDrAayVDGhvp5hjL6G9ggHRPkwVs3/qHRHNO4wx+NkDSmuGKiqFOC+AsYJvAbOsQs4nYvfHQ==
+releaseDate: '2026-10-24T02:10:43.535Z'
+releaseNotes: '{"en":["Moves FactoryTalk Optix into engineering bundle 0.3.0 as the optix row and removes the standalone tool plugin from the installer, product catalogue and Web bundle."],"zh":["将 FactoryTalk Optix 作为 optix 行并入工程组合包 0.3.0，并从安装包、产品目录与 Web 组合包中移除独立工具插件。"]}'
