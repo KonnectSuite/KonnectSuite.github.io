@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AryaAI — site.js
+   AryaCode — site.js
    Progressive enhancement only. With JavaScript unavailable the navigation is
    a plain link list, every accordion is a native <details>, and all content is
    already in the HTML. Nothing here is required to read the site.

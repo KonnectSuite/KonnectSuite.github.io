@@ -1,5 +1,7 @@
 # AryaAI 0.7.0
 
+> Historical note — AryaAI is retired. AryaCode is the current product line; this note documents a legacy build.
+
 AryaAI 0.7.0 adds community-powered image conversations and user-managed shipped plugins on DeepSeek Harness 0.2.0-rc.2.
 
 - Create and edit images through pinned dsh-image-gen tools using configured local or hosted providers.

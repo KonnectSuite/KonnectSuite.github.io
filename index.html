@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AryaAI — Your AI engineering pal for automation programmers</title>
-<meta name="description" content="AryaAI is the coding and engineering companion for automation programmers. Read Logix exports, DXF drawings, Ignition projects and IEC 61131-3 Structured Text beside the engineering software already on your desk. A Windows desktop app powered by DeepSeek Harness.">
+<title>AryaCode — Your AI engineering pal for automation programmers</title>
+<meta name="description" content="AryaCode is the coding and engineering companion for automation programmers. Read Logix exports, DXF drawings, Ignition projects and IEC 61131-3 Structured Text beside the engineering software already on your desk. A Windows desktop app powered by DeepSeek Harness.">
 <meta name="theme-color" content="#0F141B">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
@@ -12,10 +12,10 @@
 <link rel="stylesheet" href="assets/css/site.css">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="AryaAI — Your AI engineering pal">
+<meta property="og:title" content="AryaCode — Your AI engineering pal">
 <meta property="og:description" content="The coding and engineering companion for automation programmers. Powered by DeepSeek Harness.">
 <meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
-<meta property="og:image:alt" content="AryaAI horizontal logo lockup">
+<meta property="og:image:alt" content="AryaAI horizontal logo lockup — the legacy line's brand art, kept as archive">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- Flipped by script: with JavaScript unavailable the class stays and the CSS
@@ -30,7 +30,7 @@
   <div class="container">
     <a class="brand" href="index.html">
       <img class="brand__mark" src="assets/img/mark.svg" alt="" width="32" height="32">
-      <span class="brand__name">AryaAI</span>
+      <span class="brand__name">AryaCode</span>
     </a>
 
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-nav-toggle>
@@ -69,7 +69,7 @@
           <h1>Your AI engineering pal</h1>
 
           <p class="lead hero__lead">
-            Coding agents are written for people who ship software. AryaAI is written for the
+            Coding agents are written for people who ship software. AryaCode is written for the
             people who program machines — the PLC, the motion controller, the HMI, and the
             drawings those programs come from.
           </p>
@@ -93,8 +93,9 @@
           </div>
 
           <p class="hero__note">
-            <strong>AryaCode 0.1.2</strong> is the new app line; <strong>AryaAI 0.12.19</strong> is the
-            previous one. <a href="download.html">Compare both</a> &middot; installers are unsigned
+            <strong>AryaCode 0.1.2</strong> is the current line, on a nightly channel;
+            <strong>Legacy AryaAI 0.12.19</strong> is its retired predecessor &mdash; final build,
+            no more updates. <a href="download.html">Compare both</a> &middot; installers are unsigned
             &mdash; Windows may ask you to confirm.
           </p>
         </div>
@@ -102,7 +103,7 @@
         <div class="stage">
           <div class="stage__bar">
             <span class="stage__dots" aria-hidden="true"><span></span><span></span><span></span></span>
-            <span class="stage__title">aryaai — workspace: laminator</span>
+            <span class="stage__title">aryacode — workspace: laminator</span>
           </div>
 
           <div class="stage__body">
@@ -111,7 +112,7 @@
               <picture>
                 <source media="(prefers-reduced-motion: reduce)" srcset="branding/aryaai-brand-kit/companion/greeting/reduced-motion.png">
                 <source type="image/webp" srcset="branding/aryaai-brand-kit/companion/greeting/animated/256.webp">
-                <img src="branding/aryaai-brand-kit/companion/greeting/static/256.png" alt="Arya, the AryaAI companion, waving a greeting" width="256" height="256">
+                <img src="branding/aryaai-brand-kit/companion/greeting/static/256.png" alt="Arya, the AryaCode companion, waving a greeting" width="256" height="256">
               </picture>
             </div>
 
@@ -158,7 +159,7 @@
           production line end to end &mdash; reading the staged project, explaining what the logic was
           doing, writing the changes and running Build and Make through the IDE&rsquo;s own APIs
           &mdash; with every change reviewed before it reached the machine. The rest of the
-          installer&rsquo;s automation surface has not been through that, so treat it as beta: it is
+          app&rsquo;s automation surface has not been through that, so treat it as beta: it is
           untested against real production work, and none of it has the years of service that would
           justify trusting it on a plant.</li>
           <li><strong>What that proof is, and what is still missing.</strong> Proven here means an
@@ -176,7 +177,7 @@
           <li><strong>If you install an unsigned build to write PLC programs or HMI screens, you do so
           at your own risk.</strong> The installer is not code signed. Check anything it produces
           against your own standards before it goes near a machine.</li>
-          <li><strong>While online with a controller, AryaAI is read only.</strong> Reading live tag
+          <li><strong>While online with a controller, AryaCode is read only.</strong> Reading live tag
           values, the controller mode and diagnostics is what it does by default. It cannot edit
           online, force or toggle a bit, or write tag or runtime data &mdash; those actions are refused
           permanently, and no request from you can authorize them.</li>
@@ -188,7 +189,7 @@
           same session with the controller already in Program mode.</li>
           <li><strong>Everything else is an offline file.</strong> Studio 5000 work happens against an
           exported <code>.l5x</code> or an offline copy of an <code>.acd</code>, and every other tool
-          is bounded the same way. What AryaAI writes is a file you review.</li>
+          is bounded the same way. What AryaCode writes is a file you review.</li>
           <li><strong>The first milestone is Version 1.0</strong> &mdash; when the whole line, not just
           the two proven bundles, carries the evidence to drop the preview label.</li>
         </ul>
@@ -233,7 +234,7 @@
           prints — and a controller that must not be downloaded to by accident.
         </p>
         <p class="lead mt-2">
-          AryaAI is built to remove the support call. When something on the plant misbehaves, the
+          AryaCode is built to remove the support call. When something on the plant misbehaves, the
           alternative to an answer is a vendor support licence, a ticket queue and a phone line that
           keeps business hours. She is meant to be that support line instead: she reads the project
           already on the PC — the Logix export, the motion project, the drawing set — and answers
@@ -253,7 +254,7 @@
         </div>
 
         <div class="panel card--accent">
-          <p class="panel__label">AryaAI</p>
+          <p class="panel__label">AryaCode</p>
           <ul class="checklist checklist--ok">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Reads the controller summary, tags, UDTs, AOIs, modules and routines</li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Ladder comes back as text, with the rung comments intact</li>
@@ -273,7 +274,8 @@
         <h2>This is the application</h2>
         <p class="lead">
           Every image below is a real screen capture of the interface. Nothing here is a rendering
-          or a design comp.
+          or a design comp. The captures come from the final AryaAI 0.12.19 build &mdash; the same
+          app shell ships as AryaCode, so the panels look the same.
         </p>
       </div>
 
@@ -289,7 +291,8 @@
           FactoryTalk Optix Tools is the exception &mdash; it speaks to Optix Studio&rsquo;s own
           service on this PC. Windows Computer Use and ComfyUI MCP start with the app; the other
           five wait until you switch them on, so a factory tool you do not have on this machine
-          never blocks startup.
+          never blocks startup. This capture shows the installer-bundled set from AryaAI 0.12.19; in
+           AryaCode the same servers arrive as market bundles.
         </figcaption>
       </figure>
 
@@ -454,7 +457,7 @@
         <figcaption>
           <span class="shot__tag">Captured from the application</span>
           <strong>ComfyUI connected, and a workflow chosen by name.</strong>
-          AryaAI talks to the ComfyUI you already run. Pick a workflow, set size, steps, prompt
+          AryaCode talks to the ComfyUI you already run. Pick a workflow, set size, steps, prompt
           strength and seed, and generate — or hand the whole thing to the agent and let it edit
           the graph instead.
         </figcaption>
@@ -466,7 +469,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
           </div>
           <h3>It finds your checkpoints</h3>
-          <p>AryaAI probes the ComfyUI you point it at, discovers the checkpoint and Z-Image Turbo
+          <p>AryaCode probes the ComfyUI you point it at, discovers the checkpoint and Z-Image Turbo
           models already installed there, and offers them by name.</p>
         </article>
 
@@ -509,9 +512,9 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">The engineering desk</p>
-        <h2>Eight servers &mdash; seven of them inside the installer</h2>
+        <h2>Eight servers &mdash; seven bundled into the app, one served locally</h2>
         <p class="lead">
-          Seven of the eight run on the Python or Node that AryaAI carries, so your plant PC does not
+          Seven of the eight run on the Python or Node that AryaCode carries, so your plant PC does not
           need its own toolchain for them. FactoryTalk Optix Tools cannot be packed into the
           installer &mdash; it speaks to Optix Studio&rsquo;s own service on this PC, and reports when
           that service is absent. Enable a row from the MCP list, and turn it off again.
@@ -550,7 +553,7 @@
             </tr>
             <tr>
               <th scope="row">FactoryTalk Optix Tools</th>
-              <td data-label="What the agent can do">Talk to Optix Studio&rsquo;s own service on this PC. Turn it off and AryaAI stops waiting for it.</td>
+              <td data-label="What the agent can do">Talk to Optix Studio&rsquo;s own service on this PC. Turn it off and AryaCode stops waiting for it.</td>
             </tr>
             <tr>
               <th scope="row">Windows Computer Use</th>
@@ -606,7 +609,7 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Everything is a plugin</p>
-        <h2>AryaAI does not grow by hiding features in the shell</h2>
+        <h2>AryaCode does not grow by hiding features in the shell</h2>
         <p class="lead">
           A capability is a plugin. The desktop window and the web UI load the same list. Remove
           the row, or disable it, and that capability is gone on the next start.
@@ -623,7 +626,7 @@
 
         <article class="card">
           <h3>Engineering servers</h3>
-          <p>Also in the installer, and off until you enable them — except Windows Computer Use,
+          <p>Delivered as market bundles, and off until you enable them — except Windows Computer Use,
           which starts with the app. A factory tool you do not have reports itself in the MCP panel
           instead of blocking startup.</p>
           <div class="card__meta"><span class="tag">You switch them on</span></div>
@@ -644,7 +647,7 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Saying this plainly is part of the product</p>
-        <h2>What AryaAI does not do yet</h2>
+        <h2>What AryaCode does not do yet</h2>
         <p class="lead">
           An agent that overstates what it can reach is dangerous in a plant. These limits are
           published, not discovered.
@@ -723,7 +726,7 @@
         <p class="eyebrow centered">Ready when your desk is</p>
         <h2>Install it on the PC that runs the plant</h2>
         <p class="lead">
-          AryaAI is a Windows desktop application because the engineering tools live on the PC in
+          AryaCode is a Windows desktop application because the engineering tools live on the PC in
           front of you. Chats, settings and any plugin you add stay through the next update.
         </p>
         <div class="btn-row">
@@ -736,7 +739,7 @@
             View on GitHub
           </a>
         </div>
-        <p class="hero__note mb-0">AryaCode 0.1.2 and AryaAI 0.12.19 &mdash; <a href="download.html">see both installers</a> &middot; on DeepSeek Harness 0.2.1-rc.3 &middot; MIT licensed</p>
+        <p class="hero__note mb-0">AryaCode 0.1.2 and legacy AryaAI 0.12.19 &mdash; <a href="download.html">see both installers</a> &middot; on DeepSeek Harness 0.2.1-rc.3 &middot; MIT licensed</p>
       </div>
     </div>
   </section>
@@ -750,7 +753,7 @@
       <div>
         <div class="footer__brand">
           <img src="assets/img/mark.svg" alt="" width="26" height="26">
-          <span>AryaAI</span>
+          <span>AryaCode</span>
         </div>
         <p class="footer__tagline">
           Your AI engineering pal. A coding and automation engineering companion for the people who
@@ -791,7 +794,7 @@
 
     <div class="footer__legal">
       <p>
-        &copy; <span data-year>2026</span> AryaAI. Released under the MIT license. AryaAI is built on
+        &copy; <span data-year>2026</span> AryaCode. Released under the MIT license. AryaCode is built on
         DeepSeek Harness; DeepSeek Harness is a trademark of DeepSeek, and this project is not
         endorsed by or affiliated with DeepSeek.
       </p>

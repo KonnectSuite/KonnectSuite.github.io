@@ -1,5 +1,7 @@
 # AryaAI 0.8.0
 
+> Historical note — AryaAI is retired. AryaCode is the current product line; this note documents a legacy build.
+
 AryaAI 0.8.0 adds Projects on DeepSeek Harness 0.2.0-rc.2.
 
 - Create named projects above Workspaces and select several source folders in one popup.

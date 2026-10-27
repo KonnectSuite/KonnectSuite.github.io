@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Documentation — AryaAI</title>
-<meta name="description" content="Install AryaAI on Windows, what it needs, how updates and plugins behave, the safety model, and the full published list of what AryaAI does not do yet.">
+<title>Documentation — AryaCode</title>
+<meta name="description" content="Install AryaCode on Windows, what it needs, how updates and plugins behave, the safety model, and the full published list of what AryaCode does not do yet.">
 <meta name="theme-color" content="#0F141B">
 <meta name="color-scheme" content="dark light">
 <link rel="icon" type="image/svg+xml" href="assets/img/mark.svg">
 <link rel="stylesheet" href="assets/css/site.css">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Documentation — AryaAI">
-<meta property="og:description" content="Install AryaAI on Windows, what it needs, how updates and plugins behave, the safety model, and the full published list of what AryaAI does not do yet.">
+<meta property="og:title" content="Documentation — AryaCode">
+<meta property="og:description" content="Install AryaCode on Windows, what it needs, how updates and plugins behave, the safety model, and the full published list of what AryaCode does not do yet.">
 <meta property="og:image" content="branding/aryaai-brand-kit/logos/horizontal-lockup-1400.png">
 <meta property="og:image:alt" content="AryaAI horizontal logo lockup">
 <meta name="twitter:card" content="summary_large_image">
@@ -27,7 +27,7 @@
   <div class="container">
     <a class="brand" href="index.html">
       <img class="brand__mark" src="assets/img/mark.svg" alt="" width="32" height="32">
-      <span class="brand__name">AryaAI</span>
+      <span class="brand__name">AryaCode</span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation menu" data-nav-toggle>
       <svg class="nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
@@ -56,7 +56,7 @@
       <p class="eyebrow">Get running</p>
       <h1>Install it, then decide what it may touch</h1>
       <p class="lead">
-        AryaAI is a Windows desktop application. It carries its own Node and Python, so its
+        AryaCode is a Windows desktop application. It carries its own Node and Python, so its
         engineering servers work without you installing a toolchain &mdash; with one exception,
         FactoryTalk Optix Tools, which uses the service of an Optix Studio already on the PC.
       </p>
@@ -75,8 +75,8 @@
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
           <span>Download the installer from the <a href="download.html">download page</a>. These docs
-          describe <strong>AryaAI 0.12.19</strong>; <strong>AryaCode</strong> is the new app line on the
-          same harness.</span>
+          describe <strong>AryaCode</strong>, the current line; <strong>AryaAI 0.12.19</strong> is its
+          frozen legacy, documented in this repository&rsquo;s release notes.</span>
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.4 8.2-8 9-4.6-.8-8-4-8-9V7z"/></svg>
@@ -85,7 +85,7 @@
         </li>
         <li>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
-          <span>When it finishes, AryaAI reopens on its own. Chats and settings stay.</span>
+          <span>When it finishes, AryaCode reopens on its own. Chats and settings stay.</span>
         </li>
       </ol>
 
@@ -102,7 +102,7 @@
         <div class="dl__row">
           <dt>Operating system</dt>
           <dd>Windows desktop. Seven of the eight engineering servers run on the Node and Python that
-          AryaAI ships with, so they need no separate install; FactoryTalk Optix Tools uses Optix
+          AryaCode ships with, so they need no separate install; FactoryTalk Optix Tools uses Optix
           Studio&rsquo;s own service on this PC.</dd>
         </div>
         <div class="dl__row">
@@ -111,8 +111,9 @@
         </div>
         <div class="dl__row">
           <dt>Current version</dt>
-          <dd><strong>0.12.19</strong>, on DeepSeek Harness <code>0.2.1-rc.3</code>. Every build is
-          listed on the <a href="https://github.com/KonnectSuite/KonnectSuite.github.io/releases">releases page</a>.</dd>
+          <dd><strong>AryaCode 0.1.2</strong>, on DeepSeek Harness <code>0.2.1-rc.3</code>, on the
+          nightly channel. Every build is listed on the <a href="https://github.com/KonnectSuite/AryaCode/releases">AryaCode releases page</a>;
+          legacy AryaAI builds remain archived in this repository.</dd>
         </div>
         <div class="dl__row">
           <dt>License</dt>
@@ -135,7 +136,7 @@
           <li><strong>The two vendor engineering bundles are proven in field use.</strong>
           The <strong>Studio 5000 L5X</strong> and <strong>MotionWorks IEC</strong> paths have done real
           engineering work on real machines &mdash; the MotionWorks path commissioned a production line
-          end to end &mdash; and everything else in the installer is
+          end to end &mdash; and everything else the market carries is
           untested against real production work. Read every tool&rsquo;s boundary before you rely on
           it for anything.</li>
           <li><strong>What that proof is, and what is still missing.</strong> Proven here means an
@@ -152,7 +153,7 @@
           controller for mode reads, uploads and mode changes.</li>
           <li><strong>Installing an unsigned build to write PLC programs or HMI screens is done at
           your own risk.</strong> The installer is not code signed.</li>
-          <li><strong>While online with a controller, AryaAI is read only.</strong> Reading live tag
+          <li><strong>While online with a controller, AryaCode is read only.</strong> Reading live tag
           values, the controller mode and diagnostics is what it does by default. Editing online,
           forcing or toggling a bit, and writing tag or runtime data are refused permanently, and no
           request from you authorizes them.</li>
@@ -236,7 +237,7 @@ pnpm dsh web</code></pre>
         <p>
           <span class="callout__title">The development checkout is not published at a public URL yet</span>
           These commands apply to a checkout you already have. The Windows installer above is the
-          supported way to run AryaAI today.
+          supported way to run AryaCode today.
         </p>
       </div>
 
@@ -307,7 +308,7 @@ pnpm dsh web</code></pre>
         </details>
 
         <details>
-          <summary>A tool that cannot see its target says so, and AryaAI still starts</summary>
+          <summary>A tool that cannot see its target says so, and AryaCode still starts</summary>
           <div class="accordion__body">
             <p>A missing factory tool reports itself in the MCP panel. It does not block the
             application from opening, and it does not silently pretend to be available.</p>
@@ -351,7 +352,7 @@ pnpm dsh web</code></pre>
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Stated plainly</p>
-        <h2>What AryaAI does not do yet</h2>
+        <h2>What AryaCode does not do yet</h2>
         <p class="lead">
           An agent that overstates what it can reach is dangerous in a plant. This section is part
           of the product, not a disclaimer bolted onto it.
@@ -416,10 +417,10 @@ pnpm dsh web</code></pre>
     <div class="container">
       <div class="cta">
         <h2>Still deciding?</h2>
-        <p class="lead">Read the source, or open an issue with the export that did not behave. Both
-        go to the same place.</p>
+        <p class="lead">Read the source, or open an issue with the export that did not behave. App
+        code and reports live in the AryaCode repository.</p>
         <div class="btn-row">
-          <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/KonnectSuite.github.io">View on GitHub</a>
+          <a class="btn btn--primary btn--lg" href="https://github.com/KonnectSuite/AryaCode">AryaCode on GitHub</a>
           <a class="btn btn--ghost btn--lg" href="contact.html">Contact and support</a>
         </div>
       </div>
@@ -435,7 +436,7 @@ pnpm dsh web</code></pre>
       <div>
         <div class="footer__brand">
           <img src="assets/img/mark.svg" alt="" width="26" height="26">
-          <span>AryaAI</span>
+          <span>AryaCode</span>
         </div>
         <p class="footer__tagline">
           Your AI engineering pal. A coding and automation engineering companion for the people who
@@ -473,7 +474,7 @@ pnpm dsh web</code></pre>
     </div>
     <div class="footer__legal">
       <p>
-        &copy; <span data-year>2026</span> AryaAI. Released under the MIT license. AryaAI is built on
+        &copy; <span data-year>2026</span> AryaCode. Released under the MIT license. AryaCode is built on
         DeepSeek Harness; DeepSeek Harness is a trademark of DeepSeek, and this project is not
         endorsed by or affiliated with DeepSeek.
       </p>

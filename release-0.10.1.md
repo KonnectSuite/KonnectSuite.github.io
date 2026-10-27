@@ -1,5 +1,7 @@
 # AryaAI 0.10.1
 
+> Historical note — AryaAI is retired. AryaCode is the current product line; this note documents a legacy build.
+
 AryaAI 0.10.1 repairs Native Window loading after the 0.10.0 update.
 
 - Includes Native Window 0.2.3 with corrected bundle configuration. This fixes the YAML indentation error that prevented the built-in plugin from loading.

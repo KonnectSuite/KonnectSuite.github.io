@@ -1,5 +1,7 @@
 # AryaAI 0.10.0
 
+> Historical note — AryaAI is retired. AryaCode is the current product line; this note documents a legacy build.
+
 AryaAI 0.10.0 adds an Arya plugin catalog and docked-application awareness and control on DeepSeek Harness 0.2.0-rc.2.
 
 - Adds Arya Plugin Market with public packaged releases, plugin updates, release selection, and restoration of retained versions.

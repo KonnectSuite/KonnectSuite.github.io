@@ -1,5 +1,7 @@
 # AryaAI 0.8.1
 
+> Historical note — AryaAI is retired. AryaCode is the current product line; this note documents a legacy build.
+
 AryaAI 0.8.1 is a maintenance release on DeepSeek Harness 0.2.0-rc.2.
 
 - Refreshes the included MotionWorks IEC plugin from upstream Git: compiler-artifact timing, protected function-block reviews, guarded library reads, native variable-group edits, IDE diagnostics, and equivalent Windows checkpoint paths.

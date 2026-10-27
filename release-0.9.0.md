@@ -1,5 +1,7 @@
 # AryaAI 0.9.0
 
+> Historical note — AryaAI is retired. AryaCode is the current product line; this note documents a legacy build.
+
 AryaAI 0.9.0 adds built-in desktop and FactoryTalk View workflows on DeepSeek Harness 0.2.0-rc.2.
 
 - Includes Native Window 0.1.2 for docking Windows applications beside Arya conversations. Elevated applications require separately approved helper elevation.
