@@ -349,6 +349,19 @@ pre {
   white-space: nowrap;
 }
 
+/* A full SHA-256 digest is 64 characters: monospaced, allowed to wrap, and
+   quieter than an inline code token so it does not shout on the page. */
+:not(pre) > code.hash {
+  display: inline-block;
+  white-space: normal;
+  word-break: break-all;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+  padding: 0.2em 0.45em;
+}
+
 /* --------------------------------------------------------------------------
    5. Layout
    -------------------------------------------------------------------------- */
