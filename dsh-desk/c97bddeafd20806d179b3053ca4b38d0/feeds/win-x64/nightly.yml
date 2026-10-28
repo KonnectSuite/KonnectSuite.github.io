@@ -1,8 +1,8 @@
-﻿version: 0.2.1-rc.3.AryaCode.0.1.3
+version: 0.2.1-rc.3.AryaCode.0.1.4
 files:
-  - url: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.1-rc.3.AryaCode.0.1.3-win-x64-unsigned.exe
-    sha512: YmAUOFEMCpAP4gLIGtWkT3/QiQJkjz7T9SZHUti1jAZMDxJowAkY3SDiUaMYd6+m7l/yp7ASNB8xLgJuiXklYg==
-    size: 321404318
-path: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.1-rc.3.AryaCode.0.1.3-win-x64-unsigned.exe
-sha512: YmAUOFEMCpAP4gLIGtWkT3/QiQJkjz7T9SZHUti1jAZMDxJowAkY3SDiUaMYd6+m7l/yp7ASNB8xLgJuiXklYg==
-releaseDate: '2026-10-28T22:19:35.603Z'
+  - url: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.1-rc.3.AryaCode.0.1.4-win-x64-unsigned.exe
+    sha512: KAL+vbHNchUWw1VH/5RYOV+SlFfAnIi21RmAnekZ0c3cWD7MGAQTsN12TYOAb9P71bQmwdP6NJz+EnXefHkNew==
+    size: 322537671
+path: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.1-rc.3.AryaCode.0.1.4-win-x64-unsigned.exe
+sha512: KAL+vbHNchUWw1VH/5RYOV+SlFfAnIi21RmAnekZ0c3cWD7MGAQTsN12TYOAb9P71bQmwdP6NJz+EnXefHkNew==
+releaseDate: '2026-10-28T22:35:27.458Z'
