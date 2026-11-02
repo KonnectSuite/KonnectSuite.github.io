@@ -1,8 +1,8 @@
-version: 0.2.2-alpha.2.AryaCode.0.1.4
+version: 0.2.2-alpha.2.AryaCode.0.1.5
 files:
-  - url: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.2-alpha.2.AryaCode.0.1.4-win-x64-unsigned.exe
-    sha512: 4KV/o6tmjVVnXrwwWibSzfj8oc/WNG0MXz9MrtgJt2941lAVBTm2qUyrnwVHYF9s2RZT3J8WXPdM8xIj1fU/gQ==
-    size: 324494414
-path: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.2-alpha.2.AryaCode.0.1.4-win-x64-unsigned.exe
-sha512: 4KV/o6tmjVVnXrwwWibSzfj8oc/WNG0MXz9MrtgJt2941lAVBTm2qUyrnwVHYF9s2RZT3J8WXPdM8xIj1fU/gQ==
-releaseDate: '2026-11-02T04:03:36.343Z'
+  - url: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.2-alpha.2.AryaCode.0.1.5-win-x64-unsigned.exe
+    sha512: 2eA6aHQETK1HImqBles0nW03JFTTNgeNvkEQd5hF7djr3Bi/mG5gRfCU03FsqT0e2XmHxZMgin1YSMSqLOrWAg==
+    size: 324495274
+path: https://github.com/KonnectSuite/AryaCode/releases/download/nightly/aryacode-0.2.2-alpha.2.AryaCode.0.1.5-win-x64-unsigned.exe
+sha512: 2eA6aHQETK1HImqBles0nW03JFTTNgeNvkEQd5hF7djr3Bi/mG5gRfCU03FsqT0e2XmHxZMgin1YSMSqLOrWAg==
+releaseDate: '2026-11-02T06:46:00.000Z'
